@@ -1,6 +1,6 @@
 Ext.ns('com.dj.project.base');
 
-com.dj.project.base.BaseForm = Ext.extend(Ext.form.FormPanel, {
+com.dj.project.base.BaseForm = Ext.extend(Ext.form.FormPanel, {    
     constructor : function(config) {
         config = config || {};
         Ext.applyIf(config, {
