@@ -26,12 +26,12 @@ public class AtmSessionCustomizer implements SessionCustomizer{
         int totalNumberOfConnections = cPool.getTotalNumberOfConnections();
         System.out.println("Details- NumberOfActiveUnitsOfWork : " + work + ", ConnectionPool size : " + totalNumberOfConnections );
         List<Accessor> list = cPool.getConnectionsAvailable();
-        for (Accessor a : list){
-            boolean b = a.isInTransaction();
-            int count = a.getCallCount();
-            boolean valid = a.isValid();
-            System.out.println("Accessor Details- In Txn : " + b + ", Call Count : " + count + ", Valid : " + valid);
-        }
+        //for (Accessor a : list){
+           // boolean b = a.isInTransaction();
+            //int count = a.getCallCount();
+            //boolean valid = a.isValid();
+            //System.out.println("Accessor Details- In Txn : " + b + ", Call Count : " + count + ", Valid : " + valid);
+        //}
 
     }
 }
