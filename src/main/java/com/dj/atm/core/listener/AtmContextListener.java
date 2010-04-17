@@ -1,6 +1,7 @@
 package com.dj.atm.core.listener;
 
 import com.dj.atm.core.module.PerisistenceModule;
+import com.dj.atm.core.security.AtmSecurityFilter;
 import com.dj.atm.developer.module.DeveloperModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -24,9 +25,9 @@ public class AtmContextListener extends GuiceServletContextListener {
 
     @Override
     protected Injector getInjector() {
-        final Map<String, String> params = new HashMap<String, String>();
-        params.put(PackagesResourceConfig.PROPERTY_PACKAGES, SCANNING_LOCATIONS);
-        params.put("com.sun.jersey.config.feature.Trace", "true");
+        final Map<String, String> servletParameters = new HashMap<String, String>();
+        servletParameters.put(PackagesResourceConfig.PROPERTY_PACKAGES, SCANNING_LOCATIONS);
+        servletParameters.put("com.sun.jersey.config.feature.Trace", "true");
 
         Injector injector = Guice.createInjector(
                 new DeveloperModule(),
@@ -40,7 +41,8 @@ public class AtmContextListener extends GuiceServletContextListener {
 
                     @Override
                     protected void configureServlets() {
-                        serve("/webresources/*").with(GuiceContainer.class, params);
+                        filter("/webresources/*").through(AtmSecurityFilter.class);
+                        serve("/webresources/*").with(GuiceContainer.class, servletParameters);
                     }
                 });
         return injector;
