@@ -16,6 +16,18 @@ import org.guiceyfruit.jsr250.Jsr250Module;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *  Responsible for the following tasks
+ * <ol>
+ * <li> Provides the list scanning locations/ packages for resources and providers for Jersey Servlet</li>
+ * <li> Provides Guice Integration of dependence injection, transaction support and servlet modules</li>
+ * <li> Routes any REST / AJAX request through security filter for checking authenticity of the calls</li>
+ * <li> Forwards any REST / AJAX calls to its handler</li>
+ * </ol>
+ *
+ * @author Script Runner
+ * @since 0.0.1
+ */
 public class AtmContextListener extends GuiceServletContextListener {
 
     /**
@@ -41,6 +53,7 @@ public class AtmContextListener extends GuiceServletContextListener {
 
                     @Override
                     protected void configureServlets() {
+                        //forward all Ajax Requests through AtmSecurityFilter implementation
                         filter("/webresources/*").through(AtmSecurityFilter.class);
                         serve("/webresources/*").with(GuiceContainer.class, servletParameters);
                     }
