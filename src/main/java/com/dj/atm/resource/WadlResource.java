@@ -16,7 +16,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@Produces({"application/vnd.sun.wadl+xml", "application/xml"})
+@Produces({"application/xml"})
 @Singleton
 @Path("wadl")
 public class WadlResource {
@@ -44,7 +44,7 @@ public class WadlResource {
             }
             try {
                 final Marshaller marshaller = wadlContext.getJAXBContext().createMarshaller();
-                marshaller.setProperty(XML_HEADERS, "<?xml-stylesheet type='text/xsl' href='http://www.mnot.net/webdesc/wadl_documentation.xsl'?>");
+                marshaller.setProperty(XML_HEADERS, "<?xml-stylesheet type='text/xsl' href='http://localhost:8080/atm-web/wadl_stylesheet.xsl'?>");
                 marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
                 final ByteArrayOutputStream os = new ByteArrayOutputStream();
                 marshaller.marshal(application, os);
