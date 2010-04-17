@@ -41,7 +41,7 @@ public class MyResource {
     @Produces( { MediaType.APPLICATION_JSON, "text/json" })
     @Path("/users")
     public User getUser(@QueryParam("username") String username) {
-	return new User("test", "test2");
+	return new User("test");
     }
 
     @POST
