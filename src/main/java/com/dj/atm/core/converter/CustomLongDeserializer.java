@@ -12,6 +12,9 @@ import java.io.IOException;
  * <p/>
  * Difference with provided Jackson Long de-serializer is that this
  * one assumes empty values as valid before converting the same to 0L.
+ *
+ * @author Script Runner
+ * @since 0.0.1
  */
 public class CustomLongDeserializer extends JsonDeserializer<Long> {
     private static final String EMPTY_STRING = "";
