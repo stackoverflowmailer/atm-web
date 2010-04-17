@@ -48,7 +48,7 @@ com.dj.project.base.main.Main = function () {
                 height    : 125,
                 modal     : true,
                 draggable : false,
-                title     : 'Login to NYTBD',
+                title     : 'Login to Advanced Task Management',
                 layout    : 'fit',
                 center    : true,
                 closable  : false,
@@ -153,10 +153,7 @@ com.dj.project.base.main.Main = function () {
             Ext.getBody().mask('Logging out...', 'x-mask-loading');
 
             Ext.Ajax.request({
-                url          : 'webresources/logout/logout',
-                params       : {
-                    user : cookieUtil.get('loginCookie')
-                },
+                url          : 'webresources/login/logout',
                 scope        : this,
                 callback     : this.onAfterAjaxReq,
                 succCallback : this.onAfterLogout

@@ -31,6 +31,20 @@ public class LoginResource {
         return result;
     }
 
+    @GET
+    @Produces({MediaType.APPLICATION_JSON, "text/json"})
+    @Path("/logout")
+    public WrappedResponse<User> logout(@Context HttpServletRequest request) {
+
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            session.removeAttribute(ATM_SESSION_KEY);
+        }
+        WrappedResponse<User> result = new WrappedResponse<User>(true, null);
+        return result;
+    }
+
+
     /**
      * If a valid session exists for the use then return the user object, else return null.
      *
