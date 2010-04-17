@@ -13,11 +13,19 @@
         </layout>
     </appender>
 
+    <logger name="com.sun.jersey">
+        <level value="debug"/>
+    </logger>
+
+    <logger name="com.google.inject">
+        <level value="debug"/>
+    </logger>
 
     <!-- Root Logger -->
     <root>
         <priority value="debug"/>
         <appender-ref ref="console"/>
     </root>
+
 
 </log4j:configuration>

@@ -9,24 +9,14 @@ com.dj.project.base.main.Main = function () {
     var cookieUtil = Ext.util.Cookies;
     return {
         init : function() {
-            if (!cookieUtil.get('JSESSIONID')) {
-                if (!loginWindow) {
-                    loginWindow = this.buildLoginWindow();
-                }
-                loginWindow.show();
-            } else {
-                this.buildViewport();
-            }
-
-        }
-        ,
+            this.checkSession();
+        },
         destroy : function() {
             viewport.destroy();
             viewport = null;
             cardPanel = null;
             this.init();
-        }
-        ,
+        },
         buildLoginWindow : function() {
             var formItemDefaults = {
                 allowBlank : false,
@@ -42,15 +32,15 @@ com.dj.project.base.main.Main = function () {
             };
 
             var formLoginItems = [
-            {
-                fieldLabel : 'User Name',
-                name       : 'user'
-            },
-            {
-                inputType  : 'password',
-                fieldLabel : 'Password',
-                name       : 'password'
-            }
+                {
+                    fieldLabel : 'User Name',
+                    name       : 'username'
+                },
+                {
+                    inputType  : 'password',
+                    fieldLabel : 'Password',
+                    name       : 'password'
+                }
             ];
 
             return  new Ext.Window({
@@ -69,21 +59,20 @@ com.dj.project.base.main.Main = function () {
                     defaultType : 'textfield',
                     labelWidth  : 70,
                     frame       : true,
-                    url         : 'login/login',
+                    url         : 'webresources/login/login',
                     labelAlign  : 'right',
                     defaults    : formItemDefaults,
                     items       : formLoginItems
                 },
                 buttons : [
-                {
-                    text    : 'Login',
-                    handler : this.onLogin,
-                    scope   : this
-                }
+                    {
+                        text    : 'Login',
+                        handler : this.onLogin,
+                        scope   : this
+                    }
                 ]
             });
-        }
-        ,
+        },
         buildViewport : function() {
             cardPanel = new Ext.Panel({
                 layout     : 'card',
@@ -94,22 +83,24 @@ com.dj.project.base.main.Main = function () {
                 }
                 ,
                 tbar       : [
-                {
-                    text         : 'Manage Developers',
-                    iconCls      : 'icon-user_edit',
-                    itemType     : 'developermanager',
-                    toggleGroup  : 'navGrp',
-                    enableToggle : true,
-                    scope        : this,
-                    handler      : this.onSwitchPanel
-                }
-                ,'->'
-                ,{
-                    text     : 'Log out',
-                    iconCls  : 'icon-door_out',
-                    scope    : this,
-                    handler  : this.onLogOut
-                }
+                    {
+                        text         : 'Manage Developers',
+                        iconCls      : 'icon-user_edit',
+                        itemType     : 'developermanager',
+                        toggleGroup  : 'navGrp',
+                        enableToggle : true,
+                        scope        : this,
+                        handler      : this.onSwitchPanel
+                    }
+                    ,
+                    '->'
+                    ,
+                    {
+                        text     : 'Log out',
+                        iconCls  : 'icon-door_out',
+                        scope    : this,
+                        handler  : this.onLogOut
+                    }
                 ]
             });
 
@@ -118,8 +109,7 @@ com.dj.project.base.main.Main = function () {
                 items  : cardPanel
             });
             Ext.getBody().unmask();
-        }
-        ,
+        },
         onLogin : function() {
             var form = loginWindow.get(0);
             if (form.getForm().isValid()) {
@@ -130,12 +120,11 @@ com.dj.project.base.main.Main = function () {
                     scope   : this
                 });
             }
-        }
-        ,
+        },
         onLoginSuccess : function(form, action) {
             loginWindow.el.unmask();
-            var cookie = cookieUtil.get('JSESSIONID');
-            if (cookie) {
+            var success = action.result.success;
+            if (success) {
                 this.buildViewport();
                 loginWindow.destroy();
                 loginWindow = null;
@@ -143,32 +132,28 @@ com.dj.project.base.main.Main = function () {
             else {
                 this.onLoginFailure();
             }
-        }
-
-        ,
+        },
         onLoginFailure : function(form, action) {
             loginWindow.el.unmask();
             Ext.MessageBox.alert('Failure', "Login failed. Please try again");
-        }
-        ,
+        },
         onLogOut :function() {
             Ext.MessageBox.confirm(
-                'Please confirm',
-                'Are you sure you want to log out?',
-                function(btn) {
-                    if (btn === 'yes') {
-                        this.doLogOut();
-                    }
-                },
-                this
-                );
-        }
-        ,
+                    'Please confirm',
+                    'Are you sure you want to log out?',
+                    function(btn) {
+                        if (btn === 'yes') {
+                            this.doLogOut();
+                        }
+                    },
+                    this
+                    );
+        },
         doLogOut : function() {
             Ext.getBody().mask('Logging out...', 'x-mask-loading');
 
             Ext.Ajax.request({
-                url          : '/logout/logout',
+                url          : 'webresources/logout/logout',
                 params       : {
                     user : cookieUtil.get('loginCookie')
                 },
@@ -176,16 +161,61 @@ com.dj.project.base.main.Main = function () {
                 callback     : this.onAfterAjaxReq,
                 succCallback : this.onAfterLogout
             });
-        }
-        ,
+        },
         onAfterLogout : function() {
             this.destroy();
-        }
-        ,
+        },
+
+        checkSession: function() {
+            Ext.getBody().mask('Checking session...', 'x-mask-loading');
+
+            Ext.Ajax.request({
+                url          : 'webresources/login/check',
+                scope        : this,
+                callback     : this.onSessionCheck,
+                succCallback : this.onValidSession,
+                failCallback : this.onInvalidSession
+            });
+        },
+        onSessionCheck : function(options, success, result) {
+            Ext.getBody().unmask();
+            //            console.log('success : '+ success);
+            //            console.log('result.success : '+ result.success);
+            //            console.dir(result);
+
+            if (success === true) {
+                var jsonData;
+                try {
+                    jsonData = Ext.decode(result.responseText);
+                } catch (e) {
+                    Ext.MessageBox.alert('Error!', 'Data returned is not valid!');
+                }
+                if(jsonData.success){
+                    options.succCallback.call(options.scope, jsonData, options);
+                } else {
+                   options.failCallback.call(options.scope, jsonData, options);
+                }
+            } else {
+                Ext.MessageBox.alert('Error!', 'The web transaction failed!');
+            }
+
+        },
+        
+        onInvalidSession : function(){
+          if (!loginWindow) {
+            loginWindow = this.buildLoginWindow();
+          }
+          loginWindow.show();
+        },
+        
+        onValidSession : function(){
+          this.buildViewport();
+        },
+
         onSwitchPanel : function(btn) {
             var newPanel,
-            xtype = btn.itemType,
-            panels = cardPanel.findByType(xtype);
+                    xtype = btn.itemType,
+                    panels = cardPanel.findByType(xtype);
 
             if (panels.length < 1) {
                 newPanel = cardPanel.add({
@@ -200,12 +230,11 @@ com.dj.project.base.main.Main = function () {
 
             var newCardIndex = cardPanel.items.indexOf(newPanel);
             this.switchToCard(newCardIndex)
-        }
-        ,
+        },
         switchToCard : function(newCardIndex) {
             var layout = cardPanel.getLayout(),
-            activePanel = layout.activeItem,
-            activePanelIdx = cardPanel.items.indexOf(activePanel);
+                    activePanel = layout.activeItem,
+                    activePanelIdx = cardPanel.items.indexOf(activePanel);
 
             if (activePanelIdx !== newCardIndex) {
                 var newPanel = cardPanel.items.itemAt(newCardIndex);
@@ -216,8 +245,7 @@ com.dj.project.base.main.Main = function () {
                     newPanel.cleanSlate();
                 }
             }
-        }
-        ,
+        },
         onAfterAjaxReq : function(options, success, result) {
             Ext.getBody().unmask();
             if (success === true) {
