@@ -1,7 +1,7 @@
 Ext.ns('com.dj.project.developer');
 
 com.dj.project.developer.DeveloperList = Ext.extend(com.dj.project.base.BaseListPanel, {
-    url           : 'developers/listForDevelopers',
+    url           : 'webresources/developer/developers',
     buildListView : function() {
         return {
             xtype         : 'listview',

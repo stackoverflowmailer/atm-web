@@ -16,19 +16,16 @@ import java.util.Map;
  */
 @Path("/developer")
 public class DeveloperResource {
-
     private final DeveloperService developerService;
-
 
     @Inject
     public DeveloperResource(DeveloperService developerService) {
         this.developerService = developerService;
     }
 
-
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
-    @Path("/getDeveloper")
+    @Path("/developers")
     public Developer getDeveloper() {
         Developer developer = new Developer();
         developer.setName(new Name("Deepak", "", "Jacob"));
@@ -47,6 +44,4 @@ public class DeveloperResource {
         rValue.put("data", persisted);
         return rValue;
     }
-
-
 }
