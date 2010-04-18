@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Responsible for checking authenticity of user before making the AJAX calls.
+ * Responsible for checking authenticity of user before allowing responses to the AJAX calls.
  *
  * @author Script Runner
  */
