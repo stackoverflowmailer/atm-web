@@ -1,15 +1,18 @@
 package com.dj.atm.resource;
 
+import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.core.util.WrappedResponse;
-import com.dj.atm.developer.model.Band;
 import com.dj.atm.developer.model.Developer;
-import com.dj.atm.developer.model.Name;
 import com.dj.atm.developer.service.DeveloperService;
 import com.google.inject.Inject;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -27,15 +30,17 @@ public class DeveloperResource {
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/developers")
-    public WrappedResponse<List> getDeveloper() {
-        Developer developer = new Developer();
+    public WrappedResponse<List> getDeveloper(@Context HttpServletRequest request) {
+        /*Developer developer = new Developer();
         developer.setId(1000L);
         developer.setName(new Name("Deepak", "", "Jacob"));
         developer.setBand(Band.C);
         developer.setDoj(new Date());
         developer.setBloodGroup("A+");
         List<Developer> developers = new ArrayList<Developer>(1);
-        developers.add(developer);
+        developers.add(developer);*/
+        QueryParameter qp = HttpServletUtil.getQueryParameter(request);
+        List<Developer> developers = developerService.getDevelopers(qp);
         WrappedResponse<List> response = new WrappedResponse<List>(true, developers);
         return response;
     }
