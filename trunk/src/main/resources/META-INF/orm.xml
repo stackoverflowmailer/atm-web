@@ -1,80 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
-	version="1.0"
->
-	<description>ATM Web</description>
-	<mapped-superclass class="com.dj.atm.core.model.Entity">
-		<attributes>
-			<id name="id">
-				<column name="ID" />
-				<generated-value strategy="SEQUENCE" generator="ID_SEQ" />
-			</id>
-		</attributes>
-	</mapped-superclass>
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+                 version="1.0"
+        >
+    <description>ATM Web</description>
+    <mapped-superclass class="com.dj.atm.core.model.Entity">
+        <attributes>
+            <id name="id">
+                <column name="ID"/>
+                <generated-value strategy="SEQUENCE" generator="ID_SEQ"/>
+            </id>
+        </attributes>
+    </mapped-superclass>
 
-	<entity class="com.dj.atm.developer.model.Developer" name="Developer"
-		access="PROPERTY"
-	>
-		<table name="DEVELOPER" />
-		<named-query name="getDeveloperByName">
-			<query>
+    <entity class="com.dj.atm.developer.model.Developer" name="Developer"
+            access="PROPERTY"
+            >
+        <table name="DEVELOPER"/>
+        <named-query name="getDeveloperByName">
+            <query>
                 <![CDATA[
                 SELECT d from Developer d where d.name.firstName=:fName and d.name.lastName=:lName
                 ]]>
             </query>
-		</named-query>
-		<attributes>
-			<basic name="doj" optional="false">
-				<column name="DATE_JOIN" />
-				<temporal>DATE</temporal>
-			</basic>
-			<basic name="bloodGroup" optional="true">
-				<column name="BLOOD_GROUP" length="3" />
-			</basic>
-			<basic name="dol" optional="true">
-				<column name="DATE_LEAVING" />
-				<temporal>DATE</temporal>
-			</basic>
-			<basic name="band">
-				<enumerated>STRING</enumerated>
-			</basic>
-			<embedded name="name" />
-			<embedded name="landPhone" />
+        </named-query>
+        
+        <named-query name="getAllDevelopers">
+            <query>
+                <![CDATA[
+                SELECT d FROM Developer d  ORDER BY d.id 
+            ]]>
+            </query>
+        </named-query>
 
-		</attributes>
+        <attributes>
+            <basic name="doj" optional="false">
+                <column name="DATE_JOIN"/>
+                <temporal>DATE</temporal>
+            </basic>
+            <basic name="bloodGroup" optional="true">
+                <column name="BLOOD_GROUP" length="3"/>
+            </basic>
+            <basic name="dol" optional="true">
+                <column name="DATE_LEAVING"/>
+                <temporal>DATE</temporal>
+            </basic>
+            <basic name="band">
+                <enumerated>STRING</enumerated>
+            </basic>
+            <embedded name="name"/>
+            <embedded name="landPhone"/>
 
-	</entity>
+        </attributes>
 
-	<embeddable class="com.dj.atm.developer.model.Name" access="PROPERTY">
-		<attributes>
-			<basic name="firstName" optional="false">
-				<column name="F_NAME" length="50" />
-			</basic>
-			<basic name="middleName" optional="true">
-				<column name="M_NAME" length="50" />
-			</basic>
+    </entity>
 
-			<basic name="lastName" optional="false">
-				<column name="L_NAME" length="50" />
-			</basic>
-		</attributes>
-	</embeddable>
+    <embeddable class="com.dj.atm.developer.model.Name" access="PROPERTY">
+        <attributes>
+            <basic name="firstName" optional="false">
+                <column name="F_NAME" length="50"/>
+            </basic>
+            <basic name="middleName" optional="true">
+                <column name="M_NAME" length="50"/>
+            </basic>
 
-	<embeddable class="com.dj.atm.developer.model.Phone" access="PROPERTY">
-		<attributes>
-			<basic name="countryCode">
-				<column name="LP_C_CODE" />
-			</basic>
-			<basic name="stdCode">
-				<column name="LP_STD_CODE" />
-			</basic>
-			<basic name="number">
-				<column name="LP_NUMBER" />
-			</basic>
-		</attributes>
-	</embeddable>
+            <basic name="lastName" optional="false">
+                <column name="L_NAME" length="50"/>
+            </basic>
+        </attributes>
+    </embeddable>
+
+    <embeddable class="com.dj.atm.developer.model.Phone" access="PROPERTY">
+        <attributes>
+            <basic name="countryCode">
+                <column name="LP_C_CODE"/>
+            </basic>
+            <basic name="stdCode">
+                <column name="LP_STD_CODE"/>
+            </basic>
+            <basic name="number">
+                <column name="LP_NUMBER"/>
+            </basic>
+        </attributes>
+    </embeddable>
 
 
 </entity-mappings>
