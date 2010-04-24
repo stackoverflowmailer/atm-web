@@ -71,7 +71,7 @@ public class AtmSecurityFilter implements Filter {
      */
     private void handleAuthenticationFailure(ServletRequest request, ServletResponse response) throws IOException {
         response.setContentType("text/json");
-        response.getWriter().write("{ success : " + false + ", data : {message : 'Not a valid user' }");
+        response.getWriter().write("{ success : " + false + ", data : {message : 'Not a valid user' } }");
         return;
     }
 

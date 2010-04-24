@@ -1,5 +1,7 @@
 package com.dj.atm.resource;
 
+import com.dj.atm.core.util.WrappedResponse;
+import com.dj.atm.developer.model.Band;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
 import com.dj.atm.developer.service.DeveloperService;
@@ -7,8 +9,7 @@ import com.google.inject.Inject;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 
 /**
@@ -26,10 +27,17 @@ public class DeveloperResource {
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/developers")
-    public Developer getDeveloper() {
+    public WrappedResponse<List> getDeveloper() {
         Developer developer = new Developer();
+        developer.setId(1000L);
         developer.setName(new Name("Deepak", "", "Jacob"));
-        return developer;
+        developer.setBand(Band.C);
+        developer.setDoj(new Date());
+        developer.setBloodGroup("A+");
+        List<Developer> developers = new ArrayList<Developer>(1);
+        developers.add(developer);
+        WrappedResponse<List> response = new WrappedResponse<List>(true, developers);
+        return response;
     }
 
     @Path("/saveDeveloper")

@@ -4,6 +4,7 @@ import com.dj.atm.core.model.User;
 import com.dj.atm.core.util.WrappedResponse;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
@@ -29,12 +30,14 @@ public class LoginResource {
     @Path("/login")
     public WrappedResponse<User> login(@FormParam("username") String username,
                                        @FormParam("password") String password,
-                                       @Context HttpServletRequest request) {
+                                       @Context HttpServletRequest request,
+                                       @Context HttpServletResponse response) {
         User user = new User(username);
         HttpSession session = request.getSession(true);
         if (session != null) {
             session.setAttribute(ATM_SESSION_KEY, user);
         }
+        HttpServletUtil.addCookieToResponse("atm-web",username, request, response);
         WrappedResponse<User> result = new WrappedResponse<User>(true, user);
         return result;
     }
@@ -57,7 +60,6 @@ public class LoginResource {
         WrappedResponse<User> result = new WrappedResponse<User>(true, null);
         return result;
     }
-
 
     /**
      * If a valid session exists for the use then return the user object, else return null.
