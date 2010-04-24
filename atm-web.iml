@@ -30,11 +30,21 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="P6Spy" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-jdk15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" exported="" name="Maven: com.wideplay.warp.persist:warp-persist:2.0-20090214" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.5.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.codehaus.jackson:jackson-core-asl:1.5.0" level="project" />
@@ -58,21 +68,27 @@
     <orderEntry type="library" exported="" name="Maven: javax.xml.bind:jaxb-api:2.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.activation:activation:1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-client:1.1.5.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-test-framework:1.1.5.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-servlet-webserver:1.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-http:1.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-framework:1.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-utils:1.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-rcm:1.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-portunif:1.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.grizzly:grizzly-http-servlet:1.9.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.embedded:glassfish-embedded-all:3.0-Prelude-Embedded-b14" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="Maven: log4j:log4j:1.2.15" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.eclipse.persistence:javax.persistence:2.0.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.eclipse.persistence:eclipselink:2.0.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: postgresql:postgresql:8.3-603.jdbc4" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.h2database:h2:1.2.130" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.jersey.contribs:jersey-guice:1.1.5.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.guiceyfruit:guice-all:2.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.guiceyfruit:guice-servlet:2.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.guiceyfruit:guiceyfruit-core:2.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.annotation:com.springsource.javax.annotation:1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.aopalliance:com.springsource.org.aopalliance:1.0.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.google.inject:guice:2.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: aopalliance:aopalliance:1.0" level="project" />
   </component>

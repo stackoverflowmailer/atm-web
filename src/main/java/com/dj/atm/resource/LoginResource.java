@@ -15,6 +15,14 @@ public class LoginResource {
     /* Name under which the user object is saved under Http Session scope */
     private static final String ATM_SESSION_KEY = "sessionKey";
 
+    /**
+     * Handles user log in requests. Expects username and password.
+     *
+     * @param username The user's sign-in name
+     * @param password The user's password.
+     * @param request  The injected HTTPServletRequest object.
+     * @return The wrapped user object in a way front-end expects.
+     */
     @POST
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Consumes({MediaType.APPLICATION_FORM_URLENCODED})
@@ -31,6 +39,12 @@ public class LoginResource {
         return result;
     }
 
+    /**
+     * Handles user log out requests.
+     *
+     * @param request The injected HTTPServletRequest object.
+     * @return The wrapped user object in a way front-end expects.
+     */
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/logout")
