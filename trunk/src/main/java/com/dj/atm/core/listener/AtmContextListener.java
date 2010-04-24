@@ -1,6 +1,6 @@
 package com.dj.atm.core.listener;
 
-import com.dj.atm.core.module.PerisistenceModule;
+import com.dj.atm.core.module.PersistenceModule;
 import com.dj.atm.core.security.AtmSecurityFilter;
 import com.dj.atm.developer.module.DeveloperModule;
 import com.google.inject.Guice;
@@ -11,7 +11,6 @@ import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
 import com.wideplay.warp.persist.PersistenceService;
 import com.wideplay.warp.persist.UnitOfWork;
-import org.guiceyfruit.jsr250.Jsr250Module;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,12 +42,12 @@ public class AtmContextListener extends GuiceServletContextListener {
 
         Injector injector = Guice.createInjector(
                 new DeveloperModule(),
-                new PerisistenceModule(),
+                new PersistenceModule(),
                 PersistenceService
                         .usingJpa()
                         .across(UnitOfWork.TRANSACTION)
                         .buildModule(),
-                new Jsr250Module(),
+                //new Jsr250Module(),
                 new ServletModule() {
 
                     @Override

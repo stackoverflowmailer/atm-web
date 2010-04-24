@@ -209,7 +209,7 @@ com.dj.project.base.main.Main = function () {
           this.buildViewport();
         },
 
-        onSwitchPanel : function(btn) {
+        /*onSwitchPanel : function(btn) {
             var newPanel,
                     xtype = btn.itemType,
                     panels = cardPanel.findByType(xtype);
@@ -227,6 +227,15 @@ com.dj.project.base.main.Main = function () {
 
             var newCardIndex = cardPanel.items.indexOf(newPanel);
             this.switchToCard(newCardIndex)
+        },*/
+
+        onSwitchPanel : function(btn) {
+            var xtype    = btn.itemType,
+                panels   = cardPanel.findByType(xtype),
+                newPanel = panels[0];
+
+            var newCardIndex = cardPanel.items.indexOf(newPanel);
+            this.switchToCard(newCardIndex);
         },
         switchToCard : function(newCardIndex) {
             var layout = cardPanel.getLayout(),

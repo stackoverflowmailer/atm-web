@@ -3,7 +3,7 @@ package com.dj.atm.core.module;
 import com.google.inject.AbstractModule;
 import com.wideplay.warp.persist.jpa.JpaUnit;
 
-public class PerisistenceModule extends AbstractModule {
+public class PersistenceModule extends AbstractModule {
 
     private static final String PERSISTENCE_UNIT = "atm";
 
