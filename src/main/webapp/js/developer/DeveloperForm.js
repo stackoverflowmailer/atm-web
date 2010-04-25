@@ -2,17 +2,11 @@ Ext.ns("com.dj.project.developer");
 
 com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm, {
     title : 'Developer',
-    // frame : true,
-    border : true,
-    autoScroll : true,
-    bodyStyle : 'background-color: #DFE8F6; padding: 10px',
-    layout : 'column',
-    labelWidth : 80, // label's width
-    defaults : {
 
-        layout : 'form',
-        border : false
-    },
+    layout: 'column',
+    autoHeight: true,
+    bodyStyle : 'background-color: #DFE8F6; padding: 10px',
+
     initComponent : function() {
         Ext.applyIf(this, {
             tbar : this.buildToolbar(),
@@ -70,52 +64,137 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
     buildFormItems : function() {
         return [
             {
-                xtype : 'fieldset',
-                columnWidth : 0.5,
-                title : 'Name',
-                collapsible : false,
-                anchor : -30,
-                autoHeight : true,
-                defaults : {
-                    anchor : '-20', // leave room for error icon
-                    allowBlank : false
+                xtype: 'fieldset',
+                title: 'Basic Information',
+                bodyStyle: Ext.isIE ? 'padding:0 0 5px 15px;' : 'padding:10px 15px;',
+                style: {
+                    "margin-left": "10px", // when you add custom margin in IE 6...
+                    "margin-right": Ext.isIE6 ? (Ext.isStrict ? "-10px" : "-13px") : "0"  // you have to adjust for it somewhere else
                 },
-                defaultType : 'textfield',
-                items : [
+
+
+                layout: 'form',
+                columnWidth: .60,
+                autoHeight: true,
+                anchor: '-20',
+                defaults : {
+                    xtype: 'textfield',
+                    allowBlank:false,
+                    anchor: '-20'
+                },
+                items: [
                     {
                         xtype : 'hidden',
                         name : 'id'
                     },
+                    /*{
+                     fieldLabel : 'First Name',
+                     name : 'name.firstName'
+                     },
+                     {
+                     fieldLabel : 'Middle Name',
+                     name : 'name.middleName'
+                     },
+                     {
+                     fieldLabel : 'Last Name',
+                     name : 'name.lastName'
+                     }*/
                     {
-                        fieldLabel : 'First Name',
-                        name : 'name.firstName'
+                        xtype : 'compositefield',
+                        anchor: '-20',
+                        msgTarget: 'side',
+                        fieldLabel: 'Full Name',
+                        items : [
+                            {
+                                //the width of this field in the HBox layout is set directly
+                                //the other 2 items are given flex: 1, so will share the rest of the space
+                                width:          50,
+                                xtype:          'combo',
+                                mode:           'local',
+                                value:          'mr',
+                                triggerAction:  'all',
+                                forceSelection: true,
+                                editable:       false,
+                                fieldLabel:     'Title',
+                                name:           'title',
+                                hiddenName:     'title',
+                                displayField:   'name',
+                                valueField:     'value',
+                                store:          new Ext.data.JsonStore({
+                                    fields : ['name', 'value'],
+                                    data   : [
+                                        {name : 'Mr',   value: 'mr'},
+                                        {name : 'Mrs',  value: 'mrs'},
+                                        {name : 'Miss', value: 'miss'}
+                                    ]
+                                })
+                            },
+                            {
+                                xtype: 'textfield',
+                                flex : 1,
+                                name : 'name.firstName',
+                                fieldLabel: 'First',
+                                allowBlank: false
+                            },
+                            {
+                                xtype: 'textfield',
+                                flex : 1,
+                                name : 'name.middleName',
+                                fieldLabel: 'Middle',
+                                allowBlank: false
+                            },
+                            {
+                                xtype: 'textfield',
+                                flex : 1,
+                                name : 'name.lastName',
+                                fieldLabel: 'Last',
+                                allowBlank: false
+                            }
+                        ]
                     },
                     {
-                        fieldLabel : 'Middle Name',
-                        name : 'name.middleName'
+                        xtype: 'compositefield',
+                        fieldLabel: 'Date of joining (Company & Project)',
+                        msgTarget : 'side',
+                        anchor    : '-20',
+                        defaults: {
+                            flex: 1
+                        },
+                        items: [
+                            {
+                                xtype     : 'datefield',
+                                name      : 'company',
+                                fieldLabel: 'Start'
+                            },
+                            {
+                                xtype     : 'datefield',
+                                name      : 'project',
+                                fieldLabel: 'End'
+                            }
+                        ]
                     },
-                    {
-                        fieldLabel : 'Last Name',
-                        name : 'name.lastName'
-                    }
                 ]
             },
 
             {
-                // Fieldset in Column 2 - Panel inside
-
-                xtype : 'fieldset',
-                title : 'Phone Number',
-                autoHeight : true,
-                columnWidth : 0.3,
-                layout : 'form',
-                bodyStyle : 'padding:18px 18px 18px 18px',
-
-                defaults : {
-                    anchor : '-20', // leave room for error icon
-                    allowBlank : false
+                xtype: 'fieldset',
+                title : 'Telephone Details',
+                collapsible: true,
+                bodyStyle: Ext.isIE ? 'padding:0 0 5px 15px;' : 'padding:10px 15px;',
+                style: {
+                    "margin-left": "10px", // when you add custom margin in IE 6...
+                    "margin-right": Ext.isIE6 ? (Ext.isStrict ? "-10px" : "-13px") : "0"  // you have to adjust for it somewhere else
                 },
-                defaultType : 'textfield',
+
+                layout: 'form',
+                columnWidth: .40,
+                autoHeight: true,
+                anchor: '-20',
+                defaults : {
+                    xtype: 'textfield',
+                    allowBlank:false,
+                    anchor: '-10'
+                },
                 items : [
                     {
                         fieldLabel : 'Home ',

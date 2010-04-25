@@ -82,4 +82,4 @@ com.dj.project.developer.DevloperGridPanel = Ext.extend(Ext.grid.GridPanel, {
     }
 });
 
-Ext.reg('developergridpanel', com.dj.project.developer.DevloperGridPanel)
+Ext.reg('developergridpanel', com.dj.project.developer.DevloperGridPanel);

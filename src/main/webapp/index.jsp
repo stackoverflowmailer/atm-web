@@ -6,6 +6,7 @@
     <!-- Ext relies on its default css so include it here. -->
     <!-- This must come BEFORE javascript includes! -->
     <link rel="stylesheet" type="text/css" href="extjs-3.2.0/resources/css/ext-all.css">
+    <link rel="stylesheet" type="text/css" href="css/atm-web.css">
 
     <!-- Include here your own css files if you have them. -->
 

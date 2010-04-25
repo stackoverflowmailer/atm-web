@@ -2,6 +2,12 @@ Ext.ns('com.dj.project.base.main');
 
 
 com.dj.project.base.main.Main = function () {
+    Ext.QuickTips.init();
+
+    // turn on validation errors beside the field globally
+    Ext.form.Field.prototype.msgTarget = 'side';
+
+
 
     var viewport;
     var cardPanel;
