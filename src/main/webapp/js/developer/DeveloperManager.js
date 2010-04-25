@@ -103,7 +103,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
     },
 
     onDeveloperSaveSuccess : function(developerForm, action) {
-        console.dir(action);
+        //console.dir(action);
         var record = this.getComponent('developerList').getSelected();
         var defaultValues = developerForm.getValues(false);
 
@@ -122,8 +122,11 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             this.getComponent('developerForm').setValues({});
         }
         Ext.MessageBox.alert('Success', msg);
-
         this.clearMask();
+        //console.dir(this);
+        this.getComponent('developerList').refreshView();
+        this.getComponent('developerForm').reset();
+
     },
     onDeveloperSaveFailure : function() {
         this.clearMask();
