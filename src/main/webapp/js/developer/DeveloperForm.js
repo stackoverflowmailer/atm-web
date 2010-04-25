@@ -87,18 +87,6 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                         xtype : 'hidden',
                         name : 'id'
                     },
-                    /*{
-                     fieldLabel : 'First Name',
-                     name : 'name.firstName'
-                     },
-                     {
-                     fieldLabel : 'Middle Name',
-                     name : 'name.middleName'
-                     },
-                     {
-                     fieldLabel : 'Last Name',
-                     name : 'name.lastName'
-                     }*/
                     {
                         xtype : 'compositefield',
                         anchor: '-20',
@@ -172,7 +160,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                                 fieldLabel: 'End'
                             }
                         ]
-                    },
+                    }
                 ]
             },
 

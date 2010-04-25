@@ -8,7 +8,6 @@ com.dj.project.base.main.Main = function () {
     Ext.form.Field.prototype.msgTarget = 'side';
 
 
-
     var viewport;
     var cardPanel;
     var loginWindow;
@@ -24,15 +23,13 @@ com.dj.project.base.main.Main = function () {
                 this.buildViewport();
             }
 
-        }
-        ,
+        },
         destroy : function() {
             viewport.destroy();
             viewport = null;
             cardPanel = null;
             this.init();
-        }
-        ,
+        },
         buildLoginWindow : function() {
             var formItemDefaults = {
                 allowBlank : false,
@@ -48,15 +45,15 @@ com.dj.project.base.main.Main = function () {
             };
 
             var formLoginItems = [
-            {
-                fieldLabel : 'User Name',
-                name       : 'username'
-            },
-            {
-                inputType  : 'password',
-                fieldLabel : 'Password',
-                name       : 'password'
-            }
+                {
+                    fieldLabel : 'User Name',
+                    name       : 'username'
+                },
+                {
+                    inputType  : 'password',
+                    fieldLabel : 'Password',
+                    name       : 'password'
+                }
             ];
 
             return  new Ext.Window({
@@ -81,51 +78,47 @@ com.dj.project.base.main.Main = function () {
                     items       : formLoginItems
                 },
                 buttons : [
-                {
-                    text    : 'Login',
-                    handler : this.onLogin,
-                    scope   : this
-                }
+                    {
+                        text    : 'Login',
+                        handler : this.onLogin,
+                        scope   : this
+                    }
                 ]
             });
-        }
-        ,
+        },
         buildViewport : function() {
-            cardPanel = new Ext.Panel({
+            var cardPanel = new Ext.Panel({
                 layout     : 'card',
                 activeItem : 0,
                 border     : false,
                 items      :  {
                     xtype   : 'developermanager'
-                }
-                ,
+                },
                 tbar       : [
-                {
-                    text         : 'Manage Developers',
-                    iconCls      : 'icon-user_edit',
-                    itemType     : 'developermanager',
-                    toggleGroup  : 'navGrp',
-                    enableToggle : true,
-                    scope        : this,
-                    handler      : this.onSwitchPanel
-                }
-                ,'->'
-                ,{
-                    text     : 'Log out',
-                    iconCls  : 'icon-door_out',
-                    scope    : this,
-                    handler  : this.onLogOut
-                }
+                    {
+                        text         : 'Manage Developers',
+                        iconCls      : 'icon-user_edit',
+                        itemType     : 'developermanager',
+                        toggleGroup  : 'navGrp',
+                        enableToggle : true,
+                        scope        : this,
+                        handler      : this.onSwitchPanel
+                    },
+                    '->',
+                    {
+                        text     : 'Log out',
+                        iconCls  : 'icon-door_out',
+                        scope    : this,
+                        handler  : this.onLogOut
+                    }
                 ]
             });
-
             viewport = new Ext.Viewport({
                 layout : 'fit',
                 items  : cardPanel
             });
             Ext.getBody().unmask();
-        }
-        ,
+        },
         onLogin : function() {
             var form = loginWindow.get(0);
             if (form.getForm().isValid()) {
@@ -136,8 +129,7 @@ com.dj.project.base.main.Main = function () {
                     scope   : this
                 });
             }
-        }
-        ,
+        },
         onLoginSuccess : function(form, action) {
             loginWindow.el.unmask();
             var cookie = cookieUtil.get('atm-web');
@@ -149,27 +141,23 @@ com.dj.project.base.main.Main = function () {
             else {
                 this.onLoginFailure();
             }
-        }
-
-        ,
+        },
         onLoginFailure : function(form, action) {
             loginWindow.el.unmask();
             Ext.MessageBox.alert('Failure', "Login failed. Please try again");
-        }
-        ,
+        },
         onLogOut :function() {
             Ext.MessageBox.confirm(
-                'Please confirm',
-                'Are you sure you want to log out?',
-                function(btn) {
-                    if (btn === 'yes') {
-                        this.doLogOut();
-                    }
-                },
-                this
-                );
-        }
-        ,
+                    'Please confirm',
+                    'Are you sure you want to log out?',
+                    function(btn) {
+                        if (btn === 'yes') {
+                            this.doLogOut();
+                        }
+                    },
+                    this
+                    );
+        },
         doLogOut : function() {
             Ext.getBody().mask('Logging out...', 'x-mask-loading');
 
@@ -182,16 +170,14 @@ com.dj.project.base.main.Main = function () {
                 callback     : this.onAfterAjaxReq,
                 succCallback : this.onAfterLogout
             });
-        }
-        ,
+        },
         onAfterLogout : function() {
             this.destroy();
-        }
-        ,
+        },
         onSwitchPanel : function(btn) {
             var newPanel,
-            xtype = btn.itemType,
-            panels = cardPanel.findByType(xtype);
+                    xtype = btn.itemType,
+                    panels = cardPanel.findByType(xtype);
 
             if (panels.length < 1) {
                 newPanel = cardPanel.add({
@@ -205,13 +191,12 @@ com.dj.project.base.main.Main = function () {
             }
 
             var newCardIndex = cardPanel.items.indexOf(newPanel);
-            this.switchToCard(newCardIndex)
-        }
-        ,
+            this.switchToCard(newCardIndex);
+        },
         switchToCard : function(newCardIndex) {
             var layout = cardPanel.getLayout(),
-            activePanel = layout.activeItem,
-            activePanelIdx = cardPanel.items.indexOf(activePanel);
+                    activePanel = layout.activeItem,
+                    activePanelIdx = cardPanel.items.indexOf(activePanel);
 
             if (activePanelIdx !== newCardIndex) {
                 var newPanel = cardPanel.items.itemAt(newCardIndex);
@@ -222,8 +207,7 @@ com.dj.project.base.main.Main = function () {
                     newPanel.cleanSlate();
                 }
             }
-        }
-        ,
+        },
         onAfterAjaxReq : function(options, success, result) {
             Ext.getBody().unmask();
             if (success === true) {
