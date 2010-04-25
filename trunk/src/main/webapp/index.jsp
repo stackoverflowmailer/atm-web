@@ -5,15 +5,15 @@
 
     <!-- Ext relies on its default css so include it here. -->
     <!-- This must come BEFORE javascript includes! -->
-    <link rel="stylesheet" type="text/css" href="extjs311/resources/css/ext-all.css">
+    <link rel="stylesheet" type="text/css" href="extjs-3.2.0/resources/css/ext-all.css">
 
     <!-- Include here your own css files if you have them. -->
 
     <!-- First of javascript includes must be an adapter... -->
-    <script type="text/javascript" src="extjs311/adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="extjs-3.2.0/adapter/ext/ext-base-debug.js"></script>
 
     <!-- ...then you need the Ext itself, either debug or production version. -->
-    <script type="text/javascript" src="extjs311/ext-all-debug.js"></script>
+    <script type="text/javascript" src="extjs-3.2.0/ext-all-debug.js"></script>
 
     <!-- Include here your extended classes if you have some. -->
 
@@ -38,7 +38,7 @@
     <script type="text/javascript">
 
         // Path to the blank image must point to a valid location on your server
-     Ext.BLANK_IMAGE_URL = 'extjs311/resources/images/default/s.gif';
+     Ext.BLANK_IMAGE_URL = 'extjs-3.2.0/resources/images/default/s.gif';
 
 
 
