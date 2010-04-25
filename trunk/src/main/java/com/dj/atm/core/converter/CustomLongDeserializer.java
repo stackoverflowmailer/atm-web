@@ -23,7 +23,7 @@ public class CustomLongDeserializer extends JsonDeserializer<Long> {
     public Long deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
         String valueString = jp.getText();
         if (valueString == null || valueString.trim().equals(EMPTY_STRING)) {
-            return Long.valueOf(0L);
+            return Long.valueOf(0);
         }
         return Long.valueOf(valueString);
     }

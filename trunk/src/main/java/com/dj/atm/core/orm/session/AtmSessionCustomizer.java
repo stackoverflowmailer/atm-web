@@ -25,7 +25,7 @@ public class AtmSessionCustomizer implements SessionCustomizer{
         ConnectionPool cPool = serverSession.getConnectionPool("default");
         int totalNumberOfConnections = cPool.getTotalNumberOfConnections();
         System.out.println("Details- NumberOfActiveUnitsOfWork : " + work + ", ConnectionPool size : " + totalNumberOfConnections );
-        List<Accessor> list = cPool.getConnectionsAvailable();
+        //List<Accessor> list = cPool.getConnectionsAvailable();
         //for (Accessor a : list){
            // boolean b = a.isInTransaction();
             //int count = a.getCallCount();
