@@ -28,8 +28,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         ];
         com.dj.project.developer.DeveloperManager.superclass.initComponent.call(this);
     },
-
-
     buildDeveloperForm : function() {
         return {
             xtype     : 'developerform',
@@ -42,7 +40,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             }
         };
     },
-
     buildDeveloperList : function() {
 
         return {
@@ -61,7 +58,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
     onDeveloperListClick : function() {
         Ext.Msg.alert("Clicked");
     },
-
     onSaveDeveloper : function(developerForm, values) {
         if (developerForm.getForm().isValid()) {
             var msg = String.format(this.msgs.saving, values['name.lastName'], values['name.firstName']);
@@ -101,7 +97,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         //return developer;
         return developer;
     },
-
     onDeveloperSaveSuccess : function(developerForm, action) {
         //console.dir(action);
         var record = this.getComponent('developerList').getSelected();
@@ -135,12 +130,10 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
     clearMask : function() {
         Ext.getBody().unmask();
     },
-
     cleanSlate : function() {
         this.getComponent('developerList').refreshView();
         this.getComponent('developerForm').clearForm();
     }
-
 });
 
 Ext.reg('developermanager', com.dj.project.developer.DeveloperManager);

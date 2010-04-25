@@ -121,6 +121,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                                 xtype: 'textfield',
                                 flex : 1,
                                 name : 'name.firstName',
+                                hiddenName : 'First Name',
                                 fieldLabel: 'First',
                                 allowBlank: false
                             },
@@ -139,6 +140,27 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                                 allowBlank: false
                             }
                         ]
+                    },
+                    {
+                        xtype:          'combo',
+                        mode:           'local',
+                        value:          'B',
+                        triggerAction:  'all',
+                        forceSelection: true,
+                        editable:       false,
+                        fieldLabel:     'Band',
+                        name:           'band',
+                        hiddenName:     'band',
+                        displayField:   'name',
+                        valueField:     'value',
+                        store:          new Ext.data.JsonStore({
+                            fields : ['name', 'value'],
+                            data   : [
+                                {name : 'Band A',   value: 'A'},
+                                {name : 'Band B',  value: 'B'},
+                                {name : 'Band C', value: 'C'}
+                            ]
+                        })
                     },
                     {
                         xtype: 'compositefield',
@@ -181,7 +203,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                 defaults : {
                     xtype: 'textfield',
                     allowBlank:false,
-                    anchor: '-10'
+                    anchor: '-30'
                 },
                 items : [
                     {
@@ -192,6 +214,53 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                     {
                         fieldLabel : 'Mobile ',
                         name : 'mobilePhone.number'
+                    }
+                ]
+            },
+            {
+                xtype: 'fieldset',
+                title : 'Other Details',
+                collapsible: true,
+                bodyStyle: Ext.isIE ? 'padding:0px 0 5px 15px;' : 'padding:10px 15px;',
+                style: {
+                    "margin-left": "10px", // when you add custom margin in IE 6...
+                    "margin-right": Ext.isIE6 ? (Ext.isStrict ? "-10px" : "-13px") : "0"  // you have to adjust for it somewhere else
+                },
+
+                layout: 'form',
+                columnWidth: .40,
+                autoHeight: true,
+                anchor: '-20',
+                defaults : {
+                    allowBlank:false,
+                    anchor: '-30'
+                },
+                items : [
+                    {
+                        xtype:          'combo',
+                        mode:           'local',
+                        value:          'A+VE',
+                        triggerAction:  'all',
+                        forceSelection: true,
+                        editable:       false,
+                        fieldLabel:     'Blood Group',
+                        name:           'bloodGroup',
+                        hiddenName:     'bloodGroup',
+                        displayField:   'name',
+                        valueField:     'value',
+                        store:          new Ext.data.JsonStore({
+                            fields : ['name', 'value'],
+                            data   : [
+                                {name : 'A +VE',  value: 'A+'},
+                                {name : 'B +VE',  value: 'B+'},
+                                {name : 'O +VE',  value: 'O+'},
+                                {name : 'AB +VE', value: 'AB'},
+                                {name : 'A -VE',  value: 'A-'},
+                                {name : 'B -VE',  value: 'B-'},
+                                {name : 'O -VE',  value: 'O-'},
+                                {name : 'AB -VE', value: 'AB'}
+                            ]
+                        })
                     }
                 ]
             }
