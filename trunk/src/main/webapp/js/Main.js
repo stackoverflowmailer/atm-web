@@ -162,7 +162,7 @@ com.dj.project.base.main.Main = function () {
             Ext.getBody().mask('Logging out...', 'x-mask-loading');
 
             Ext.Ajax.request({
-                url          : '/logout/logout',
+                url          : 'webresources/login/logout',
                 params       : {
                     user : cookieUtil.get('loginCookie')
                 },
@@ -194,9 +194,9 @@ com.dj.project.base.main.Main = function () {
             this.switchToCard(newCardIndex);
         },
         switchToCard : function(newCardIndex) {
-            var layout = cardPanel.getLayout(),
-                    activePanel = layout.activeItem,
-                    activePanelIdx = cardPanel.items.indexOf(activePanel);
+            var layout = cardPanel.getLayout();
+            var activePanel = layout.activeItem;
+            var activePanelIdx = cardPanel.items.indexOf(activePanel);
 
             if (activePanelIdx !== newCardIndex) {
                 var newPanel = cardPanel.items.itemAt(newCardIndex);

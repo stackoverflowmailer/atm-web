@@ -37,7 +37,7 @@ public class LoginResource {
         if (session != null) {
             session.setAttribute(ATM_SESSION_KEY, user);
         }
-        HttpServletUtil.addCookieToResponse("atm-web",username, request, response);
+        HttpServletUtil.addCookieToResponse("atm-web", username, request, response);
         WrappedResponse<User> result = new WrappedResponse<User>(true, user);
         return result;
     }
@@ -50,6 +50,7 @@ public class LoginResource {
      */
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
+    @Consumes({MediaType.APPLICATION_FORM_URLENCODED})
     @Path("/logout")
     public WrappedResponse<User> logout(@Context HttpServletRequest request) {
 
@@ -73,11 +74,14 @@ public class LoginResource {
     public WrappedResponse<User> checkSession(@Context HttpServletRequest request) {
         HttpSession session = request.getSession(false);
         User user = (User) session.getAttribute(ATM_SESSION_KEY);
-        if (null != user) {
-            WrappedResponse<User> result = new WrappedResponse<User>(true, user);
-            return result;
+        WrappedResponse<User> result = null;
+        if (session != null) {
+            if (null != user) {
+                result = new WrappedResponse<User>(true, user);
+            } else {
+                result = new WrappedResponse<User>(false, null);
+            }
         }
-        WrappedResponse<User> result = new WrappedResponse<User>(false, null);
         return result;
     }
 
