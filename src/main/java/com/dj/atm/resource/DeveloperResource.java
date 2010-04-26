@@ -2,7 +2,9 @@ package com.dj.atm.resource;
 
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.core.util.WrappedResponse;
+import com.dj.atm.developer.model.Band;
 import com.dj.atm.developer.model.Developer;
+import com.dj.atm.developer.model.Name;
 import com.dj.atm.developer.service.DeveloperService;
 import com.google.inject.Inject;
 
@@ -10,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +29,22 @@ public class DeveloperResource {
     public DeveloperResource(DeveloperService developerService) {
         this.developerService = developerService;
     }
-
+    @POST
+    @Produces({MediaType.APPLICATION_JSON, "text/json"})
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Path("/getDeveloper")
+    public WrappedResponse<Developer> getDeveloper(@FormParam("id") String id) {
+        Developer developer = developerService.getDeveloper(Long.valueOf(id));
+        /*Developer developer = new Developer();
+        developer.setId(1000L);
+        developer.setName(new Name("Deepak", "", "Jacob"));
+        developer.setBand(Band.B);
+        developer.setDoj(new Date());
+        developer.setBloodGroup("B+");
+        */
+        WrappedResponse<Developer> response = new WrappedResponse<Developer>(true, developer);
+        return response;
+    }
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/developers")

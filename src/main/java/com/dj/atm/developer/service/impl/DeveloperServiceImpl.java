@@ -27,9 +27,9 @@ public class DeveloperServiceImpl implements DeveloperService {
     }
 
     @Override
+    @Transactional
     public Developer getDeveloper(Long id) {
-        return null; // To change body of implemented methods use File |
-        // Settings | File Templates.
+        return getDeveloperDao().findById(id);
     }
 
     /**

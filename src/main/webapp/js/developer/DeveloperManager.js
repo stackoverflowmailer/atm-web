@@ -37,7 +37,22 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             listeners : {
                 scope : this,
                 saveDeveloper: this.onSaveDeveloper
-            }
+            },
+            reader : new Ext.data.JsonReader({
+                idProperty      : 'id',
+                root            : 'data',
+                successProperty : 'success',
+                //messageProperty: "msg",
+                //totalProperty  : 'total',
+                fields          : [
+                    'id',
+                    {name: 'name.firstName', type: 'auto', mapping:'name.firstName'},
+                    {name: 'name.lastName',  type: 'auto', mapping:'name.lastName'},
+                    {name: 'name.middleName',  type: 'auto',mapping:'name.middlename'},
+                    'doj',
+                    'bloodGroup'
+                ]
+            })
         };
     },
     buildDeveloperList : function() {
@@ -56,7 +71,44 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         };
     },
     onDeveloperListClick : function() {
-        Ext.Msg.alert("Clicked");
+        var record = this.getComponent('developerList').getSelected();
+        console.log(record);
+        var msg = String.format(
+                this.msgs.fetchingDataFor,
+                record.get('lastName'),
+                record.get('firstName')
+                );
+
+        Ext.getBody().mask(msg, 'x-mask-loading');
+
+        this.getComponent('developerForm').load({
+            url     : 'webresources/developer/getDeveloper',
+            scope   : this,
+            success : this.clearMask,
+            failure : this.onDeveloperFormLoadFailure,
+            params  : {
+                id : record.get('id')
+            }
+        });
+        //console.log(this.getComponent('developerForm').reader);
+    },
+
+    onDeveloperFormLoadFailure : function() {
+        var record = this.getComponent('developerList').getSelected();
+        var msg = String.format(
+                this.msgs.couldNotLoadData,
+                record.get('lastName'),
+                record.get('firstName')
+                );
+
+        Ext.MessageBox.show({
+            title   : 'Error',
+            msg     : msg,
+            buttons : Ext.MessageBox.OK,
+            icon    : Ext.MessageBox.WARNING
+        });
+
+        this.clearMask();
     },
     onSaveDeveloper : function(developerForm, values) {
         if (developerForm.getForm().isValid()) {
@@ -127,7 +179,11 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         this.clearMask();
         Ext.MessageBox.alert('Error', this.msgs.errorSavingData);
     },
-    clearMask : function() {
+    clearMask : function(a, b, c, d) {
+        //console.log(a);
+        //console.log(b);
+        //console.dir(c);
+        //console.dir(d);
         Ext.getBody().unmask();
     },
     cleanSlate : function() {
