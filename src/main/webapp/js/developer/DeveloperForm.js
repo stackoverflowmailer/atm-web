@@ -6,7 +6,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
     layout: 'column',
     autoHeight: true,
     bodyStyle : 'background-color: #DFE8F6; padding: 10px',
-
+    
     initComponent : function() {
         Ext.applyIf(this, {
             tbar : this.buildToolbar(),
@@ -203,17 +203,36 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                 defaults : {
                     xtype: 'textfield',
                     allowBlank:false,
-                    anchor: '-30'
+                    anchor: '-20'
                 },
                 items : [
                     {
-                        fieldLabel : 'Home ',
-                        name : 'landPhone.number'
-
+                        xtype: 'compositefield',
+                        fieldLabel: 'Home',
+                        // anchor    : '-20',
+                        // anchor    : null,
+                        msgTarget: 'side',
+                        items: [
+                            {xtype: 'displayfield', value: '('},
+                            {xtype: 'numberfield',    name: 'landPhone.countryCode', width: 35, allowBlank: true},
+                            {xtype: 'displayfield', value: ')'},
+                            {xtype: 'numberfield', name: 'landPhone.stdCode', width: 55, allowBlank: true, margins: '0 5 0 0'},
+                            {xtype: 'numberfield',    name: 'landPhone.number', width: 100, allowBlank: true}
+                        ]
                     },
                     {
-                        fieldLabel : 'Mobile ',
-                        name : 'mobilePhone.number'
+                        xtype: 'compositefield',
+                        fieldLabel: 'Mobile',
+                        // anchor    : '-20',
+                        // anchor    : null,
+                        msgTarget: 'side',
+                        items: [
+                            {xtype: 'displayfield', value: '('},
+                            {xtype: 'numberfield',    name: 'mobilePhone.countryCode', width: 35, allowBlank: true},
+                            {xtype: 'displayfield', value: ')'},
+                            {xtype: 'numberfield',    name: 'mobilePhone.stdCode', width: 55, allowBlank: true, margins: '0 5 0 0'},
+                            {xtype: 'numberfield',    name: 'mobilePhone.number', width: 100, allowBlank: false}
+                        ]
                     }
                 ]
             },

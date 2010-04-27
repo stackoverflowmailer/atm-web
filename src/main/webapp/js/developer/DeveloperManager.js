@@ -72,7 +72,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
     },
     onDeveloperListClick : function() {
         var record = this.getComponent('developerList').getSelected();
-        console.log(record);
+        //console.log(record);
         var msg = String.format(
                 this.msgs.fetchingDataFor,
                 record.get('lastName'),
