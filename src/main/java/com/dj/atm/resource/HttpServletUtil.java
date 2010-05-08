@@ -20,6 +20,15 @@ public class HttpServletUtil {
         response.addCookie(cookie);
     }
 
+    public static void deleteCookie(String name,
+                                           HttpServletRequest request,
+                                           HttpServletResponse response) {
+        Cookie cookie = new Cookie(name, null);
+        cookie.setMaxAge(0);
+        cookie.setPath(getWebCtxName(request));
+        response.addCookie(cookie);
+    }
+
     public static String getWebCtxName(HttpServletRequest request) {
         String ctxPath = request.getContextPath();
         return ctxPath;

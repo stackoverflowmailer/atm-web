@@ -190,6 +190,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             id: 'reportFrame'
         });
         report.load({
+            //method: 'POST', ? why  'POST' is not working
             url: 'webresources/developer/report',
             params: {
                 task: 'csv',

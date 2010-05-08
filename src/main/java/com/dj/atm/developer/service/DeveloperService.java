@@ -1,10 +1,10 @@
 package com.dj.atm.developer.service;
 
-import java.util.List;
-
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
+
+import java.util.List;
 
 /**
  * Service class for managing Developers

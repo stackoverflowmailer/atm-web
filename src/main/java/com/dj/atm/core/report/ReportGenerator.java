@@ -5,9 +5,6 @@ import com.lowagie.text.DocumentException;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfWriter;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayOutputStream;
 import java.util.Date;
 
@@ -30,7 +27,7 @@ public class ReportGenerator {
 
 
             // Get the text that will be added to the PDF
-            String text = "Input Parameter";
+            String text = "Input Parameter. Needs to replaced by a valid content ???";
             if (text == null || text.trim().length() == 0) {
                 text = "You didn't enter any text.";
             }

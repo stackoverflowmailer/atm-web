@@ -1,12 +1,15 @@
 package com.dj.atm.core.security;
 
 import com.dj.atm.core.model.User;
+import com.dj.atm.resource.HttpServletUtil;
 import com.google.inject.Singleton;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import javax.servlet.*;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
@@ -38,11 +41,11 @@ public class AtmSecurityFilter implements Filter {
      * login and checking the validity of the session.
      */
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        HttpSession session = ((HttpServletRequest) request).getSession(false);
-
-        String requestedPath = httpRequest.getServletPath();
+    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) res;
+        HttpSession session = request.getSession(false);
+        String requestedPath = request.getServletPath();
         if (logger.isDebugEnabled()) {
             logger.debug(String.format("The servlet path %s", requestedPath));
         }
@@ -58,20 +61,24 @@ public class AtmSecurityFilter implements Filter {
                 // then proceed for next actions
                 chain.doFilter(request, response);
                 return;
+            } else {
+                HttpServletUtil.deleteCookie("atm-web", request, response);
+                handleAuthenticationFailure(request, response);
+                //response.sendRedirect(HttpServletUtil.getWebCtxName(request));
             }
-            // user does not have a valid session
+        } else {
+            HttpServletUtil.deleteCookie("atm-web", request, response);
             handleAuthenticationFailure(request, response);
+            //response.sendRedirect(HttpServletUtil.getWebCtxName(request));
         }
-        // user does not have a valid session
-        handleAuthenticationFailure(request, response);
     }
 
     /**
      * In case a request is found without valid session then write the following Json response.
      */
-    private void handleAuthenticationFailure(ServletRequest request, ServletResponse response) throws IOException {
-        response.setContentType("text/json");
-        response.getWriter().write("{ success : " + false + ", data : {message : 'Not a valid user' } }");
+    private void handleAuthenticationFailure(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        //response.setContentType("text/json");
+        response.getWriter().write("NOT_A_VALID_USER");
         //return;
     }
 
