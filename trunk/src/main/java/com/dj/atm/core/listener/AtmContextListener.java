@@ -11,7 +11,6 @@ import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
 import com.wideplay.warp.persist.PersistenceService;
 import com.wideplay.warp.persist.UnitOfWork;
-import net.sf.ehcache.constructs.web.filter.GzipFilter;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,7 +53,7 @@ public class AtmContextListener extends GuiceServletContextListener {
                     @Override
                     protected void configureServlets() {
                         //forward all Ajax Requests through AtmSecurityFilter implementation
-                        //filter("/webresources/*").through(AtmSecurityFilter.class);
+                        filter("/webresources/*").through(AtmSecurityFilter.class);
                         serve("/webresources/*").with(GuiceContainer.class, servletParameters);
                     }
                 });

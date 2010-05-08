@@ -1,8 +1,8 @@
 package com.dj.atm.developer.model;
 
-import java.util.Date;
-
 import com.dj.atm.core.model.Entity;
+
+import java.util.Date;
 
 /**
  * Represents a developer entity in the system.
@@ -77,5 +77,33 @@ public class Developer extends Entity {
 
     public void setBloodGroup(String bloodGroup) {
 	this.bloodGroup = bloodGroup;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Developer developer = (Developer) o;
+
+        if (band != developer.band) return false;
+        if (bloodGroup != null ? !bloodGroup.equals(developer.bloodGroup) : developer.bloodGroup != null) return false;
+        if (doj != null ? !doj.equals(developer.doj) : developer.doj != null) return false;
+        if (dol != null ? !dol.equals(developer.dol) : developer.dol != null) return false;
+        if (landPhone != null ? !landPhone.equals(developer.landPhone) : developer.landPhone != null) return false;
+        if (name != null ? !name.equals(developer.name) : developer.name != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (landPhone != null ? landPhone.hashCode() : 0);
+        result = 31 * result + (band != null ? band.hashCode() : 0);
+        result = 31 * result + (doj != null ? doj.hashCode() : 0);
+        result = 31 * result + (dol != null ? dol.hashCode() : 0);
+        result = 31 * result + (bloodGroup != null ? bloodGroup.hashCode() : 0);
+        return result;
     }
 }

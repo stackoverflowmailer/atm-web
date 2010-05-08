@@ -26,6 +26,7 @@
     <!-- If you have it in your application file delete the whole -->
     <!-- following script tag as we must have only one onReady. -->
 
+    <script type="text/javascript" src="js/base/Global.js"></script>
     <script type="text/javascript" src="js/base/JsonSubmit.js"></script>
     <script type="text/javascript" src="js/base/Report.js"></script>
     <script type="text/javascript" src="js/base/BaseForm.js"></script>

@@ -26,6 +26,7 @@
     <build>
         <finalName>atm-web</finalName>
         <testSourceDirectory>src/test/java</testSourceDirectory>
+        <outputDirectory>target/classes</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -56,7 +57,7 @@
                     <webAppSourceDirectory>${basedir}/src/main/webapp</webAppSourceDirectory>
                     <webXml>${basedir}/src/main/webapp/WEB-INF/web.xml</webXml>
                     <webDefaultXml>${basedir}/src/main/resources/webdefault.xml</webDefaultXml>
-                    <classesDirectory>${basedir}/target/classes</classesDirectory>
+                    <!--<classesDirectory>${basedir}/target/classes</classesDirectory>-->
                     <scanIntervalSeconds>3</scanIntervalSeconds>
                     <scanTargets>
                         <scanTarget>${basedir}/src/main/resources</scanTarget>

@@ -1,14 +1,13 @@
 package com.dj.atm.developer.dao.impl;
 
-import java.util.List;
-
-import javax.persistence.Query;
-
 import com.dj.atm.core.dao.impl.AbstractJpaDaoImpl;
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.developer.dao.DeveloperDao;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
+
+import javax.persistence.Query;
+import java.util.List;
 
 /**
  * @author Script Runner

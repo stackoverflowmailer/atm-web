@@ -1,12 +1,9 @@
 package com.dj.atm.core.orm.session;
 
 import org.eclipse.persistence.config.SessionCustomizer;
-import org.eclipse.persistence.internal.databaseaccess.Accessor;
 import org.eclipse.persistence.sessions.Session;
 import org.eclipse.persistence.sessions.server.ConnectionPool;
 import org.eclipse.persistence.sessions.server.ServerSession;
-
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
