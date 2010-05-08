@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *  Responsible for the following tasks
+ * Responsible for the following tasks
  * <ol>
  * <li> Provides the list scanning locations/ packages for resources and providers for Jersey Servlet</li>
  * <li> Provides Guice Integration of dependence injection, transaction support and servlet modules</li>
@@ -53,9 +53,8 @@ public class AtmContextListener extends GuiceServletContextListener {
 
                     @Override
                     protected void configureServlets() {
-                        //filter("/webresources/*").through(GzipFilter.class);
                         //forward all Ajax Requests through AtmSecurityFilter implementation
-                        filter("/webresources/*").through(AtmSecurityFilter.class);
+                        //filter("/webresources/*").through(AtmSecurityFilter.class);
                         serve("/webresources/*").with(GuiceContainer.class, servletParameters);
                     }
                 });

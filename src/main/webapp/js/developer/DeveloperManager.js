@@ -24,7 +24,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         this.items = [
             this.buildDeveloperList(),
             this.buildDeveloperForm()
-
         ];
         com.dj.project.developer.DeveloperManager.superclass.initComponent.call(this);
     },
@@ -37,6 +36,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             listeners : {
                 scope : this,
                 saveDeveloper: this.onSaveDeveloper
+                ,generateReport:this.onGenerateReport
             },
             reader : new Ext.data.JsonReader({
                 idProperty      : 'id',
@@ -179,11 +179,26 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         this.clearMask();
         Ext.MessageBox.alert('Error', this.msgs.errorSavingData);
     },
-    clearMask : function(a, b, c, d) {
-        //console.log(a);
-        //console.log(b);
-        //console.dir(c);
-        //console.dir(d);
+
+    onGenerateReport : function() {
+        var el = Ext.getDom('reportFrame');
+        if (el) {
+            Ext.removeNode(el);
+        }
+        var report = new com.dj.project.report.Report({
+            renderTo: Ext.getBody(),
+            id: 'reportFrame'
+        });
+        report.load({
+            url: 'webresources/developer/report',
+            params: {
+                task: 'csv',
+                query: 'query'
+            }
+        });
+
+    },
+    clearMask:function(a, b, c, d) {
         Ext.getBody().unmask();
     },
     cleanSlate : function() {

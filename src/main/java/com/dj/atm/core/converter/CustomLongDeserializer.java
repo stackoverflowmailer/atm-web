@@ -17,12 +17,16 @@ import java.io.IOException;
  * @since 0.0.1
  */
 public class CustomLongDeserializer extends JsonDeserializer<Long> {
-    private static final String EMPTY_STRING = "";
 
     @Override
     public Long deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
-        String valueString = jp.getText();
-        if (valueString == null || valueString.trim().equals(EMPTY_STRING)) {
+        return deserializeInternal(jp, ctxt);
+    }
+
+
+    private Long deserializeInternal(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
+        String valueString = jp.getText().trim();
+        if (null == valueString || 0 == valueString.length()) {
             return Long.valueOf(0);
         }
         return Long.valueOf(valueString);
