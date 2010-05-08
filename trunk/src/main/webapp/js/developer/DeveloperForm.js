@@ -6,7 +6,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
     layout: 'column',
     autoHeight: true,
     bodyStyle : 'background-color: #DFE8F6; padding: 10px',
-    
+
     initComponent : function() {
         Ext.applyIf(this, {
             tbar : this.buildToolbar(),
@@ -17,7 +17,8 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                 .call(this);
 
         this.addEvents({
-            'saveDeveloper' : true
+            'saveDeveloper' : true,
+            'generateReport' : true
         });
         if (this.record) {
             this.on({
@@ -51,6 +52,12 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                 iconCls : 'icon-user_add',
                 scope : this,
                 handler : this.onNew
+            },
+            {
+                text : 'Report',
+                iconCls : 'icon-user_report',
+                scope : this,
+                handler : this.onReport
             },
             '->',
             {
@@ -290,6 +297,10 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
         if (this.isValid()) {
             this.fireEvent('saveDeveloper', this, this.getValues());
         }
+    },
+    onReport : function() {
+        //Ext.Msg.alert('Status', 'Executing Report1');
+        this.fireEvent('generateReport',this);
     },
     loadFormAfterRender : function() {
         this.load({

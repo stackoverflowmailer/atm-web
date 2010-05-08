@@ -1,17 +1,32 @@
 package com.dj.atm.resource;
 
 import com.dj.atm.core.model.QueryParameter;
+import com.dj.atm.core.model.User;
+import com.dj.atm.core.report.ReportGenerator;
 import com.dj.atm.core.util.WrappedResponse;
 import com.dj.atm.developer.model.Band;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
 import com.dj.atm.developer.service.DeveloperService;
 import com.google.inject.Inject;
+import com.lowagie.text.Document;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.pdf.PdfWriter;
+import com.sun.jersey.core.header.ContentDisposition;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -29,6 +44,7 @@ public class DeveloperResource {
     public DeveloperResource(DeveloperService developerService) {
         this.developerService = developerService;
     }
+
     @POST
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -45,6 +61,7 @@ public class DeveloperResource {
         WrappedResponse<Developer> response = new WrappedResponse<Developer>(true, developer);
         return response;
     }
+
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/developers")
@@ -74,5 +91,23 @@ public class DeveloperResource {
         rValue.put("success", true);
         rValue.put("data", persisted);
         return rValue;
+    }
+
+    //@POST
+
+    //@Produces({"application/pdf"})
+    @GET
+    //@Consumes({MediaType.APPLICATION_FORM_URLENCODED})
+    @Path("/report")
+    public Response generateReport(
+            @Context HttpServletRequest request,
+            @Context HttpServletResponse response,
+            @Context ServletContext ctx) throws Exception {
+        ContentDisposition cd =
+                ContentDisposition.type("attachment").fileName("report.pdf").build();
+       
+        byte[] bytes = ReportGenerator.generateReport();
+        return Response.ok(bytes).header("Content-Disposition", cd).type("application/pdf").build();
+
     }
 }
