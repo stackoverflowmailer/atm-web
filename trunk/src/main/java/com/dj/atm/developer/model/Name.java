@@ -14,43 +14,43 @@ public class Name {
     }
 
     public Name(String firstName, String middleName, String lastName) {
-	this.firstName = firstName;
-	this.middleName = middleName;
-	this.lastName = lastName;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
-	return firstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-	this.firstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getMiddleName() {
-	return middleName;
+        return middleName;
     }
 
     public void setMiddleName(String middleName) {
-	this.middleName = middleName;
+        this.middleName = middleName;
     }
 
     public String getLastName() {
-	return lastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-	this.lastName = lastName;
+        this.lastName = lastName;
     }
 
     @Override
     public String toString() {
-	final StringBuilder sb = new StringBuilder();
-	sb.append("Name");
-	sb.append("{firstName='").append(firstName).append('\'');
-	sb.append(", middleName='").append(middleName).append('\'');
-	sb.append(", lastName='").append(lastName).append('\'');
-	sb.append('}');
-	return sb.toString();
+        final StringBuilder sb = new StringBuilder();
+        sb.append("Name");
+        sb.append("{firstName='").append(firstName).append('\'');
+        sb.append(", middleName='").append(middleName).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
