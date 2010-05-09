@@ -106,6 +106,7 @@ com.dj.project.base.main.Main = function () {
                     },
                     '->',
                     {
+                        id       : 'logout-btn',
                         text     : 'Log out',
                         iconCls  : 'icon-door_out',
                         scope    : this,
