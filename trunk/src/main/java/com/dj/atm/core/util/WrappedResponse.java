@@ -2,8 +2,8 @@ package com.dj.atm.core.util;
 
 /**
  * This class wraps XHR output in a way Ext Js expects.
- * For eg. Ext Js expects a property 'success' in all form submission responses
- * if this property is missing, the user is shown a message that the processing
+ * For eg. Ext Js expects a property 'success' in all form submission responses.
+ * If this property is missing, the user is shown a message that the processing
  * is failed.
  * <p/>
  * Including the above mentioned 'success' property all the entities doesn't

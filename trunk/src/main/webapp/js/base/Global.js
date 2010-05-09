@@ -2,25 +2,32 @@ Ext.Ajax.defaultHeaders = {
     'Powered-By': 'ATM-WEB'
 };
 
-// Example: show a spinner during all Ajax requests
 //Ext.Ajax.on('beforerequest', this.showSpinner, this);
-Ext.Ajax.on('requestcomplete', function(request, response, object) {
-    //console.dir(request);
-    //console.dir(response);
-    //console.dir(object);
+
+Ext.Ajax.on('requestcomplete', function(connection, response, object) {
     if (response.responseText == 'NOT_A_VALID_USER') {
         Ext.getBody().unmask();
         Ext.Msg.show({
-            title:'Session Expiry',
-            msg: 'Your session expired. Please press Yes to navigate to login page, press No stay on the current page',
+            title:'Session Expired',
+            msg: 'Your session has expired.' +
+                    '</br></br>Press <b>Yes</b> to navigate to login page,' +
+                    'or <b>No</b> stay on the current page',
             buttons: Ext.Msg.YESNO,
-            fn: function(){
-                
+            fn: function(btn, text, option) {
+                if (btn == 'yes') {
+                    window.location.reload(false);
+                }
             },
-            animEl: 'elId',
+            animEl: 'logout-btn',
             icon: Ext.MessageBox.QUESTION
         });
+        window.onerror = function(msg){
+            return true;
+        }
     }
-
 }, this);
-//Ext.Ajax.on('requestexception', this.hideSpinner, this);
+
+/*
+Ext.Ajax.on('requestexception', function(connection, response, object) {
+    console.dir(response);
+}, this);*/

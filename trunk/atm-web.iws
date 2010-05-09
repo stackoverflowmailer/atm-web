@@ -3,26 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/orm/session/AtmSessionCustomizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/orm/session/AtmSessionCustomizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Developer.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Developer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/HttpServletUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/HttpServletUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/dao/impl/DeveloperDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/dao/impl/DeveloperDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.ipr" afterPath="$PROJECT_DIR$/atm-web.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/dj/atm/resource/LoginResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/dj/atm/resource/LoginResourceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/dao/impl/AbstractJpaDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/dao/impl/AbstractJpaDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/dao/DeveloperDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/dao/DeveloperDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/report/ReportGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/report/ReportGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/Main.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/util/WrappedResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/util/WrappedResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" />
     </list>
-    <ignored path="atm-web.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="atm-web.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +71,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -96,39 +82,37 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AtmSecurityFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/LoginResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Global.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Global.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="27" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5">
+            <state line="23" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.759434">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeveloperManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
+      <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="34" selection-start="7200" selection-end="7223" vertical-scroll-proportion="-10.76">
+            <state line="108" column="46" selection-start="3487" selection-end="3487" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtmSecurityFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="36" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WrappedResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/util/WrappedResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,28 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Developer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Developer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="37" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="54" selection-start="1367" selection-end="1367" vertical-scroll-proportion="-12.090909">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagedFilterPipeline.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/ManagedFilterPipeline.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="16" selection-start="1369" selection-end="1369" vertical-scroll-proportion="-11.375">
+            <state line="28" column="54" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,16 +139,7 @@
       <file leaf-file-name="HttpServletUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/HttpServletUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Response.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.9/jetty-6.1.9-sources.jar!/org/mortbay/jetty/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="0" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.0">
+            <state line="31" column="17" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -198,8 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/converter/CustomLongDeserializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/report/AbstractReportGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperForm.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/base/Report.js" />
@@ -212,6 +167,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Developer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/util/WrappedResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/Main.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" />
       </list>
@@ -269,7 +226,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -321,6 +280,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -754,8 +739,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -772,9 +755,14 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="com.dj.atm.core.security.AtmSecurityFilter" />
+    </key>
   </component>
   <component name="RunManager" selected="Maven.ATM-WEB">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -844,7 +832,7 @@
       </server-settings>
       <predefined_log_file id="Glassfish" enabled="true" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="4060" />
+        <option name="DEBUG_PORT" value="2760" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -885,21 +873,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="packagepath" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="sysFilter" value=".*" />
-      <setting name="exampleFilter" value=".*" />
-      <method>
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
       <option name="LOCAL" value="false" />
       <deployment />
@@ -918,6 +891,21 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="packagepath" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="sysFilter" value=".*" />
+      <setting name="exampleFilter" value=".*" />
       <method>
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
@@ -1139,24 +1127,25 @@
     <frame x="-4" y="-4" width="1448" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="96" y="96" width="1248" height="676" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32166892" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32032302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23884892" sideWeight="0.21938089" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.8667564" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23884892" sideWeight="0.66890985" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35683453" sideWeight="0.6702557" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37415883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1195,81 +1184,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.9/jetty-6.1.9-sources.jar!/org/mortbay/jetty/HttpConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="0" selection-start="6857" selection-end="6857" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.9/jetty-6.1.9-sources.jar!/org/mortbay/jetty/HttpFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1026" column="0" selection-start="33706" selection-end="33706" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.9/jetty-6.1.9-sources.jar!/org/mortbay/jetty/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/HttpServletUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.9/jetty-6.1.9-sources.jar!/org/mortbay/jetty/servlet/ServletHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1084" column="0" selection-start="38585" selection-end="38585" vertical-scroll-proportion="0.3325893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/GuiceFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.33169532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/ManagedFilterPipeline.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="1369" selection-end="1369" vertical-scroll-proportion="-11.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/FilterChainInvocation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="758" selection-end="758" vertical-scroll-proportion="0.39344263">
-          <folding />
-        </state>
+        <state line="13" column="16" selection-start="758" selection-end="758" vertical-scroll-proportion="0.39344263" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/FilterDefinition.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.6229508">
-          <folding />
-        </state>
+        <state line="20" column="16" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.6229508" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="54" selection-start="1367" selection-end="1367" vertical-scroll-proportion="-12.090909">
-          <folding />
-        </state>
+        <state line="202" column="34" selection-start="7200" selection-end="7223" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/LoginResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/WadlResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Developer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="37" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="82" column="37" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="54" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/ManagedFilterPipeline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java">
@@ -1279,32 +1231,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.9/jetty-6.1.9-sources.jar!/org/mortbay/jetty/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/LoginResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+        <state line="74" column="68" selection-start="2478" selection-end="2478" vertical-scroll-proportion="0.11056511">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/HttpServletUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="34" selection-start="7200" selection-end="7223" vertical-scroll-proportion="-10.76">
+        <state line="31" column="17" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api-2.5/6.1.9/servlet-api-2.5-6.1.9-sources.jar!/javax/servlet/http/HttpServletResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="317" column="16" selection-start="11002" selection-end="11002" vertical-scroll-proportion="0.33184856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="46" selection-start="3487" selection-end="3487" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/util/WrappedResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="36" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Global.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5">
+        <state line="23" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.759434">
           <folding />
         </state>
       </provider>
