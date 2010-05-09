@@ -25,7 +25,6 @@ com.dj.project.developer.DevloperGridPanel = Ext.extend(Ext.grid.GridPanel, {
             sortable  : true
         }
     ],
-
     initComponent : function() {
         this.store = this.buildStore();
         com.dj.project.developer.DevloperGridPanel.superclass.initComponent.call(this);
@@ -45,7 +44,6 @@ com.dj.project.developer.DevloperGridPanel = Ext.extend(Ext.grid.GridPanel, {
             }
         };
     },
-
     add : function(r) {
         var store = this.store;
         var sortInfo = store.sortInfo;

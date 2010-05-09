@@ -42,7 +42,7 @@
 
         // Path to the blank image must point to a valid location on your server
     Ext.BLANK_IMAGE_URL = 'extjs-3.2.1/resources/images/default/s.gif';
-
+    Ext.USE_NATIVE_JSON = true;
 
     </script>
 </head>

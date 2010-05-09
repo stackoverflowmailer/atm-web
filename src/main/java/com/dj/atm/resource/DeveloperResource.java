@@ -5,8 +5,13 @@ import com.dj.atm.core.report.ReportGenerator;
 import com.dj.atm.core.util.WrappedResponse;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.service.DeveloperService;
+import com.google.common.base.Predicate;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
 import com.google.inject.Inject;
 import com.sun.jersey.core.header.ContentDisposition;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +20,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,6 +31,7 @@ import java.util.Map;
  */
 @Path("/developer")
 public class DeveloperResource {
+    private static Log logger = LogFactory.getLog(DeveloperResource.class);
     private final DeveloperService developerService;
 
     @Inject
@@ -52,10 +59,25 @@ public class DeveloperResource {
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/developers")
-    public WrappedResponse<List> getDeveloper(@Context HttpServletRequest request) {
+    public WrappedResponse<Collection> getDeveloper(@Context HttpServletRequest request) {
         QueryParameter qp = HttpServletUtil.getQueryParameter(request);
         List<Developer> developers = developerService.getDevelopers(qp);
-        WrappedResponse<List> response = new WrappedResponse<List>(true, developers);
+        Collection<Developer> filtered = Collections2.filter(developers, new Predicate<Developer>() {
+            @Override
+            public boolean apply(Developer developer) {
+                if (logger.isDebugEnabled()) {
+                    logger.debug("Developer  : " + developer.getName());
+                }
+                if (developer.getName() == null) {
+                    if (logger.isDebugEnabled()) {
+                        logger.debug("Developer name found to null for : " + developer.getId());
+                    }
+                    return false;
+                }
+                return true;
+            }
+        });
+        WrappedResponse<Collection> response = new WrappedResponse<Collection>(true, filtered);
         return response;
     }
 
@@ -73,6 +95,7 @@ public class DeveloperResource {
     }
 
     //@POST
+
     @GET
     @Consumes({MediaType.APPLICATION_FORM_URLENCODED})
     @Path("/report")

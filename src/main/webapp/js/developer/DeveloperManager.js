@@ -92,7 +92,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         });
         //console.log(this.getComponent('developerForm').reader);
     },
-
     onDeveloperFormLoadFailure : function() {
         var record = this.getComponent('developerList').getSelected();
         var msg = String.format(
@@ -179,7 +178,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         this.clearMask();
         Ext.MessageBox.alert('Error', this.msgs.errorSavingData);
     },
-
     onGenerateReport : function() {
         var el = Ext.getDom('reportFrame');
         if (el) {
