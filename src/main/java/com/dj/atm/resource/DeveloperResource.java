@@ -1,13 +1,11 @@
 package com.dj.atm.resource;
 
 import com.dj.atm.core.model.QueryParameter;
-import com.dj.atm.core.report.ReportGenerator;
 import com.dj.atm.core.util.WrappedResponse;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.service.DeveloperService;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
-import com.google.common.collect.Lists;
 import com.google.inject.Inject;
 import com.sun.jersey.core.header.ContentDisposition;
 import org.apache.commons.logging.Log;
@@ -66,7 +64,7 @@ public class DeveloperResource {
             @Override
             public boolean apply(Developer developer) {
                 if (logger.isDebugEnabled()) {
-                    logger.debug("Developer  : " + developer.getName());
+                    logger.debug("Developer  : " + developer.getId() + " : " + developer.getName());
                 }
                 if (developer.getName() == null) {
                     if (logger.isDebugEnabled()) {
@@ -105,8 +103,8 @@ public class DeveloperResource {
             @Context ServletContext ctx) throws Exception {
         ContentDisposition cd =
                 ContentDisposition.type("attachment").fileName("developer-report.pdf").build();
-        byte[] bytes = ReportGenerator.generateReport();
-        return Response.ok(bytes).header("Content-Disposition", cd).type("application/pdf").build();
+        //byte[] bytes = new ReportGenerator().generateReport(developerService.getDeveloper(13001L));
+        return Response.ok(new byte[]{}).header("Content-Disposition", cd).type("application/pdf").build();
 
     }
 }

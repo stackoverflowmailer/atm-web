@@ -80,12 +80,6 @@
     <orderEntry type="library" exported="" name="Maven: org.guiceyfruit:guice-servlet:2.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.google.inject:guice:2.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: com.lowagie:itext:2.1.7" level="project" />
-    <orderEntry type="library" exported="" name="Maven: bouncycastle:bcmail-jdk14:138" level="project" />
-    <orderEntry type="library" exported="" name="Maven: bouncycastle:bcprov-jdk14:138" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.google.collections:google-collections:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: net.sf.ehcache:ehcache-web:2.0.1" level="project" />

@@ -43,12 +43,6 @@
             <element id="library" level="project" name="Maven: org.guiceyfruit:guice-servlet:2.0" />
             <element id="library" level="project" name="Maven: com.google.inject:guice:2.0" />
             <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: com.lowagie:itext:2.1.7" />
-            <element id="library" level="project" name="Maven: bouncycastle:bcmail-jdk14:138" />
-            <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk14:138" />
-            <element id="library" level="project" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" />
-            <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" />
-            <element id="library" level="project" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" />
             <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
             <element id="library" level="project" name="Maven: com.google.collections:google-collections:1.0" />
             <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-web:2.0.1" />
@@ -87,7 +81,9 @@
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/report/ReportGenerator.java" charset="UTF-8" />
+  </component>
   <component name="FacetAutodetectingManager">
     <autodetection-disabled>
       <facet-type id="web">
@@ -604,6 +600,7 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/persistence/eclipselink/2.0.0/eclipselink-2.0.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/persistence/eclipselink/2.0.0/eclipselink-2.0.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: postgresql:postgresql:8.3-603.jdbc4">
@@ -727,76 +724,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.lowagie:itext:2.1.7">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/core" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/toolbox" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/rtf" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/rups" />
-      </SOURCES>
-    </library>
-    <library name="Maven: bouncycastle:bcmail-jdk14:138">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: bouncycastle:bcprov-jdk14:138">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.bouncycastle:bctsp-jdk14:1.38">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.bouncycastle:bcprov-jdk14:1.38">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.bouncycastle:bcmail-jdk14:1.38">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.google.collections:google-collections:1.0">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/google/collections/google-collections/1.0/google-collections-1.0.jar!/" />
@@ -817,6 +744,23 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/jsr250-api/1.0/jsr250-api-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.itextpdf:itext:5.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/itextpdf/itext/5.0.2/itext-5.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/itextpdf/itext/5.0.2/itext-5.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/itextpdf/itext/5.0.2/itext-5.0.2-sources.jar!/" />
+        <root url="jar://D:/x/iText-src-5.0.2.zip!/src/core" />
+        <root url="jar://D:/x/iText-src-5.0.2.zip!/src/rups" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/itextpdf/itext/5.0.2/itext-5.0.2-sources.jar!/rups" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/itextpdf/itext/5.0.2/itext-5.0.2-sources.jar!/core" />
+        <root url="jar://C:/Documents and Settings/ScriptRunner/desktop/iText-src-5.0.2.zip!/src/core" />
+        <root url="jar://C:/Documents and Settings/ScriptRunner/desktop/iText-src-5.0.2.zip!/src/rups" />
       </SOURCES>
     </library>
   </component>
