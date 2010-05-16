@@ -11,7 +11,7 @@ import java.io.IOException;
  * Deserializer for Long types.
  * <p/>
  * Difference with provided Jackson Long de-serializer is that this
- * one assumes empty values as valid before converting the same to 0L.
+ * one converts empty values to 0L.
  *
  * @author Script Runner
  * @since 0.0.1
