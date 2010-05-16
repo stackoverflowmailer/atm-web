@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="Misc modifications">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="DELETED" beforePath="D:\atm-web\src\main\java\com\dj\atm\core\report\ReportGenerator.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iml" afterPath="$PROJECT_DIR$/atm-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/converter/CustomLongDeserializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/converter/CustomLongDeserializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.ipr" afterPath="$PROJECT_DIR$/atm-web.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/base/Report.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/Report.js" />
     </list>
     <ignored path="atm-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -315,8 +305,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -326,19 +316,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DeveloperManager.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DeveloperManager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="12" selection-start="6940" selection-end="6940" vertical-scroll-proportion="0.0">
+            <state line="190" column="12" selection-start="6940" selection-end="6940" vertical-scroll-proportion="0.50634694">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Report.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Report.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Report.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="8" selection-start="273" selection-end="273" vertical-scroll-proportion="0.30501089">
+            <state line="10" column="8" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtmContextListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="24" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -915,9 +914,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="IntroduceConstantDialog.RECENTS_KEY">
@@ -993,7 +992,7 @@
       </server-settings>
       <predefined_log_file id="Glassfish" enabled="true" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="4676" />
+        <option name="DEBUG_PORT" value="3201" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -1034,6 +1033,21 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="packagepath" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="sysFilter" value=".*" />
+      <setting name="exampleFilter" value=".*" />
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
       <option name="LOCAL" value="false" />
       <deployment />
@@ -1052,21 +1066,6 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="packagepath" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="sysFilter" value=".*" />
-      <setting name="exampleFilter" value=".*" />
       <method>
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
@@ -1291,7 +1290,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2583213" sideWeight="0.2208672" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1359,9 +1358,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itext/5.0.2/itext-5.0.2.jar!/com/itextpdf/text/pdf/BaseFont.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="49" selection-start="5076" selection-end="5076" vertical-scroll-proportion="1.4739884">
-          <folding />
-        </state>
+        <state line="92" column="49" selection-start="5076" selection-end="5076" vertical-scroll-proportion="1.4739884" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/guiceyfruit/guice-servlet/2.0/guice-servlet-2.0.jar!/com/google/inject/servlet/ServletDefinition.class">
@@ -1373,9 +1370,7 @@
     </entry>
     <entry file="jar://C:/Documents and Settings/ScriptRunner/desktop/iText-src-5.0.2.zip!/src/core/com/itextpdf/text/pdf/PdfGraphics2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="134" selection-start="6936" selection-end="6955" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="205" column="134" selection-start="6936" selection-end="6955" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Documents and Settings/ScriptRunner/desktop/iText-src-5.0.2.zip!/src/core/com/itextpdf/text/pdf/BaseFont.java">
@@ -1394,16 +1389,12 @@
     </entry>
     <entry file="jar://C:/Documents and Settings/ScriptRunner/desktop/iText-src-5.0.2.zip!/src/core/com/itextpdf/text/pdf/FontMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="39" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.23695345">
-          <folding />
-        </state>
+        <state line="54" column="39" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.23695345" />
       </provider>
     </entry>
     <entry file="jar://C:/Documents and Settings/ScriptRunner/desktop/iText-src-5.0.2.zip!/src/core/com/itextpdf/text/pdf/PdfContentByte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2966" column="67" selection-start="109377" selection-end="109377" vertical-scroll-proportion="0.4513399">
-          <folding />
-        </state>
+        <state line="2966" column="67" selection-start="109377" selection-end="109377" vertical-scroll-proportion="0.4513399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java">
@@ -1416,13 +1407,6 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="227" column="51" selection-start="8550" selection-end="8550" vertical-scroll-proportion="4.6461987">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="26" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1441,16 +1425,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="12" selection-start="6940" selection-end="6940" vertical-scroll-proportion="0.0">
+        <state line="55" column="24" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Report.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="273" selection-end="273" vertical-scroll-proportion="0.30501089">
+        <state line="10" column="8" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="12" selection-start="6940" selection-end="6940" vertical-scroll-proportion="0.50634694">
           <folding />
         </state>
       </provider>
