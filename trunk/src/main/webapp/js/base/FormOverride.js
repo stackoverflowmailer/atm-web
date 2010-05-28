@@ -1,38 +1,28 @@
-/*
- Ext.override(Ext.form.CompositeField, {
- bubble : Ext.Container.prototype.bubble,
- cascade : Ext.Container.prototype.cascade,
- findById : Ext.Container.prototype.findById,
- findByType : Ext.Container.prototype.findByType,
- find : Ext.Container.prototype.find,
- findBy : Ext.Container.prototype.findBy,
- get : Ext.Container.prototype.get
- });
- */
+
 
 
 function getFieldValuesAsObject(form) {
     //var formObject = form.getFieldValues();
     var obj = {};
-    var formItems = form.items.items;
-    var propLen = formItems.length;
-    for (var i = 0; i < propLen; i++) {
-        if (formItems[i].xtype == "compositefield") {
-            var compFieldItem = formItems[i].items.items;
-            var compPropLen = compFieldItem.length;
-            for (var j = 0; j < compPropLen; j++) {
-                if (compFieldItem[j].xtype !== "displayfield") {
-                    var val = compFieldItem[j].getValue();
-                    var name = compFieldItem[j].getName();
+    var fi = form.items.items;
+    var pl = fi.length;
+    for (var i = 0; i < pl; i++) {
+        if (fi[i].xtype == "compositefield") {
+            var cfi = fi[i].items.items;
+            var cpl = cfi.length;
+            for (var j = 0; j < cpl; j++) {
+                if (cfi[j].xtype !== "displayfield") {
+                    var val = cfi[j].getValue();
+                    var name = cfi[j].getName();
                     if (isQualifiedName(name)) {
                         createObjectStructure(name, obj, val);
                     }
                 }
             }
         } else {
-            if (formItems[i].xtype !== "displayfield") {
-                var val = formItems[i].value;
-                var name = formItems[i].name;
+            if (fi[i].xtype !== "displayfield") {
+                var val = fi[i].value;
+                var name = fi[i].name;
                 obj[name] = val;
             }
         }
