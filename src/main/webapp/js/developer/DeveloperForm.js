@@ -18,6 +18,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
 
         this.addEvents({
             'saveDeveloper' : true,
+            'reset' : true,
             'generateReport' : true
         });
         if (this.record) {
@@ -47,12 +48,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                 handler : this.onReset
             },
             '-',
-            {
-                text : 'New Developer',
-                iconCls : 'icon-user_add',
-                scope : this,
-                handler : this.onNew
-            },
+
             /*{
              text : 'Report',
              iconCls : 'icon-user_report',
@@ -194,6 +190,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                             {
                                 xtype     : 'datefield',
                                 name      : 'dol',
+                                format : 'd/m/Y',
                                 fieldLabel: 'End'
                             }
                         ]
@@ -305,6 +302,9 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
         if (this.isValid()) {
             this.fireEvent('saveDeveloper', this, this.getValues());
         }
+    },
+    onReset : function() {
+        this.fireEvent('reset', this, this.getValues());
     },
     /*onReport : function() {
      this.fireEvent('generateReport',this);
