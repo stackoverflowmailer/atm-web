@@ -53,11 +53,18 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                 scope : this,
                 handler : this.onNew
             },
+            /*{
+             text : 'Report',
+             iconCls : 'icon-user_report',
+             scope : this,
+             handler : this.onReport
+             },*/
             {
-                text : 'Report',
-                iconCls : 'icon-user_report',
-                scope : this,
-                handler : this.onReport
+                text  : 'Developer Report',
+                url   : 'webresources/developer/report',
+                xtype : 'reportButton',
+                fileType : 'html'
+
             },
             '->',
             {
@@ -181,7 +188,8 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                             {
                                 xtype     : 'datefield',
                                 name      : 'company',
-                                fieldLabel: 'Start'
+                                fieldLabel: 'Start',
+                                format : 'd/m/Y'
                             },
                             {
                                 xtype     : 'datefield',
@@ -298,10 +306,9 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
             this.fireEvent('saveDeveloper', this, this.getValues());
         }
     },
-    onReport : function() {
-        //Ext.Msg.alert('Status', 'Executing Report1');
-        this.fireEvent('generateReport',this);
-    },
+    /*onReport : function() {
+     this.fireEvent('generateReport',this);
+     },*/
     loadFormAfterRender : function() {
         this.load({
             url : 'developers/getDeveloper',
