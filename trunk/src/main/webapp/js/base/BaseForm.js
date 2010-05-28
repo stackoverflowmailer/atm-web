@@ -10,10 +10,7 @@ com.dj.project.base.BaseForm = Ext.extend(Ext.form.FormPanel, {
     },
 
     getValues : function() {
-        //if (!this.getCustomFormValues) {
         return this.getForm().getValues();
-        //}
-        //return this.getCustomFormValues();
     },
 
     //----------------------------Newly added section --------------------------------------

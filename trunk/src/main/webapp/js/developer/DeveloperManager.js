@@ -1,24 +1,14 @@
 Ext.ns("com.dj.project.developer");
 
 
-com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
+com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseManager, {
     border : false,
     layout : {
         type  : 'hbox',
         align : 'stretch'
     },
-    msgs          : {
-        immediateChanges : 'Warning! Changes are <span style="color: red;">immediate</span>.',
-        errorsInForm     : 'There are errors in the form. Please correct and try again.',
-        developerSavedSuccess  : 'Saved {0}, {1} successfully.',
-        fetchingDataFor  : 'Fetching data for {0}, {1}',
-        couldNotLoadData : 'Could not load data for {0}, {1}!',
-        saving           : 'Saving {0}, {1}...',
-        errorSavingData  : 'There was an error saving the form.',
-        deletingDeveloper : 'Deleting developer {0}, {1}...',
-        deleteEmpConfirm : 'Are you sure you want to delete developer {0}, {1}?',
-        deleteEmpSuccess : 'Developer {0}, {1} was deleted successfully.',
-        deleteEmpFailure : 'Developer {0}, {1} was not deleted due to a failure.'
+    localMsg : {
+
     },
     initComponent : function() {
         this.items = [
@@ -27,6 +17,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         ];
         com.dj.project.developer.DeveloperManager.superclass.initComponent.call(this);
     },
+
     buildDeveloperForm : function() {
         return {
             xtype     : 'developerform',
@@ -35,22 +26,34 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             border    : false,
             listeners : {
                 scope : this,
-                saveDeveloper: this.onSaveDeveloper
-                ,generateReport:this.onGenerateReport
+                saveDeveloper: this.onSaveDeveloper,
+                reset: this.onReset,
+                generateReport:this.onGenerateReport
             },
+
             reader : new Ext.data.JsonReader({
                 idProperty      : 'id',
                 root            : 'data',
                 successProperty : 'success',
                 //messageProperty: "msg",
                 //totalProperty  : 'total',
+
                 fields          : [
                     'id',
                     {name: 'name.firstName', type: 'auto', mapping:'name.firstName'},
                     {name: 'name.lastName',  type: 'auto', mapping:'name.lastName'},
-                    {name: 'name.middleName',  type: 'auto',mapping:'name.middlename'},
-                    'doj',
-                    'bloodGroup'
+                    {name: 'name.middleName',  type: 'auto',mapping:'name.middleName'},
+                    {name : 'title', mapping : 'title'},
+                    {name: 'landPhone.countryCode',  type: 'auto', mapping:'landPhone.countryCode'},
+                    {name: 'landPhone.stdCode',  type: 'auto', mapping:'landPhone.stdCode'},
+                    {name: 'landPhone.number',  type: 'auto', mapping:'landPhone.number'},
+                    {name: 'mobilePhone.countryCode',  type: 'auto', mapping:'mobilePhone.countryCode'},
+                    {name: 'mobilePhone.stdCode',  type: 'auto', mapping:'mobilePhone.stdCode'},
+                    {name: 'mobilePhone.number',  type: 'auto', mapping:'mobilePhone.number'},
+                    {name: 'band',  type: 'auto', mapping:'band'},
+                    {name: 'dol', convert:this.convertDate},
+                    {name: 'doj', convert:this.convertDate},
+                    {name: 'bloodGroup',  type: 'auto',mapping:'bloodGroup'}
                 ]
             })
         };
@@ -74,7 +77,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         var record = this.getComponent('developerList').getSelected();
         //console.log(record);
         var msg = String.format(
-                this.msgs.fetchingDataFor,
+                this.globalMsg.fetchingDataFor,
                 record.get('lastName'),
                 record.get('firstName')
                 );
@@ -90,12 +93,11 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
                 id : record.get('id')
             }
         });
-        //console.log(this.getComponent('developerForm').reader);
     },
     onDeveloperFormLoadFailure : function() {
         var record = this.getComponent('developerList').getSelected();
         var msg = String.format(
-                this.msgs.couldNotLoadData,
+                this.globalMsg.couldNotLoadData,
                 record.get('lastName'),
                 record.get('firstName')
                 );
@@ -111,7 +113,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
     },
     onSaveDeveloper : function(developerForm, values) {
         if (developerForm.getForm().isValid()) {
-            var msg = String.format(this.msgs.saving, values['name.lastName'], values['name.firstName']);
+            var msg = String.format(this.globalMsg.saving, values['name.lastName'], values['name.firstName']);
 
             Ext.getBody().mask(msg, 'x-mask-loading');
             var self = this;
@@ -126,17 +128,16 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
                 failure : this.onDeveloperSaveFailure
             });
         } else {
-            Ext.MessageBox.alert('Error', this.msgs.errorsInForm);
+            Ext.MessageBox.alert('Error', this.globalMsg.errorsInForm);
         }
     },
     onDeveloperSaveSuccess : function(developerForm, action) {
-        //console.dir(action);
         var record = this.getComponent('developerList').getSelected();
         var defaultValues = developerForm.getValues(false);
 
         var firstName = defaultValues['name.firstName'];
         var lastName = defaultValues['name.lastName'];
-        var msg = String.format(this.msgs.developerSavedSuccess, lastName, firstName);
+        var msg = String.format(this.globalMsg.developerSavedSuccess, lastName, firstName);
 
         if (record) {
             record.set('lastName', lastName);
@@ -146,19 +147,20 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         else {
             var resultData = action.result.data;
             this.getComponent('developerList').createAndSelectRecord(resultData);
-            this.getComponent('developerForm').setValues({});
+            
+            //this.getComponent('developerForm').setValues({});
         }
         Ext.MessageBox.alert('Success', msg);
         this.clearMask();
-        //console.dir(this);
         this.getComponent('developerList').refreshView();
-        this.getComponent('developerForm').reset();
+        //this.getComponent('developerForm').reset();
 
     },
     onDeveloperSaveFailure : function() {
         this.clearMask();
-        Ext.MessageBox.alert('Error', this.msgs.errorSavingData);
+        Ext.MessageBox.alert('Error', this.globalMsg.errorSavingData);
     },
+
     onGenerateReport : function() {
         var el = Ext.getDom('reportFrame');
         if (el) {
@@ -178,9 +180,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         });
 
     },
-    clearMask:function(a, b, c, d) {
-        Ext.getBody().unmask();
-    },
+    
     cleanSlate : function() {
         this.getComponent('developerList').refreshView();
         this.getComponent('developerForm').clearForm();

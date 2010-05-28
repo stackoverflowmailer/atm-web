@@ -25,12 +25,11 @@
     <!-- You can have onReady function here or in your application file. -->
     <!-- If you have it in your application file delete the whole -->
     <!-- following script tag as we must have only one onReady. -->
-
-    <%--<script type="text/javascript" src="js/base/FormOverride.js"></script>--%>
     <script type="text/javascript" src="js/base/Global.js"></script>
     <script type="text/javascript" src="js/base/JsonSubmit.js"></script>
     <script type="text/javascript" src="js/base/Report.js"></script>
     <script type="text/javascript" src="js/base/WindowReportButton.js"></script>
+    <script type="text/javascript" src="js/base/BaseManager.js"></script>
     <script type="text/javascript" src="js/base/BaseForm.js"></script>
     <script type="text/javascript" src="js/base/BaseListPanel.js"></script>
     <script type="text/javascript" src="js/class/ClassList.js"></script>
@@ -43,8 +42,8 @@
     <script type="text/javascript">
 
         // Path to the blank image must point to a valid location on your server
-    Ext.BLANK_IMAGE_URL = 'extjs-3.2.1/resources/images/default/s.gif';
-    Ext.USE_NATIVE_JSON = true;
+        Ext.BLANK_IMAGE_URL = 'extjs-3.2.1/resources/images/default/s.gif';
+        Ext.USE_NATIVE_JSON = true;
 
     </script>
 </head>
