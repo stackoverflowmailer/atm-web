@@ -1,6 +1,10 @@
 Ext.ns('com.dj.project.base');
 
 com.dj.project.base.BaseForm = Ext.extend(Ext.form.FormPanel, {
+
+    monitorValid : true,
+    monitorPoll : 900,
+
     constructor : function(config) {
         config = config || {};
         Ext.applyIf(config, {

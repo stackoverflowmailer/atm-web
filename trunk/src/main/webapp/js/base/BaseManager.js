@@ -24,5 +24,8 @@ com.dj.project.base.BaseManager = Ext.extend(Ext.Panel, {
         if (v) {
             return new Date(v);
         }
+    },
+    onClientValidation : function(formPanel, valid){
+        //console.debug('Do something meaningful in subclass, Form Valid : ' + valid);
     }
 });

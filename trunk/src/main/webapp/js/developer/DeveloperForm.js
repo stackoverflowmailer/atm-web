@@ -6,7 +6,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
     layout: 'column',
     autoHeight: true,
     bodyStyle : 'background-color: #DFE8F6; padding: 10px',
-
+    
     initComponent : function() {
         Ext.applyIf(this, {
             tbar : this.buildToolbar(),
@@ -35,6 +35,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
     buildToolbar : function() {
         return [
             {
+                id:'developerSaveBtn',
                 text : 'Save',
                 iconCls : 'icon-disk',
                 scope : this,
@@ -42,6 +43,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
             },
             '-',
             {
+                id:'developerResetBtn',
                 text : 'Reset',
                 iconCls : 'icon-arrow_undo',
                 scope : this,
