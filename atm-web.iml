@@ -12,16 +12,6 @@
         <context-artifact name="atm-web:war exploded" />
       </configuration>
     </facet>
-    <facet type="jpa" name="JPA">
-      <configuration>
-        <setting name="validation-enabled" value="true" />
-        <setting name="provider-name" value="" />
-        <datasource-mapping>
-          <factory-entry name="atm" />
-        </datasource-mapping>
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -86,6 +76,12 @@
     <orderEntry type="library" exported="" name="Maven: net.sf.ehcache:ehcache-core:2.0.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-api:1.5.11" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-log4j12:1.5.11" level="project" />
+    <orderEntry type="library" exported="" name="Maven: com.lowagie:itext:2.1.7" level="project" />
+    <orderEntry type="library" exported="" name="Maven: bouncycastle:bcmail-jdk14:138" level="project" />
+    <orderEntry type="library" exported="" name="Maven: bouncycastle:bcprov-jdk14:138" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" level="project" />
   </component>
 </module>
 

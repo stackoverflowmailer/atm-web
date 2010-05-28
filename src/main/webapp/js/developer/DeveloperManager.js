@@ -130,8 +130,12 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         }
     },
     toObject : function(form) {
+
+        var test = getFieldValuesAsObject(form);
+
         var defaultValues = form.getValues(false);
-        //console.dir(defaultValues);
+        console.dir(defaultValues);
+        console.debug('----------------------------------------');
         var name = {
             firstName  : defaultValues['name.firstName'],
             middleName : defaultValues['name.middleName'],
@@ -140,11 +144,22 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         var landPhone = {
             countryCode :  defaultValues['landPhone.number']
         };
+        var doj = new Date(defaultValues['company']);
+        var dol = new Date(defaultValues['project']);
+
+        console.dir(doj);
+        
         var developer = {
             id : defaultValues['id'],
             name : name,
-            landPhone : landPhone
+            landPhone : landPhone,
+            doj : doj,
+            dol : dol
         };
+        console.dir(developer);
+
+        console.debug('Date : ' + Ext.isDate(doj));
+
         //return developer;
         return developer;
     },

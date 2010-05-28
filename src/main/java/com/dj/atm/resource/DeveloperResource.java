@@ -1,6 +1,7 @@
 package com.dj.atm.resource;
 
 import com.dj.atm.core.model.QueryParameter;
+import com.dj.atm.core.report.ReportGenerator;
 import com.dj.atm.core.util.WrappedResponse;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.service.DeveloperService;
@@ -31,6 +32,8 @@ import java.util.Map;
 public class DeveloperResource {
     private static Log logger = LogFactory.getLog(DeveloperResource.class);
     private final DeveloperService developerService;
+    
+    private static final String CONTENT_DISPOSITION_MS_EXCEL = "application/vnd.ms-excel";
 
     @Inject
     public DeveloperResource(DeveloperService developerService) {
@@ -43,13 +46,6 @@ public class DeveloperResource {
     @Path("/getDeveloper")
     public WrappedResponse<Developer> getDeveloper(@FormParam("id") String id) {
         Developer developer = developerService.getDeveloper(Long.valueOf(id));
-        /*Developer developer = new Developer();
-        developer.setId(1000L);
-        developer.setName(new Name("Deepak", "", "Jacob"));
-        developer.setBand(Band.B);
-        developer.setDoj(new Date());
-        developer.setBloodGroup("B+");
-        */
         WrappedResponse<Developer> response = new WrappedResponse<Developer>(true, developer);
         return response;
     }
@@ -92,19 +88,22 @@ public class DeveloperResource {
         return rValue;
     }
 
-    //@POST
 
-    @GET
+
+    @POST
     @Consumes({MediaType.APPLICATION_FORM_URLENCODED})
     @Path("/report")
     public Response generateReport(
             @Context HttpServletRequest request,
             @Context HttpServletResponse response,
             @Context ServletContext ctx) throws Exception {
+
+        QueryParameter qp = HttpServletUtil.getQueryParameter(request);
+        List<Developer> developers = developerService.getDevelopers(qp);
         ContentDisposition cd =
-                ContentDisposition.type("attachment").fileName("developer-report.pdf").build();
-        //byte[] bytes = new ReportGenerator().generateReport(developerService.getDeveloper(13001L));
-        return Response.ok(new byte[]{}).header("Content-Disposition", cd).type("application/pdf").build();
+                ContentDisposition.type("inline").fileName("developer-report.pdf").build();
+        byte[] bytes = new ReportGenerator().generateReport(developers);
+        return Response.ok(bytes).header("Content-Disposition", cd).type("application/pdf").build();
 
     }
 }
