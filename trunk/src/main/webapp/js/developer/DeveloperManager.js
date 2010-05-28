@@ -118,7 +118,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
             var form = developerForm.getForm();
             developerForm.getForm().doAction("jsonsubmit", {
                 params   : {
-                    data : self.toObject(form)
+                    data : developerForm.getFieldValuesAsObject()
                 },
                 url     : 'webresources/developer/saveDeveloper',
                 scope   : this,
@@ -128,40 +128,6 @@ com.dj.project.developer.DeveloperManager = Ext.extend(Ext.Panel, {
         } else {
             Ext.MessageBox.alert('Error', this.msgs.errorsInForm);
         }
-    },
-    toObject : function(form) {
-
-        var test = getFieldValuesAsObject(form);
-
-        var defaultValues = form.getValues(false);
-        console.dir(defaultValues);
-        console.debug('----------------------------------------');
-        var name = {
-            firstName  : defaultValues['name.firstName'],
-            middleName : defaultValues['name.middleName'],
-            lastName   : defaultValues['name.lastName']
-        };
-        var landPhone = {
-            countryCode :  defaultValues['landPhone.number']
-        };
-        var doj = new Date(defaultValues['company']);
-        var dol = new Date(defaultValues['project']);
-
-        console.dir(doj);
-        
-        var developer = {
-            id : defaultValues['id'],
-            name : name,
-            landPhone : landPhone,
-            doj : doj,
-            dol : dol
-        };
-        console.dir(developer);
-
-        console.debug('Date : ' + Ext.isDate(doj));
-
-        //return developer;
-        return developer;
     },
     onDeveloperSaveSuccess : function(developerForm, action) {
         //console.dir(action);

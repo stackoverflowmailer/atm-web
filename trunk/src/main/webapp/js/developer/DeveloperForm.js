@@ -144,7 +144,7 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                                 flex : 1,
                                 name : 'name.middleName',
                                 fieldLabel: 'Middle',
-                                allowBlank: false
+                                allowBlank: true
                             },
                             {
                                 xtype: 'textfield',
@@ -187,13 +187,13 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                         items: [
                             {
                                 xtype     : 'datefield',
-                                name      : 'company',
+                                name      : 'doj',
                                 fieldLabel: 'Start',
                                 format : 'd/m/Y'
                             },
                             {
                                 xtype     : 'datefield',
-                                name      : 'project',
+                                name      : 'dol',
                                 fieldLabel: 'End'
                             }
                         ]
@@ -285,14 +285,14 @@ com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm
                         store:          new Ext.data.JsonStore({
                             fields : ['name', 'value'],
                             data   : [
-                                {name : 'A +VE',  value: 'A+'},
-                                {name : 'B +VE',  value: 'B+'},
-                                {name : 'O +VE',  value: 'O+'},
-                                {name : 'AB +VE', value: 'AB'},
-                                {name : 'A -VE',  value: 'A-'},
-                                {name : 'B -VE',  value: 'B-'},
-                                {name : 'O -VE',  value: 'O-'},
-                                {name : 'AB -VE', value: 'AB'}
+                                {name : 'A+VE',  value: 'A+'},
+                                {name : 'B+VE',  value: 'B+'},
+                                {name : 'O+VE',  value: 'O+'},
+                                {name : 'AB+VE', value: 'AB+'},
+                                {name : 'A-VE',  value: 'A-'},
+                                {name : 'B-VE',  value: 'B-'},
+                                {name : 'O-VE',  value: 'O-'},
+                                {name : 'AB-VE', value: 'AB-'}
                             ]
                         })
                     }

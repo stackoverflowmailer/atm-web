@@ -25,7 +25,7 @@
                 ]]>
             </query>
         </named-query>
-        
+
         <named-query name="getAllDevelopers">
             <query>
                 <![CDATA[
@@ -40,7 +40,7 @@
                 <temporal>DATE</temporal>
             </basic>
             <basic name="bloodGroup" optional="true">
-                <column name="BLOOD_GROUP" length="3"/>
+                <column name="BLOOD_GROUP" length="5"/>
             </basic>
             <basic name="dol" optional="true">
                 <column name="DATE_LEAVING"/>
@@ -52,6 +52,17 @@
             <embedded name="name"/>
             <embedded name="landPhone"/>
 
+            <embedded name="mobilePhone">
+                <attribute-override name="countryCode">
+                    <column name="MP_C_CODE"/>
+                </attribute-override>
+                <attribute-override name="stdCode">
+                    <column name="MP_STD_CODE"/>
+                </attribute-override>
+                <attribute-override name="number">
+                    <column name="MP_NUMBER"/>
+                </attribute-override>
+            </embedded>
         </attributes>
 
     </entity>
