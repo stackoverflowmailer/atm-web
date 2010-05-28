@@ -28,7 +28,8 @@ com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseM
                 scope : this,
                 saveDeveloper: this.onSaveDeveloper,
                 reset: this.onReset,
-                generateReport:this.onGenerateReport
+                generateReport:this.onGenerateReport,
+                clientValidation : this.onClientValidation
             },
 
             reader : new Ext.data.JsonReader({
@@ -184,7 +185,16 @@ com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseM
     cleanSlate : function() {
         this.getComponent('developerList').refreshView();
         this.getComponent('developerForm').clearForm();
+    },
+    onClientValidation : function(formPanel, valid){
+        this.enableDisableButtons(!valid, 'developerSaveBtn');
+        //this.enableDisableSaveButton(!valid, 'developerResetBtn');
+    },
+    enableDisableButtons : function(e, btnId){
+      var btn = Ext.getCmp(btnId);
+      btn.setDisabled(e);
     }
+
 });
 
 Ext.reg('developermanager', com.dj.project.developer.DeveloperManager);
