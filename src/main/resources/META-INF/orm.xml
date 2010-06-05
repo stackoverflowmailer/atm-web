@@ -15,7 +15,7 @@
     </mapped-superclass>
 
     <entity class="com.dj.atm.developer.model.Developer" name="Developer"
-            access="PROPERTY"
+            access="FIELD"
             >
         <table name="DEVELOPER"/>
         <named-query name="getDeveloperByName">
@@ -66,6 +66,42 @@
         </attributes>
 
     </entity>
+
+
+    <entity class="com.dj.atm.core.model.User" name="User"
+            access="PROPERTY"
+            >
+        <table name="USER"/>
+        <named-query name="getUserByName">
+            <query>
+                <![CDATA[
+                SELECT u from User u where u.username=:username
+                ]]>
+            </query>
+        </named-query>
+
+        <named-query name="getAllUsers">
+            <query>
+                <![CDATA[
+                SELECT u FROM User u  ORDER BY u.id
+            ]]>
+            </query>
+        </named-query>
+
+        <attributes>
+            <basic name="username" optional="false">
+                <column name="USER_NAME"/>
+            </basic>
+            <basic name="passwordHash" optional="false">
+                <column name="PASSWORD"/>
+            </basic>
+            <basic name="doc" optional="false">
+                <column name="DATE_CREATION"/>
+                <temporal>DATE</temporal>
+            </basic>
+        </attributes>
+    </entity>
+
 
     <embeddable class="com.dj.atm.developer.model.Name" access="PROPERTY">
         <attributes>
