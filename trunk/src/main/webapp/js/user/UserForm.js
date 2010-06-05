@@ -58,73 +58,59 @@ com.dj.project.user.UserForm = Ext.extend(com.dj.project.base.AbstractForm, {
                         name : 'id'
                     },
                     {
-                        xtype : 'compositefield',
-                        anchor: '-20',
-                        msgTarget: 'side',
+                        xtype: 'textfield',
+                        flex : 1,
+                        name : 'name',
+                        hiddenName : 'name',
                         fieldLabel: 'Full Name',
-                        items : [
-                            {
-                                //the width of this field in the HBox layout is set directly
-                                //the other 2 items are given flex: 1, so will share the rest of the space
-                                width:          50,
-                                xtype:          'combo',
-                                mode:           'local',
-                                value:          'mr',
-                                triggerAction:  'all',
-                                forceSelection: true,
-                                editable:       false,
-                                fieldLabel:     'Title',
-                                name:           'title',
-                                hiddenName:     'title',
-                                displayField:   'name',
-                                valueField:     'value',
-                                store:          new Ext.data.JsonStore({
-                                    fields : ['name', 'value'],
-                                    data   : [
-                                        {name : 'Mr',   value: 'mr'},
-                                        {name : 'Mrs',  value: 'mrs'},
-                                        {name : 'Miss', value: 'miss'}
-                                    ]
-                                })
-                            },
-                            {
-                                xtype: 'textfield',
-                                flex : 1,
-                                name : 'name.firstName',
-                                hiddenName : 'First Name',
-                                fieldLabel: 'First',
-                                allowBlank: false
-                            },
-                            {
-                                xtype: 'textfield',
-                                flex : 1,
-                                name : 'name.middleName',
-                                fieldLabel: 'Middle',
-                                allowBlank: true
-                            },
-                            {
-                                xtype: 'textfield',
-                                flex : 1,
-                                name : 'name.lastName',
-                                fieldLabel: 'Last',
-                                allowBlank: false
-                            }
-                        ]
+                        allowBlank: false
+                    },
+                    {
+                        xtype: 'textfield',
+                        flex : 1,
+                        name : 'username',
+                        hiddenName : 'username',
+                        fieldLabel: 'User Name',
+                        allowBlank: false
+                    },
+                    {
+                        inputType  : 'password',
+                        flex : 1,
+                        name : 'password',
+                        fieldLabel: 'Password',
+                        allowBlank: false
+                    },
+                    {
+                        inputType  : 'password',
+                        flex : 1,
+                        name : 'repassword',
+                        fieldLabel: 'Re-enter password',
+                        allowBlank: false
+                    },
+                    {
+                        xtype     : 'datefield',
+                        name      : 'creationDate',
+                        format : 'd/m/Y',
+                        fieldLabel: 'Date'
                     }
                 ]
+
             }
         ]
+
     },
 
     onSave : function() {
         if (this.isValid()) {
             this.fireEvent('save', this, this.getValues());
         }
-    },
+    }
+    ,
     onReset : function() {
         this.fireEvent('reset', this, this.getValues());
     }
 
-});
+})
+        ;
 
 Ext.reg('userform', com.dj.project.user.UserForm);

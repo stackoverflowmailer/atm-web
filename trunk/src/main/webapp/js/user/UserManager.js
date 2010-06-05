@@ -36,9 +36,9 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
 
                 fields          : [
                     'id',
-                    {name: 'name.firstName', type: 'auto', mapping:'name.firstName'},
-                    {name: 'name.lastName',  type: 'auto', mapping:'name.lastName'},
-                    {name: 'name.middleName',  type: 'auto',mapping:'name.middleName'}
+                    {name: 'name', type: 'auto', mapping:'name'},
+                    {name: 'username',  type: 'auto', mapping:'username'},
+                    {name: 'creationDate', convert:this.convertDate}
                 ]
             })
         };
@@ -63,14 +63,14 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
         //console.log(record);
         var msg = String.format(
                 this.globalMsg.fetchingDataFor,
-                record.get('lastName'),
-                record.get('firstName')
+                record.get('username'),
+                record.get('name')
                 );
 
         Ext.getBody().mask(msg, 'x-mask-loading');
 
         this.getComponent('userForm').load({
-            url     : 'webresources/user/getUser',
+            url     : 'webresources/user/get',
             scope   : this,
             success : this.clearMask,
             failure : this.onUserFormLoadFailure,
@@ -83,8 +83,8 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
         var record = this.getComponent('userList').getSelected();
         var msg = String.format(
                 this.globalMsg.couldNotLoadData,
-                record.get('lastName'),
-                record.get('firstName')
+                record.get('username'),
+                record.get('name')
                 );
 
         Ext.MessageBox.show({
@@ -98,7 +98,7 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
     },
     onSave : function(userForm, values) {
         if (userForm.getForm().isValid()) {
-            var msg = String.format(this.globalMsg.saving, values['name.lastName'], values['name.firstName']);
+            var msg = String.format(this.globalMsg.saving, values['username'], values['name']);
 
             Ext.getBody().mask(msg, 'x-mask-loading');
             var self = this;
@@ -107,7 +107,7 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
                 params   : {
                     data : userForm.getFieldValuesAsObject()
                 },
-                url     : 'webresources/user/saveUser',
+                url     : 'webresources/user/save',
                 scope   : this,
                 success : this.onUserSaveSuccess,
                 failure : this.onUserSaveFailure
@@ -120,13 +120,13 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
         var record = this.getComponent('userList').getSelected();
         var defaultValues = userForm.getValues(false);
 
-        var firstName = defaultValues['name.firstName'];
-        var lastName = defaultValues['name.lastName'];
-        var msg = String.format(this.globalMsg.userSavedSuccess, lastName, firstName);
+        var name = defaultValues['name'];
+        var username = defaultValues['username'];
+        var msg = String.format(this.globalMsg.userSavedSuccess, username, name);
 
         if (record) {
-            record.set('lastName', lastName);
-            record.set('firstName', firstName);
+            record.set('username', username);
+            record.set('name', name);
             record.commit();
         }
         Ext.MessageBox.alert('Success', msg);
@@ -144,17 +144,17 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
         this.getComponent('userList').refreshView();
         this.getComponent('userForm').clearForm();
     },
-    onClientValidation : function(formPanel, valid){
+    onClientValidation : function(formPanel, valid) {
         //this.enableDisableButtons(!valid, 'userSaveBtn');
         //this.enableDisableSaveButton(!valid, 'userResetBtn');
     },
-    onReset : function(userForm){
+    onReset : function(userForm) {
         this.getComponent('userForm').clearForm();
         this.getComponent('userForm').reset();
     },
-    enableDisableButtons : function(e, btnId){
-      var btn = Ext.getCmp(btnId);
-      btn.setDisabled(e);
+    enableDisableButtons : function(e, btnId) {
+        var btn = Ext.getCmp(btnId);
+        btn.setDisabled(e);
     }
 
 });

@@ -1,15 +1,30 @@
 package com.dj.atm.core.model;
 
+import java.util.Date;
+
 /**
  * Represents a user in the system.
  */
-public class User {
+public class User extends Entity {
 
     private static final long serialVersionUID = 1L;
+
     private String username;
+
     private String name;
 
-    public User(String username) {
+    private String password;
+
+    private String passwordHash;
+
+    private Date creationDate;
+
+
+    public User(){
+
+    }
+
+    public User(String username){
         this.username = username;
     }
 
@@ -29,37 +44,47 @@ public class User {
         this.name = name;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
     @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
+        User user = (User) o;
 
-        final User other = (User) obj;
-
-        if ((username == null) ? (other.username != null)
-                : (!username.equals(other.username))) {
-            return false;
-        }
-
-        if ((name == null) ? (other.name != null) : (!name.equals(other.name))) {
-            return false;
-        }
+        if (!name.equals(user.name)) return false;
+        if (!username.equals(user.username)) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = (19 * hash) + ((username != null) ? username.hashCode() : 0);
-        hash = (19 * hash) + ((name != null) ? name.hashCode() : 0);
-
-        return hash;
+        int result = username.hashCode();
+        result = 31 * result + name.hashCode();
+        return result;
     }
-
 }

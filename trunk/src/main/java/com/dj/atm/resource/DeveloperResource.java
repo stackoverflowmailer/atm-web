@@ -34,6 +34,7 @@ public class DeveloperResource {
     private final DeveloperService developerService;
     
     private static final String CONTENT_DISPOSITION_MS_EXCEL = "application/vnd.ms-excel";
+    private static final String CONTENT_DISPOSITION_PDF = "application/pdf";
 
     @Inject
     public DeveloperResource(DeveloperService developerService) {
@@ -103,7 +104,7 @@ public class DeveloperResource {
         ContentDisposition cd =
                 ContentDisposition.type("inline").fileName("developer-report.pdf").build();
         byte[] bytes = new ReportGenerator().generateReport(developers);
-        return Response.ok(bytes).header("Content-Disposition", cd).type("application/pdf").build();
+        return Response.ok(bytes).header("Content-Disposition", cd).type(CONTENT_DISPOSITION_PDF).build();
 
     }
 }
