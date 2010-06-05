@@ -1,5 +1,3 @@
-Ext.ns('com.dj.project.report');
-
 com.dj.project.report.Report = Ext.extend(Ext.Component, {
     autoEl: {
         tag: 'iframe',

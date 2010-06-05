@@ -1,6 +1,3 @@
-Ext.ns("com.dj.project.developer");
-
-
 com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseManager, {
     border : false,
     layout : {
@@ -145,16 +142,14 @@ com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseM
             record.set('firstName', firstName);
             record.commit();
         }
-        else {
+        /*else {
             var resultData = action.result.data;
             this.getComponent('developerList').createAndSelectRecord(resultData);
-            
-            //this.getComponent('developerForm').setValues({});
-        }
+        }*/
         Ext.MessageBox.alert('Success', msg);
         this.clearMask();
         this.getComponent('developerList').refreshView();
-        //this.getComponent('developerForm').reset();
+        this.onReset(developerForm);
 
     },
     onDeveloperSaveFailure : function() {
@@ -189,6 +184,10 @@ com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseM
     onClientValidation : function(formPanel, valid){
         this.enableDisableButtons(!valid, 'developerSaveBtn');
         //this.enableDisableSaveButton(!valid, 'developerResetBtn');
+    },
+    onReset : function(developerForm){
+        this.getComponent('developerForm').clearForm();
+        this.getComponent('developerForm').reset();
     },
     enableDisableButtons : function(e, btnId){
       var btn = Ext.getCmp(btnId);

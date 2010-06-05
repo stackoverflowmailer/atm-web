@@ -5,7 +5,7 @@ Ext.Ajax.defaultHeaders = {
 //Ext.Ajax.on('beforerequest', this.showSpinner, this);
 
 Ext.Ajax.on('requestcomplete', function(connection, response, object) {
-    if (response.responseText == 'NOT_A_VALID_USER') {
+    if (response.status == 401) {
         Ext.getBody().unmask();
         Ext.Msg.show({
             title:'Session Expired',
@@ -21,9 +21,9 @@ Ext.Ajax.on('requestcomplete', function(connection, response, object) {
             animEl: 'logout-btn',
             icon: Ext.MessageBox.QUESTION
         });
-        window.onerror = function(msg){
+        /*window.onerror = function(msg){
             return true;
-        }
+        }*/
     }
 }, this);
 

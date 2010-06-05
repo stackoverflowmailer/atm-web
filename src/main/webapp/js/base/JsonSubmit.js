@@ -1,5 +1,3 @@
-Ext.ns('com.dj.project.base');
-
 com.dj.project.base.JsonSubmit = function(form, options) {
     Ext.form.Action.Submit.superclass.constructor.call(this, form, options);
 };

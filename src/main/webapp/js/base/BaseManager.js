@@ -15,10 +15,7 @@ com.dj.project.base.BaseManager = Ext.extend(Ext.Panel, {
     clearMask:function() {
         Ext.getBody().unmask();
     },
-    onReset : function(form) {
-        form.clearForm();
-        form.reset();
-    },
+    
 
     convertDate : function(v, record) {
         if (v) {

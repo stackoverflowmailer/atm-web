@@ -1,5 +1,3 @@
-Ext.ns('com.dj.project.base');
-
 com.dj.project.base.BaseListPanel = Ext.extend(Ext.Panel, {
     layout  : 'fit',
     initComponent : function() {

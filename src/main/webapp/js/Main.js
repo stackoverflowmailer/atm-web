@@ -1,11 +1,8 @@
-Ext.ns('com.dj.project.base.main');
-
-
 com.dj.project.base.main.Main = function () {
-    Ext.QuickTips.init();
+    //Ext.QuickTips.init();
 
     // turn on validation errors beside the field globally
-    Ext.form.Field.prototype.msgTarget = 'side';
+    //Ext.form.Field.prototype.msgTarget = 'side';
 
 
     var viewport;
@@ -87,18 +84,28 @@ com.dj.project.base.main.Main = function () {
             });
         },
         buildViewport : function() {
-            var cardPanel = new Ext.Panel({
+            cardPanel = new Ext.Panel({
                 layout     : 'card',
                 activeItem : 0,
                 border     : false,
                 items      :  {
-                    xtype   : 'developermanager'
+                    xtype   : 'developermanager',
+                    xtype   : 'usermanager'
                 },
                 tbar       : [
                     {
                         text         : 'Manage Developers',
                         iconCls      : 'icon-user_edit',
                         itemType     : 'developermanager',
+                        toggleGroup  : 'navGrp',
+                        enableToggle : true,
+                        scope        : this,
+                        handler      : this.onSwitchPanel
+                    },
+                    {
+                        text         : 'Manage Users',
+                        iconCls      : 'icon-user_edit',
+                        itemType     : 'usermanager',
                         toggleGroup  : 'navGrp',
                         enableToggle : true,
                         scope        : this,

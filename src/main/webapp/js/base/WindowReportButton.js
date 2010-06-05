@@ -1,5 +1,3 @@
-Ext.ns('com.dj.project.window.report');
-
 com.dj.project.window.report.QuickReportButton = Ext.extend(Ext.Button, {
 
     text:'Report **',
