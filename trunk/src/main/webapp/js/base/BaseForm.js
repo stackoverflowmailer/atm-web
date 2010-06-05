@@ -1,6 +1,4 @@
-Ext.ns('com.dj.project.base');
-
-com.dj.project.base.BaseForm = Ext.extend(Ext.form.FormPanel, {
+com.dj.project.base.AbstractForm = Ext.extend(Ext.form.FormPanel, {
 
     monitorValid : true,
     monitorPoll : 900,
@@ -10,7 +8,7 @@ com.dj.project.base.BaseForm = Ext.extend(Ext.form.FormPanel, {
         Ext.applyIf(config, {
             trackResetOnLoad : true
         });
-        com.dj.project.base.BaseForm.superclass.constructor.call(this, config)
+        com.dj.project.base.AbstractForm.superclass.constructor.call(this, config)
     },
 
     getValues : function() {

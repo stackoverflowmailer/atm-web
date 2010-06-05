@@ -78,7 +78,8 @@ public class AtmSecurityFilter implements Filter {
      */
     private void handleAuthenticationFailure(HttpServletRequest request, HttpServletResponse response) throws IOException {
         //response.setContentType("text/json");
-        response.getWriter().write("NOT_A_VALID_USER");
+        //response.getWriter().write("NOT_A_VALID_USER");
+        response.setStatus(401);
         //return;
     }
 

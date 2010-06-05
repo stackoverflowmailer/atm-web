@@ -1,5 +1,3 @@
-Ext.ns('com.dj.project.developer');
-
 com.dj.project.developer.DevloperGridPanel = Ext.extend(Ext.grid.GridPanel, {
     url           : 'students/listForStandard',
     viewConfig    : { forceFit : true },

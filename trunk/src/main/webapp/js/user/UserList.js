@@ -1,5 +1,5 @@
-com.dj.project.developer.DeveloperList = Ext.extend(com.dj.project.base.BaseListPanel, {
-    url           : 'webresources/developer/developers',
+com.dj.project.user.UserList = Ext.extend(com.dj.project.base.BaseListPanel, {
+    url           : 'webresources/user/users',
     autoLoadStore : true,
     buildListView : function() {
         return {
@@ -29,9 +29,7 @@ com.dj.project.developer.DeveloperList = Ext.extend(com.dj.project.base.BaseList
             fields      : [
                 'id',
                 {name: 'firstName', type: 'auto',mapping:'name.firstName'},
-                {name: 'lastName',  type: 'auto',mapping:'name.lastName'},
-                'doj',
-                'bloodGroup'
+                {name: 'lastName',  type: 'auto',mapping:'name.lastName'}
             ],
             sortInfo    :  {
                 field     :'firstName',
@@ -41,4 +39,4 @@ com.dj.project.developer.DeveloperList = Ext.extend(com.dj.project.base.BaseList
 
     }
 });
-Ext.reg('developerlist', com.dj.project.developer.DeveloperList);
+Ext.reg('userlist', com.dj.project.user.UserList);

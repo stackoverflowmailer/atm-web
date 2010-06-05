@@ -1,12 +1,10 @@
-Ext.ns("com.dj.project.developer");
-
-com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.BaseForm, {
+com.dj.project.developer.DeveloperForm = Ext.extend(com.dj.project.base.AbstractForm, {
     title : 'Developer',
 
     layout: 'column',
     autoHeight: true,
     bodyStyle : 'background-color: #DFE8F6; padding: 10px',
-    
+
     initComponent : function() {
         Ext.applyIf(this, {
             tbar : this.buildToolbar(),

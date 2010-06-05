@@ -25,6 +25,8 @@
     <!-- You can have onReady function here or in your application file. -->
     <!-- If you have it in your application file delete the whole -->
     <!-- following script tag as we must have only one onReady. -->
+
+    <script type="text/javascript" src="js/namespace/Namespace.js"></script>
     <script type="text/javascript" src="js/base/Global.js"></script>
     <script type="text/javascript" src="js/base/JsonSubmit.js"></script>
     <script type="text/javascript" src="js/base/Report.js"></script>
@@ -37,6 +39,9 @@
     <script type="text/javascript" src="js/developer/DeveloperForm.js"></script>
     <script type="text/javascript" src="js/developer/DeveloperList.js"></script>
     <script type="text/javascript" src="js/developer/DeveloperManager.js"></script>
+    <script type="text/javascript" src="js/user/UserForm.js"></script>
+    <script type="text/javascript" src="js/user/UserList.js"></script>
+    <script type="text/javascript" src="js/user/UserManager.js"></script>
     <script type="text/javascript" src="js/Main.js"></script>
 
     <script type="text/javascript">

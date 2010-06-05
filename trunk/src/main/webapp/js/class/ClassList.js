@@ -1,5 +1,3 @@
-Ext.ns('com.dj.project.team');
-
 com.dj.project.team.TeamList = Ext.extend(com.dj.project.base.BaseListPanel, {
     url : 'class/getList',
     buildListView : function() {
