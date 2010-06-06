@@ -85,7 +85,8 @@ com.dj.project.user.UserForm = Ext.extend(com.dj.project.base.AbstractForm, {
                         flex : 1,
                         name : 'repassword',
                         fieldLabel: 'Re-enter password',
-                        allowBlank: false
+                        allowBlank : false,
+                        clientOnly : true
                     },
                     {
                         xtype     : 'datefield',

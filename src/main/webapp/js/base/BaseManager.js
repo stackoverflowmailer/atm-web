@@ -2,7 +2,7 @@ com.dj.project.base.BaseManager = Ext.extend(Ext.Panel, {
     globalMsg : {
         immediateChanges : 'Warning! Changes are <span style="color: red;">immediate</span>.',
         errorsInForm     : 'There are errors in the form. Please correct and try again.',
-        developerSavedSuccess  : 'Saved {0}, {1} successfully.',
+        saveSuccessful  : 'Saved {0}, {1} successfully.',
         fetchingDataFor  : 'Fetching data for {0}, {1}',
         couldNotLoadData : 'Could not load data for {0}, {1}!',
         saving           : 'Saving {0}, {1}...',

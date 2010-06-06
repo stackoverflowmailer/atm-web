@@ -92,10 +92,10 @@
             <basic name="username" optional="false">
                 <column name="USER_NAME"/>
             </basic>
-            <basic name="passwordHash" optional="false">
+            <basic name="password" optional="false">
                 <column name="PASSWORD"/>
             </basic>
-            <basic name="doc" optional="false">
+            <basic name="creationDate" optional="false">
                 <column name="DATE_CREATION"/>
                 <temporal>DATE</temporal>
             </basic>
