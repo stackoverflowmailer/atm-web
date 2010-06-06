@@ -122,7 +122,7 @@ com.dj.project.user.UserManager = Ext.extend(com.dj.project.base.BaseManager, {
 
         var name = defaultValues['name'];
         var username = defaultValues['username'];
-        var msg = String.format(this.globalMsg.userSavedSuccess, username, name);
+        var msg = String.format(this.globalMsg.saveSuccessful, username, name);
 
         if (record) {
             record.set('username', username);

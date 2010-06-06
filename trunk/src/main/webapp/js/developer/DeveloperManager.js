@@ -135,7 +135,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseM
 
         var firstName = defaultValues['name.firstName'];
         var lastName = defaultValues['name.lastName'];
-        var msg = String.format(this.globalMsg.developerSavedSuccess, lastName, firstName);
+        var msg = String.format(this.globalMsg.saveSuccessful, lastName, firstName);
 
         if (record) {
             record.set('lastName', lastName);

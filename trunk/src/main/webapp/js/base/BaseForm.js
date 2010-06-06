@@ -22,13 +22,15 @@ com.dj.project.base.AbstractForm = Ext.extend(Ext.form.FormPanel, {
         var fi = this.getForm().items.items;
         var pl = fi.length;
         for (var i = 0; i < pl; i++) {
-            if (fi[i].xtype == "compositefield") {
-                var cfi = fi[i].items.items;
+            var mf = fi[i];
+            if (mf.xtype == "compositefield") {
+                var cfi = mf.items.items;
                 var cpl = cfi.length;
                 for (var j = 0; j < cpl; j++) {
-                    if (cfi[j].xtype !== "displayfield") {
-                        var val = cfi[j].getValue();
-                        var name = cfi[j].getName();
+                    var f =  cfi[j];
+                    if (f.xtype !== "displayfield") {
+                        var val = f.getValue();
+                        var name = f.getName();
                         if (this.isQualifiedName(name)) {
                             this.createObjectStructure(name, obj, val);
                         } else {
@@ -37,9 +39,9 @@ com.dj.project.base.AbstractForm = Ext.extend(Ext.form.FormPanel, {
                     }
                 }
             } else {
-                if (fi[i].xtype !== "displayfield") {
-                    var val = fi[i].value;
-                    var name = fi[i].name;
+                if (mf.xtype !== "displayfield" && mf.clientOnly !== true) {
+                    var val = mf.getValue();
+                    var name = mf.getName();
                     obj[name] = val;
                 }
             }

@@ -15,7 +15,7 @@ public class User extends Entity {
 
     private String password;
 
-    private String passwordHash;
+    //private String passwordHash;
 
     private Date creationDate;
 
@@ -52,13 +52,13 @@ public class User extends Entity {
         this.password = password;
     }
 
-    public String getPasswordHash() {
-        return passwordHash;
-    }
-
-    public void setPasswordHash(String passwordHash) {
-        this.passwordHash = passwordHash;
-    }
+//    public String getPasswordHash() {
+//        return passwordHash;
+//    }
+//
+//    public void setPasswordHash(String passwordHash) {
+//        this.passwordHash = passwordHash;
+//    }
 
     public Date getCreationDate() {
         return creationDate;
