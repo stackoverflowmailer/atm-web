@@ -4,15 +4,13 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project and Libraries" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="User management test case added.">
+    <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/base/BaseForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/BaseForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/base/BaseManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/BaseManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/module/UserModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service" />
     </list>
     <ignored path="atm-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -486,7 +484,7 @@
       <file leaf-file-name="UserManager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="16" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.35620052">
+            <state line="104" column="16" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.30542988">
               <folding />
             </state>
           </provider>
@@ -1577,19 +1575,19 @@
     <frame x="-4" y="-4" width="1448" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3781965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41453567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41453567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4320323" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2582734" sideWeight="0.24489796" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.58950204" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24676259" sideWeight="0.57604307" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24676259" sideWeight="0.66083443" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36204576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1613,7 +1611,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="User management test case added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now able to save the user entity to persistent data store." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1632,6 +1630,7 @@
     <MESSAGE value="Form monitering added." />
     <MESSAGE value="User management releated changed." />
     <MESSAGE value="User management test case added." />
+    <MESSAGE value="Now able to save the user entity to persistent data store." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1743,7 +1742,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="16" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.35620052">
+        <state line="104" column="16" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.30542988">
           <folding />
         </state>
       </provider>
