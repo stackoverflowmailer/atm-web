@@ -67,6 +67,45 @@
 
     </entity>
 
+    <entity class="com.dj.atm.voucher.model.Voucher" name="Voucher"
+            access="FIELD"
+            >
+        <table name="VOUCHER"/>
+        <named-query name="getVoucherByDate">
+            <query>
+                <![CDATA[
+                SELECT v from Voucher v where v.voucherDate=:vDate
+                ]]>
+            </query>
+        </named-query>
+
+        <named-query name="getAllDevelopers">
+            <query>
+                <![CDATA[
+                SELECT v FROM Voucher v  ORDER BY v.id
+            ]]>
+            </query>
+        </named-query>
+
+        <attributes>
+            <basic name="voucherNo" optional="false">
+                <column name="VOUCHER_NO"/>
+            </basic>
+            <basic name="voucherDate" optional="false">
+                <column name="VOUCHER_DATE"/>
+                <temporal>DATE</temporal>
+            </basic>
+            <basic name="issueDate" optional="false">
+                <column name="ISSUE_DATE"/>
+                <temporal>DATE</temporal>
+            </basic>
+
+            <embedded name="name"/>
+
+        </attributes>
+
+    </entity>
+
 
     <entity class="com.dj.atm.core.model.User" name="User"
             access="PROPERTY"

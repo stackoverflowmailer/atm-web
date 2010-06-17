@@ -1,8 +1,10 @@
 package com.dj.atm.developer.model;
 
+import com.dj.atm.core.converter.CustomIntegerDeserializer;
+import org.codehaus.jackson.map.annotate.JsonDeserialize;
+
 /**
- * Created by IntelliJ IDEA. User: ScriptRunner Date: Feb 25, 2010 Time:
- * 11:56:45 PM To change this template use File | Settings | File Templates.
+ * @author Script Runner
  */
 public class Phone {
     /**
@@ -17,43 +19,46 @@ public class Phone {
     }
 
     public Phone(int countryCode, int stdCode, int number) {
-	this.countryCode = countryCode;
-	this.stdCode = stdCode;
-	this.number = number;
+        this.countryCode = countryCode;
+        this.stdCode = stdCode;
+        this.number = number;
     }
 
     public int getCountryCode() {
-	return countryCode;
+        return countryCode;
     }
 
+    @JsonDeserialize(using = CustomIntegerDeserializer.class)
     public void setCountryCode(int countryCode) {
-	this.countryCode = countryCode;
+        this.countryCode = countryCode;
     }
 
     public int getStdCode() {
-	return stdCode;
+        return stdCode;
     }
 
+    @JsonDeserialize(using = CustomIntegerDeserializer.class)
     public void setStdCode(int stdCode) {
-	this.stdCode = stdCode;
+        this.stdCode = stdCode;
     }
 
     public int getNumber() {
-	return number;
+        return number;
     }
 
+    @JsonDeserialize(using = CustomIntegerDeserializer.class)
     public void setNumber(int number) {
-	this.number = number;
+        this.number = number;
     }
 
     @Override
     public String toString() {
-	final StringBuilder sb = new StringBuilder();
-	sb.append("Phone");
-	sb.append("{countryCode=").append(countryCode);
-	sb.append(", stdCode=").append(stdCode);
-	sb.append(", number=").append(number);
-	sb.append('}');
-	return sb.toString();
+        final StringBuilder sb = new StringBuilder();
+        sb.append("Phone");
+        sb.append("{countryCode=").append(countryCode);
+        sb.append(", stdCode=").append(stdCode);
+        sb.append(", number=").append(number);
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -58,12 +58,33 @@ com.dj.project.user.UserForm = Ext.extend(com.dj.project.base.AbstractForm, {
                         name : 'id'
                     },
                     {
-                        xtype: 'textfield',
-                        flex : 1,
-                        name : 'name',
-                        hiddenName : 'name',
-                        fieldLabel: 'Full Name',
-                        allowBlank: false
+                        xtype: 'compositefield',
+                        fieldLabel: 'Name',
+                        // anchor    : '-20',
+                        // anchor    : null,
+                        msgTarget: 'side',
+                        items: [
+                            {
+                                xtype: 'displayfield',
+                                value: 'First'
+                            },
+                            {
+                                flex : 1,
+                                xtype: 'textfield',
+                                name: 'name.firstName',
+                                allowBlank: false
+                            },
+                            {
+                                xtype: 'displayfield',
+                                value: 'Last'
+                            },
+                            {
+                                flex : 1,
+                                xtype: 'textfield',
+                                name: 'name.lastName',
+                                allowBlank: false
+                            }
+                        ]
                     },
                     {
                         xtype: 'textfield',

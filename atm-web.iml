@@ -34,6 +34,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.2" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.guiceyfruit:guiceyfruit-core:2.0" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.annotation:com.springsource.javax.annotation:1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.aopalliance:com.springsource.org.aopalliance:1.0.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.wideplay.warp.persist:warp-persist:2.0-20090214" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.5.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.codehaus.jackson:jackson-core-asl:1.5.0" level="project" />

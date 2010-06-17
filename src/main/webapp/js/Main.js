@@ -93,19 +93,28 @@ com.dj.project.base.main.Main = function () {
                     xtype   : 'usermanager'
                 },
                 tbar       : [
+                    /* {
+                     text         : 'Manage Developers',
+                     iconCls      : 'icon-user_edit',
+                     itemType     : 'developermanager',
+                     toggleGroup  : 'navGrp',
+                     enableToggle : true,
+                     scope        : this,
+                     handler      : this.onSwitchPanel
+                     },*/
                     {
-                        text         : 'Manage Developers',
+                        text         : 'Manage Users',
                         iconCls      : 'icon-user_edit',
-                        itemType     : 'developermanager',
+                        itemType     : 'usermanager',
                         toggleGroup  : 'navGrp',
                         enableToggle : true,
                         scope        : this,
                         handler      : this.onSwitchPanel
                     },
                     {
-                        text         : 'Manage Users',
+                        text         : 'Manage Vouchers',
                         iconCls      : 'icon-user_edit',
-                        itemType     : 'usermanager',
+                        itemType     : 'vouchermanager',
                         toggleGroup  : 'navGrp',
                         enableToggle : true,
                         scope        : this,
