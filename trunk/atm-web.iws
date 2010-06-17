@@ -4,27 +4,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project and Libraries" />
   </component>
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iml" afterPath="$PROJECT_DIR$/atm-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/QueryParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/QueryParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/Main.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.ipr" afterPath="$PROJECT_DIR$/atm-web.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Phone.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Phone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherGridPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/converter/CustomIntegerDeserializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" />
+    <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="Voucher screen - basic screen design over">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Name.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Name.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherList.js" />
     </list>
     <list id="416cf8ec-cf75-40ed-a75f-bda20f9e0b41" name="Failed commit: Default" comment="Voucher screen - basic screen design over" />
     <ignored path="atm-web.iws" />
@@ -91,8 +72,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -176,10 +157,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="108" column="22" selection-start="3595" selection-end="3595" vertical-scroll-proportion="0.03211009">
+                <state line="144" column="47" selection-start="5049" selection-end="5049" vertical-scroll-proportion="-1.9472423">
                   <folding />
                 </state>
               </provider>
@@ -207,66 +188,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default" pinned="false" current="true" current-in-tab="true">
-            <entry file="uml://$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default">
-              <provider selected="true" editor-type-id="UmlClassDiagramEditorProvider">
-                <state>
-                  <classes>
-                    <class fqn="com.dj.atm.developer.service.DeveloperService" x="349.0" y="218.5" />
-                    <class fqn="com.dj.atm.developer.model.Phone" x="108.5" y="498.0" />
-                    <class fqn="com.dj.atm.core.model.QueryParameter" x="208.29999999999998" y="11.0" />
-                    <class fqn="com.dj.atm.developer.model.Name" x="458.5" y="0.0" />
-                    <class fqn="com.dj.atm.core.model.User" x="537.25" y="151.5" />
-                    <class fqn="com.dj.atm.voucher.service.impl.VoucherServiceImpl" x="0.0" y="130.0" />
-                    <class fqn="com.dj.atm.core.converter.CustomIntegerDeserializer" x="0.0" y="378.0" />
-                  </classes>
-                  <packages />
-                  <edges>
-                    <edge source="com.dj.atm.core.model.User" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
-                      <point x="47.5" y="-80.0" />
-                      <point x="679.75" y="110.0" />
-                      <point x="635.25" y="110.0" />
-                      <point x="75.75" y="35.0" />
-                    </edge>
-                    <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
-                      <point x="-36.5" y="-13.0" />
-                      <point x="385.5" y="110.0" />
-                      <point x="314.04999999999995" y="110.0" />
-                      <point x="35.25" y="24.0" />
-                    </edge>
-                    <edge source="com.dj.atm.developer.model.Name" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
-                      <point x="-75.75" y="35.0" />
-                      <point x="483.75" y="90.0" />
-                      <point x="438.5" y="90.0" />
-                      <point x="438.5" y="35.0" />
-                      <point x="-101.0" y="-0.0" />
-                    </edge>
-                    <edge source="com.dj.atm.developer.model.Phone" target="com.dj.atm.core.converter.CustomIntegerDeserializer" relationship="DEPENDENCY">
-                      <point x="0.0" y="-101.5" />
-                      <point x="0.0" y="35.0" />
-                    </edge>
-                    <edge source="com.dj.atm.core.model.User" target="com.dj.atm.core.model.User" relationship="DEPENDENCY">
-                      <point x="0.0" y="80.0" />
-                      <point x="632.25" y="331.5" />
-                      <point x="517.25" y="331.5" />
-                      <point x="517.25" y="231.5" />
-                      <point x="-95.0" y="-0.0" />
-                    </edge>
-                    <edge source="com.dj.atm.voucher.service.impl.VoucherServiceImpl" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
-                      <point x="0.0" y="-101.5" />
-                      <point x="164.5" y="110.0" />
-                      <point x="243.54999999999998" y="110.0" />
-                      <point x="-35.25" y="24.0" />
-                    </edge>
-                    <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
-                      <point x="36.5" y="-13.0" />
-                      <point x="458.5" y="110.0" />
-                      <point x="534.25" y="110.0" />
-                      <point x="-25.25" y="35.0" />
-                    </edge>
-                  </edges>
-                  <settings isCamel="false" isColorManagerEnabled="true" isFieldsVisible="true" isConstructorsVisible="true" isMethodsVisible="true" isShowDependencies="true" isShowInnerClasses="true" isVcsFilterEnabled="true" defaultVisibility="all" layout="Hierarchic Group" isPropertiesVisible="false" zoom="0.7461858529819695" x="364.0" y="289.5232342007435" />
-                  <SelectedNodes />
+          <file leaf-file-name="VoucherDaoImpl.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/dao/impl/VoucherDaoImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.25688073">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -366,7 +292,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -491,25 +416,56 @@
               <option name="myItemId" value="atm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="147" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="111" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="34" />
-    <property name="OverrideImplement.combined" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="136" />
-    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="111" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="111" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="123" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
@@ -529,11 +485,11 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -599,24 +555,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" break_at_first_line="false" browser="DEFAULT" class_file="" class="" config_file="" directory="" file="" is_config_by_xml="false" is_groups_set="false" method_class="" method_file="" method="" open_page_automatically="false" scope="Class" stop_session_after_first_page="true" web_path="">
-      <option name="excludedGroups">
-        <set />
-      </option>
-      <option name="includedGroups">
-        <set />
-      </option>
-      <option name="mappings">
-        <list />
-      </option>
-      <option name="sessionId" value="" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -665,6 +603,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" break_at_first_line="false" browser="DEFAULT" class_file="" class="" config_file="" directory="" file="" is_config_by_xml="false" is_groups_set="false" method_class="" method_file="" method="" open_page_automatically="false" scope="Class" stop_session_after_first_page="true" web_path="">
+      <option name="excludedGroups">
+        <set />
+      </option>
+      <option name="includedGroups">
+        <set />
+      </option>
+      <option name="mappings">
+        <list />
+      </option>
+      <option name="sessionId" value="" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -688,7 +644,7 @@
       </server-settings>
       <predefined_log_file id="Glassfish" enabled="true" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50954" />
+        <option name="DEBUG_PORT" value="49159" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -928,7 +884,7 @@
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
     <option name="UPDATE_RUN_STATUS" value="false" />
-    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DRY_RUN" value="true" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
@@ -1002,7 +958,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2582734" sideWeight="0.24489796" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.58950204" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16993865" sideWeight="0.5605381" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32944787" sideWeight="0.5605381" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35986546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="106" y="187" width="1248" height="676" />
@@ -1059,6 +1015,17 @@
         <state line="16" column="53" selection-start="671" selection-end="678" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="uml://$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default">
+      <provider selected="true" editor-type-id="UmlClassDiagramEditorProvider">
+        <state>
+          <classes />
+          <packages />
+          <edges />
+          <settings isCamel="false" isColorManagerEnabled="true" isFieldsVisible="true" isConstructorsVisible="true" isMethodsVisible="true" isShowDependencies="false" isShowInnerClasses="true" isVcsFilterEnabled="true" defaultVisibility="all" layout="Hierarchic Group" isPropertiesVisible="false" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/orm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="45" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.0" />
@@ -1094,16 +1061,16 @@
         <state line="108" column="30" selection-start="3315" selection-end="3315" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="22" selection-start="3595" selection-end="3595" vertical-scroll-proportion="0.03211009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="150" column="31" selection-start="5247" selection-end="5530" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="264" column="0" selection-start="8894" selection-end="8955" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js">
@@ -1116,72 +1083,17 @@
         <state line="0" column="0" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/dao/impl/VoucherDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="41" selection-start="7596" selection-end="7596" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.25688073">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default">
-      <provider selected="true" editor-type-id="UmlClassDiagramEditorProvider">
-        <state>
-          <classes>
-            <class fqn="com.dj.atm.developer.service.DeveloperService" x="349.0" y="218.5" />
-            <class fqn="com.dj.atm.developer.model.Phone" x="108.5" y="498.0" />
-            <class fqn="com.dj.atm.core.model.QueryParameter" x="208.29999999999998" y="11.0" />
-            <class fqn="com.dj.atm.developer.model.Name" x="458.5" y="0.0" />
-            <class fqn="com.dj.atm.core.model.User" x="537.25" y="151.5" />
-            <class fqn="com.dj.atm.voucher.service.impl.VoucherServiceImpl" x="0.0" y="130.0" />
-            <class fqn="com.dj.atm.core.converter.CustomIntegerDeserializer" x="0.0" y="378.0" />
-          </classes>
-          <packages />
-          <edges>
-            <edge source="com.dj.atm.core.model.User" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
-              <point x="47.5" y="-80.0" />
-              <point x="679.75" y="110.0" />
-              <point x="635.25" y="110.0" />
-              <point x="75.75" y="35.0" />
-            </edge>
-            <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
-              <point x="-36.5" y="-13.0" />
-              <point x="385.5" y="110.0" />
-              <point x="314.04999999999995" y="110.0" />
-              <point x="35.25" y="24.0" />
-            </edge>
-            <edge source="com.dj.atm.developer.model.Name" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
-              <point x="-75.75" y="35.0" />
-              <point x="483.75" y="90.0" />
-              <point x="438.5" y="90.0" />
-              <point x="438.5" y="35.0" />
-              <point x="-101.0" y="-0.0" />
-            </edge>
-            <edge source="com.dj.atm.developer.model.Phone" target="com.dj.atm.core.converter.CustomIntegerDeserializer" relationship="DEPENDENCY">
-              <point x="0.0" y="-101.5" />
-              <point x="0.0" y="35.0" />
-            </edge>
-            <edge source="com.dj.atm.core.model.User" target="com.dj.atm.core.model.User" relationship="DEPENDENCY">
-              <point x="0.0" y="80.0" />
-              <point x="632.25" y="331.5" />
-              <point x="517.25" y="331.5" />
-              <point x="517.25" y="231.5" />
-              <point x="-95.0" y="-0.0" />
-            </edge>
-            <edge source="com.dj.atm.voucher.service.impl.VoucherServiceImpl" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
-              <point x="0.0" y="-101.5" />
-              <point x="164.5" y="110.0" />
-              <point x="243.54999999999998" y="110.0" />
-              <point x="-35.25" y="24.0" />
-            </edge>
-            <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
-              <point x="36.5" y="-13.0" />
-              <point x="458.5" y="110.0" />
-              <point x="534.25" y="110.0" />
-              <point x="-25.25" y="35.0" />
-            </edge>
-          </edges>
-          <settings isCamel="false" isColorManagerEnabled="true" isFieldsVisible="true" isConstructorsVisible="true" isMethodsVisible="true" isShowDependencies="true" isShowInnerClasses="true" isVcsFilterEnabled="true" defaultVisibility="all" layout="Hierarchic Group" isPropertiesVisible="false" zoom="0.7461858529819695" x="364.0" y="289.5232342007435" />
-          <SelectedNodes />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="47" selection-start="5049" selection-end="5049" vertical-scroll-proportion="-1.9472423">
+          <folding />
         </state>
       </provider>
     </entry>
