@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AntConfiguration">
-    <defaultAnt bundledAnt="true" />
-  </component>
   <component name="ArtifactManager">
     <artifact type="war" name="atm-web:war">
       <output-path>$PROJECT_DIR$/target</output-path>
@@ -312,7 +309,7 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
   <component name="RunManager">
@@ -325,6 +322,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -342,12 +340,14 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -362,12 +362,14 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -387,6 +389,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
@@ -438,7 +441,7 @@
     </option>
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+  <component name="SvnConfiguration">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
@@ -447,30 +450,17 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="DETECT_NESTED_COPIES" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <configuration useDefault="true">C:\Users\jacob\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="svn" />
+    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="svn" />
   </component>
   <component name="libraryTable">
-    <library name="Maven: com.lowagie:itext:2.1.7">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/core" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/rups" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/rtf" />
-        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/toolbox" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.wideplay.warp.persist:warp-persist:2.0-20090214">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/wideplay/warp/persist/warp-persist/2.0-20090214/warp-persist-2.0-20090214.jar!/" />
@@ -1041,6 +1031,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.lowagie:itext:2.1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/lowagie/itext/2.1.7/itext-2.1.7-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: bouncycastle:bcmail-jdk14:138">
