@@ -3,15 +3,30 @@
   <component name="AnalysisUIOptions">
     <option name="CUSTOM_SCOPE_NAME" value="Project and Libraries" />
   </component>
-  <component name="ChangeListManager">
+  <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iml" afterPath="$PROJECT_DIR$/atm-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/QueryParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/QueryParameter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/Main.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.ipr" afterPath="$PROJECT_DIR$/atm-web.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Phone.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Phone.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherGridPanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/converter/CustomIntegerDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/module/UserModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Name.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/model/Name.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherList.js" />
     </list>
+    <list id="416cf8ec-cf75-40ed-a75f-bda20f9e0b41" name="Failed commit: Default" comment="Voucher screen - basic screen design over" />
     <ignored path="atm-web.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,359 +44,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontReader.java" line="179" class="org.apache.fop.fonts.FontReader" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontReader.java" line="180" class="org.apache.fop.fonts.FontReader" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontReader.java" line="227" class="org.apache.fop.fonts.FontReader" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/truetype/TTFFile.java" line="321" class="org.apache.fop.fonts.truetype.TTFFile" package="org.apache.fop.fonts.truetype">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/apps/TTFReader.java" line="208" class="org.apache.fop.fonts.apps.TTFReader" package="org.apache.fop.fonts.apps">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/apps/TTFReader.java" line="252" class="org.apache.fop.fonts.apps.TTFReader" package="org.apache.fop.fonts.apps">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/apps/TTFReader.java" line="250" class="org.apache.fop.fonts.apps.TTFReader" package="org.apache.fop.fonts.apps">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/truetype/TTFFile.java" line="235" class="org.apache.fop.fonts.truetype.TTFFile" package="org.apache.fop.fonts.truetype">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontSetup.java" line="188" class="org.apache.fop.fonts.FontSetup" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontSetup.java" line="213" class="org.apache.fop.fonts.FontSetup" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontSetup.java" line="224" class="org.apache.fop.fonts.FontSetup" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/FontInfo.java" line="285" class="org.apache.fop.fonts.FontInfo" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/Font.java" line="200" class="org.apache.fop.fonts.Font" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/Font.java" line="204" class="org.apache.fop.fonts.Font" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/render/java2d/CustomFontMetricsMapper.java" line="125" class="org.apache.fop.render.java2d.CustomFontMetricsMapper" package="org.apache.fop.render.java2d">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/fonts/Font.java" line="196" class="org.apache.fop.fonts.Font" package="org.apache.fop.fonts">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://C:/Documents and Settings/ScriptRunner/My Documents/Downloads/fop-0.95-src.zip!/fop-0.95/src/java/org/apache/fop/render/pdf/PDFRenderer.java" line="1583" class="org.apache.fop.render.pdf.PDFRenderer" package="org.apache.fop.render.pdf">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-guice/1.1.5.1/jersey-guice-1.1.5.1-sources.jar!/com/sun/jersey/guice/spi/container/GuiceComponentProviderFactory.java" line="283" class="com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.GuiceManagedComponentProvider" package="com.sun.jersey.guice.spi.container">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-test-framework/1.1.5.1/jersey-test-framework-1.1.5.1-sources.jar!/com/sun/jersey/test/framework/JerseyTest.java" line="243" class="com.sun.jersey.test.framework.JerseyTest" package="com.sun.jersey.test.framework">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="50" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="51" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="53" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="56" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="58" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="61" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" line="59" class="com.dj.atm.resource.UserResourceTest" package="com.dj.atm.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-test-framework/1.1.5.1/jersey-test-framework-1.1.5.1-sources.jar!/com/sun/jersey/test/framework/spi/container/grizzly/web/GrizzlyWebTestContainerFactory.java" line="148" class="com.sun.jersey.test.framework.spi.container.grizzly.web.GrizzlyWebTestContainerFactory.GrizzlyWebTestContainer" package="com.sun.jersey.test.framework.spi.container.grizzly.web">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -429,8 +91,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -439,103 +101,197 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GrizzlyTestContainerFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-test-framework/1.1.5.1/jersey-test-framework-1.1.5.1-sources.jar!/com/sun/jersey/test/framework/spi/container/grizzly/GrizzlyTestContainerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orm.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/orm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="28" selection-start="3259" selection-end="3259" vertical-scroll-proportion="-7.64">
-              <folding>
-                <element signature="tag#mapped-superclass#0;tag#entity-mappings#0" expanded="false" />
-                <element signature="tag#entity#0;tag#entity-mappings#0" expanded="false" />
-                <element signature="tag#embeddable#0;tag#entity-mappings#0" expanded="false" />
-                <element signature="tag#embeddable#1;tag#entity-mappings#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserForm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="35" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseForm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/BaseForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="41" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserManager.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="16" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.30542988">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/BaseManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="8" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeveloperManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="61" selection-start="5303" selection-end="5332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="26" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="orm.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/orm.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="73" column="45" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VoucherForm.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="264" column="0" selection-start="8894" selection-end="8955" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VoucherGridPanel.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherGridPanel.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VoucherList.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Namespace.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="30" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="62" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="0" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VoucherManager.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="108" column="30" selection-start="3315" selection-end="3315" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="108" column="22" selection-start="3595" selection-end="3595" vertical-scroll-proportion="0.03211009">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DeveloperForm.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperForm.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="150" column="31" selection-start="5247" selection-end="5530" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="VoucherForm.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="209" column="41" selection-start="7596" selection-end="7596" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default" pinned="false" current="true" current-in-tab="true">
+            <entry file="uml://$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default">
+              <provider selected="true" editor-type-id="UmlClassDiagramEditorProvider">
+                <state>
+                  <classes>
+                    <class fqn="com.dj.atm.developer.service.DeveloperService" x="349.0" y="218.5" />
+                    <class fqn="com.dj.atm.developer.model.Phone" x="108.5" y="498.0" />
+                    <class fqn="com.dj.atm.core.model.QueryParameter" x="208.29999999999998" y="11.0" />
+                    <class fqn="com.dj.atm.developer.model.Name" x="458.5" y="0.0" />
+                    <class fqn="com.dj.atm.core.model.User" x="537.25" y="151.5" />
+                    <class fqn="com.dj.atm.voucher.service.impl.VoucherServiceImpl" x="0.0" y="130.0" />
+                    <class fqn="com.dj.atm.core.converter.CustomIntegerDeserializer" x="0.0" y="378.0" />
+                  </classes>
+                  <packages />
+                  <edges>
+                    <edge source="com.dj.atm.core.model.User" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
+                      <point x="47.5" y="-80.0" />
+                      <point x="679.75" y="110.0" />
+                      <point x="635.25" y="110.0" />
+                      <point x="75.75" y="35.0" />
+                    </edge>
+                    <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
+                      <point x="-36.5" y="-13.0" />
+                      <point x="385.5" y="110.0" />
+                      <point x="314.04999999999995" y="110.0" />
+                      <point x="35.25" y="24.0" />
+                    </edge>
+                    <edge source="com.dj.atm.developer.model.Name" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
+                      <point x="-75.75" y="35.0" />
+                      <point x="483.75" y="90.0" />
+                      <point x="438.5" y="90.0" />
+                      <point x="438.5" y="35.0" />
+                      <point x="-101.0" y="-0.0" />
+                    </edge>
+                    <edge source="com.dj.atm.developer.model.Phone" target="com.dj.atm.core.converter.CustomIntegerDeserializer" relationship="DEPENDENCY">
+                      <point x="0.0" y="-101.5" />
+                      <point x="0.0" y="35.0" />
+                    </edge>
+                    <edge source="com.dj.atm.core.model.User" target="com.dj.atm.core.model.User" relationship="DEPENDENCY">
+                      <point x="0.0" y="80.0" />
+                      <point x="632.25" y="331.5" />
+                      <point x="517.25" y="331.5" />
+                      <point x="517.25" y="231.5" />
+                      <point x="-95.0" y="-0.0" />
+                    </edge>
+                    <edge source="com.dj.atm.voucher.service.impl.VoucherServiceImpl" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
+                      <point x="0.0" y="-101.5" />
+                      <point x="164.5" y="110.0" />
+                      <point x="243.54999999999998" y="110.0" />
+                      <point x="-35.25" y="24.0" />
+                    </edge>
+                    <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
+                      <point x="36.5" y="-13.0" />
+                      <point x="458.5" y="110.0" />
+                      <point x="534.25" y="110.0" />
+                      <point x="-25.25" y="35.0" />
+                    </edge>
+                  </edges>
+                  <settings isCamel="false" isColorManagerEnabled="true" isFieldsVisible="true" isConstructorsVisible="true" isMethodsVisible="true" isShowDependencies="true" isShowInnerClasses="true" isVcsFilterEnabled="true" defaultVisibility="all" layout="Hierarchic Group" isPropertiesVisible="false" zoom="0.7461858529819695" x="364.0" y="289.5232342007435" />
+                  <SelectedNodes />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ButtonPanel.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="36" column="2" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseForm.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/BaseForm.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -545,22 +301,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/user/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/user/module/UserModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/impl/DeveloperServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dj/atm/resource/LoginResourceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/UserResource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dj/atm/resource/UserResourceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/VoucherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/developer/service/DeveloperService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/dao/DeveloperDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/dao/VoucherDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/dao/impl/VoucherDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/impl/VoucherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/VoucherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/module/VoucherModule.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/base/BaseForm.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/Voucher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherList.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/Main.js" />
       </list>
     </option>
   </component>
@@ -570,16 +326,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
@@ -619,6 +365,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -626,10 +375,6 @@
               <option name="myItemId" value="atm-web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -652,18 +397,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -732,126 +465,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="developer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -876,260 +489,27 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="147" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="111" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="34" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="136" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="34" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="136" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="111" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="123" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
@@ -1138,25 +518,30 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="110" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="934" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.dj.atm.resource" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dj.atm.voucher.dao.impl" />
+      <recent name="com.dj.atm.voucher.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\atm-web\src\main\java\com\dj\atm\core\report" />
@@ -1169,11 +554,11 @@
       <recent name="com.dj.atm.core.security.AtmSecurityFilter" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dj.atm.voucher.service.impl" />
       <recent name="com.dj.atm.core.service.impl" />
       <recent name="com.dj.atm.core.service.pl" />
       <recent name="com.dj.atm.user.dao.impl" />
       <recent name="com.dj.atm.user.dao" />
-      <recent name="com.dj.atm.user.service.impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\atm-web\src\main\resources" />
@@ -1187,6 +572,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="snapshooter" />
       <module name="atm-web" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1212,6 +598,24 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" break_at_first_line="false" browser="DEFAULT" class_file="" class="" config_file="" directory="" file="" is_config_by_xml="false" is_groups_set="false" method_class="" method_file="" method="" open_page_automatically="false" scope="Class" stop_session_after_first_page="true" web_path="">
+      <option name="excludedGroups">
+        <set />
+      </option>
+      <option name="includedGroups">
+        <set />
+      </option>
+      <option name="mappings">
+        <list />
+      </option>
+      <option name="sessionId" value="" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -1256,6 +660,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
@@ -1269,6 +674,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1282,7 +688,7 @@
       </server-settings>
       <predefined_log_file id="Glassfish" enabled="true" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="1275" />
+        <option name="DEBUG_PORT" value="50954" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -1320,6 +726,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
@@ -1345,12 +752,14 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1370,7 +779,6 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
       <envs />
       <properties />
@@ -1378,6 +786,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
@@ -1396,12 +805,14 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -1416,12 +827,14 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1441,6 +854,7 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
@@ -1500,8 +914,8 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Maven.ATM-WEB" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserResourceTest.testGetUsers" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserResourceTest.testGetUsers" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.ATM-WEB" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1509,7 +923,7 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+  <component name="SvnConfiguration">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
@@ -1521,7 +935,7 @@
     <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">C:\Documents and Settings\ScriptRunner\Application Data\Subversion</configuration>
+    <configuration useDefault="true">C:\Users\jacob\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
@@ -1529,16 +943,16 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\atm-web" />
-          <option name="myCopyRoot" value="D:\atm-web" />
+          <option name="myVcsRoot" value="C:\development\atm-web" />
+          <option name="myCopyRoot" value="C:\development\atm-web" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\atm-web" />
-          <option name="myCopyRoot" value="D:\atm-web" />
+          <option name="myVcsRoot" value="C:\development\atm-web" />
+          <option name="myCopyRoot" value="C:\development\atm-web" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -1546,6 +960,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="" />
+      <changelist id="416cf8ec-cf75-40ed-a75f-bda20f9e0b41" name="Failed commit: Default" comment="Voucher screen - basic screen design over" />
       <created>1272211013937</created>
       <updated>1272211013937</updated>
     </task>
@@ -1572,28 +987,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1030" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3781965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41453567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41367713" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4320323" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43161434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2582734" sideWeight="0.24489796" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.58950204" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24676259" sideWeight="0.66083443" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36204576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="106" y="187" width="1248" height="676" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16993865" sideWeight="0.5605381" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35986546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="106" y="187" width="1248" height="676" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3778027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.6769852" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1608,14 +1023,12 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now able to save the user entity to persistent data store." />
+    <option name="LAST_COMMIT_MESSAGE" value="Voucher screen - basic screen design over" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
@@ -1631,6 +1044,7 @@
     <MESSAGE value="User management releated changed." />
     <MESSAGE value="User management test case added." />
     <MESSAGE value="Now able to save the user entity to persistent data store." />
+    <MESSAGE value="Voucher screen - basic screen design over" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1640,110 +1054,134 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.5/junit-4.5-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/developer/module/DeveloperModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.5/junit-4.5-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/util/WrappedResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-client/1.1.5.1/jersey-client-1.1.5.1-sources.jar!/com/sun/jersey/api/client/WebResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="28" selection-start="14091" selection-end="14091" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-test-framework/1.1.5.1/jersey-test-framework-1.1.5.1-sources.jar!/com/sun/jersey/test/framework/JerseyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="0" selection-start="10968" selection-end="10968" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-test-framework/1.1.5.1/jersey-test-framework-1.1.5.1-sources.jar!/com/sun/jersey/test/framework/spi/container/grizzly/web/GrizzlyWebTestContainerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="36" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-test-framework/1.1.5.1/jersey-test-framework-1.1.5.1-sources.jar!/com/sun/jersey/test/framework/spi/container/grizzly/GrizzlyTestContainerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="26" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="53" selection-start="671" selection-end="678" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/orm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="28" selection-start="3259" selection-end="3259" vertical-scroll-proportion="-7.64">
-          <folding>
-            <element signature="tag#mapped-superclass#0;tag#entity-mappings#0" expanded="false" />
-            <element signature="tag#entity#0;tag#entity-mappings#0" expanded="false" />
-            <element signature="tag#embeddable#0;tag#entity-mappings#0" expanded="false" />
-            <element signature="tag#embeddable#1;tag#entity-mappings#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="73" column="45" selection-start="2641" selection-end="2641" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherGridPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="62" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="30" selection-start="3315" selection-end="3315" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="22" selection-start="3595" selection-end="3595" vertical-scroll-proportion="0.03211009">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/UserForm.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="35" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="150" column="31" selection-start="5247" selection-end="5530" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="2" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/BaseForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="41" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="41" selection-start="7596" selection-end="7596" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="61" selection-start="5303" selection-end="5332" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/BaseManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user/UserManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="16" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.30542988">
-          <folding />
+    <entry file="uml://$SHOW_CHANGES$/f5d7e200-435b-4ec2-9b9b-3705daef20fd/Default">
+      <provider selected="true" editor-type-id="UmlClassDiagramEditorProvider">
+        <state>
+          <classes>
+            <class fqn="com.dj.atm.developer.service.DeveloperService" x="349.0" y="218.5" />
+            <class fqn="com.dj.atm.developer.model.Phone" x="108.5" y="498.0" />
+            <class fqn="com.dj.atm.core.model.QueryParameter" x="208.29999999999998" y="11.0" />
+            <class fqn="com.dj.atm.developer.model.Name" x="458.5" y="0.0" />
+            <class fqn="com.dj.atm.core.model.User" x="537.25" y="151.5" />
+            <class fqn="com.dj.atm.voucher.service.impl.VoucherServiceImpl" x="0.0" y="130.0" />
+            <class fqn="com.dj.atm.core.converter.CustomIntegerDeserializer" x="0.0" y="378.0" />
+          </classes>
+          <packages />
+          <edges>
+            <edge source="com.dj.atm.core.model.User" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
+              <point x="47.5" y="-80.0" />
+              <point x="679.75" y="110.0" />
+              <point x="635.25" y="110.0" />
+              <point x="75.75" y="35.0" />
+            </edge>
+            <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
+              <point x="-36.5" y="-13.0" />
+              <point x="385.5" y="110.0" />
+              <point x="314.04999999999995" y="110.0" />
+              <point x="35.25" y="24.0" />
+            </edge>
+            <edge source="com.dj.atm.developer.model.Name" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
+              <point x="-75.75" y="35.0" />
+              <point x="483.75" y="90.0" />
+              <point x="438.5" y="90.0" />
+              <point x="438.5" y="35.0" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="com.dj.atm.developer.model.Phone" target="com.dj.atm.core.converter.CustomIntegerDeserializer" relationship="DEPENDENCY">
+              <point x="0.0" y="-101.5" />
+              <point x="0.0" y="35.0" />
+            </edge>
+            <edge source="com.dj.atm.core.model.User" target="com.dj.atm.core.model.User" relationship="DEPENDENCY">
+              <point x="0.0" y="80.0" />
+              <point x="632.25" y="331.5" />
+              <point x="517.25" y="331.5" />
+              <point x="517.25" y="231.5" />
+              <point x="-95.0" y="-0.0" />
+            </edge>
+            <edge source="com.dj.atm.voucher.service.impl.VoucherServiceImpl" target="com.dj.atm.core.model.QueryParameter" relationship="DEPENDENCY">
+              <point x="0.0" y="-101.5" />
+              <point x="164.5" y="110.0" />
+              <point x="243.54999999999998" y="110.0" />
+              <point x="-35.25" y="24.0" />
+            </edge>
+            <edge source="com.dj.atm.developer.service.DeveloperService" target="com.dj.atm.developer.model.Name" relationship="DEPENDENCY">
+              <point x="36.5" y="-13.0" />
+              <point x="458.5" y="110.0" />
+              <point x="534.25" y="110.0" />
+              <point x="-25.25" y="35.0" />
+            </edge>
+          </edges>
+          <settings isCamel="false" isColorManagerEnabled="true" isFieldsVisible="true" isConstructorsVisible="true" isMethodsVisible="true" isShowDependencies="true" isShowInnerClasses="true" isVcsFilterEnabled="true" defaultVisibility="all" layout="Hierarchic Group" isPropertiesVisible="false" zoom="0.7461858529819695" x="364.0" y="289.5232342007435" />
+          <SelectedNodes />
         </state>
       </provider>
     </entry>

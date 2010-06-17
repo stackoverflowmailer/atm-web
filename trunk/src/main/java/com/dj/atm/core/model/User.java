@@ -1,5 +1,7 @@
 package com.dj.atm.core.model;
 
+import com.dj.atm.developer.model.Name;
+
 import java.util.Date;
 
 /**
@@ -11,7 +13,7 @@ public class User extends Entity {
 
     private String username;
 
-    private String name;
+    private Name name;
 
     private String password;
 
@@ -20,11 +22,11 @@ public class User extends Entity {
     private Date creationDate;
 
 
-    public User(){
+    public User() {
 
     }
 
-    public User(String username){
+    public User(String username) {
         this.username = username;
     }
 
@@ -36,11 +38,11 @@ public class User extends Entity {
         this.username = username;
     }
 
-    public String getName() {
+    public Name getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(Name name) {
         this.name = name;
     }
 

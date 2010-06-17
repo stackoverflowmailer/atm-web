@@ -9,7 +9,7 @@ package com.dj.atm.core.model;
  */
 public class QueryParameter {
 
-    private int limit = 100;
+    private int limit = 99;
     private int offset = 0;
 
     public QueryParameter() {

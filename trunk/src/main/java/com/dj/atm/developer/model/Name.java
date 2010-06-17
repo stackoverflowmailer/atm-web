@@ -1,8 +1,7 @@
 package com.dj.atm.developer.model;
 
 /**
- * Created by IntelliJ IDEA. User: ScriptRunner Date: Feb 25, 2010 Time:
- * 11:55:14 PM To change this template use File | Settings | File Templates.
+ * @author Script Runner
  */
 public class Name {
     private String firstName;
@@ -41,6 +40,26 @@ public class Name {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Name name = (Name) o;
+
+        if (!firstName.equals(name.firstName)) return false;
+        if (!lastName.equals(name.lastName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstName.hashCode();
+        result = 31 * result + lastName.hashCode();
+        return result;
     }
 
     @Override

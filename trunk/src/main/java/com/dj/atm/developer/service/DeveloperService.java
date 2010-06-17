@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Service class for managing Developers
  *
- * @author Deepak Jacob
+ * @author Script Runner
  */
 public interface DeveloperService {
 

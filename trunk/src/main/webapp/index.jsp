@@ -27,6 +27,7 @@
     <!-- following script tag as we must have only one onReady. -->
 
     <script type="text/javascript" src="js/namespace/Namespace.js"></script>
+    <script type="text/javascript" src="js/base/ButtonPanel.js"></script>
     <script type="text/javascript" src="js/base/Global.js"></script>
     <script type="text/javascript" src="js/base/JsonSubmit.js"></script>
     <script type="text/javascript" src="js/base/Report.js"></script>
@@ -42,6 +43,12 @@
     <script type="text/javascript" src="js/user/UserForm.js"></script>
     <script type="text/javascript" src="js/user/UserList.js"></script>
     <script type="text/javascript" src="js/user/UserManager.js"></script>
+
+    <script type="text/javascript" src="js/voucher/VoucherGridPanel.js"></script>
+    <script type="text/javascript" src="js/voucher/VoucherForm.js"></script>
+    <script type="text/javascript" src="js/voucher/VoucherList.js"></script>
+    <script type="text/javascript" src="js/voucher/VoucherManager.js"></script>
+
     <script type="text/javascript" src="js/Main.js"></script>
 
     <script type="text/javascript">
