@@ -28,6 +28,8 @@
 
     <script type="text/javascript" src="js/namespace/Namespace.js"></script>
     <script type="text/javascript" src="js/base/ButtonPanel.js"></script>
+    <script type="text/javascript" src="js/base/ShortcutHolder.js"></script>
+
     <script type="text/javascript" src="js/base/Global.js"></script>
     <script type="text/javascript" src="js/base/JsonSubmit.js"></script>
     <script type="text/javascript" src="js/base/Report.js"></script>

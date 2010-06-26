@@ -14,8 +14,10 @@ public class Voucher extends Entity {
     private static final long serialVersionUID = 1L;
     private Long voucherNo;
     private Date voucherDate;
-    private Date issueDate;
-    private Name issueTo;
+    /*private Date issueDate;*/
+    private Name name;
+
+
     private BigDecimal voucherAmt;
     private String job;
     private String remarks;
@@ -36,21 +38,14 @@ public class Voucher extends Entity {
         this.voucherDate = voucherDate;
     }
 
-    public Date getIssueDate() {
+   /* public Date getIssueDate() {
         return issueDate;
     }
 
     public void setIssueDate(Date issueDate) {
         this.issueDate = issueDate;
-    }
+    }*/
 
-    public Name getIssueTo() {
-        return issueTo;
-    }
-
-    public void setIssueTo(Name issueTo) {
-        this.issueTo = issueTo;
-    }
 
     public BigDecimal getVoucherAmt() {
         return voucherAmt;
@@ -76,14 +71,22 @@ public class Voucher extends Entity {
         this.remarks = remarks;
     }
 
+    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         sb.append("Voucher");
         sb.append("{voucherNo=").append(voucherNo);
         sb.append(", voucherDate=").append(voucherDate);
-        sb.append(", issueDate=").append(issueDate);
-        sb.append(", issueTo=").append(issueTo);
+        /*sb.append(", issueDate=").append(issueDate);*/
+        sb.append(", name=").append(name);
         sb.append(", voucherAmt=").append(voucherAmt);
         sb.append(", job='").append(job).append('\'');
         sb.append(", remarks='").append(remarks).append('\'');

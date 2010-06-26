@@ -79,7 +79,7 @@
             </query>
         </named-query>
 
-        <named-query name="getAllDevelopers">
+        <named-query name="getAllVouchers">
             <query>
                 <![CDATA[
                 SELECT v FROM Voucher v  ORDER BY v.id
@@ -95,10 +95,10 @@
                 <column name="VOUCHER_DATE"/>
                 <temporal>DATE</temporal>
             </basic>
-            <basic name="issueDate" optional="false">
+            <!--<basic name="issueDate" optional="false">
                 <column name="ISSUE_DATE"/>
                 <temporal>DATE</temporal>
-            </basic>
+            </basic>-->
 
             <embedded name="name"/>
 
