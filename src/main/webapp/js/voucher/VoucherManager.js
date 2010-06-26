@@ -45,9 +45,9 @@ com.dj.project.voucher.VoucherManager = Ext.extend(com.dj.project.base.BaseManag
                         name: 'voucherDate',
                         convert:this.convertDate
                     },
-                    {
+                    /*{
                         name: 'issueDate'
-                    },
+                    },*/
                     {
                         name : 'issueTo'
                     },

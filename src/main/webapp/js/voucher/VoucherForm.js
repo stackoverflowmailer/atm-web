@@ -110,12 +110,12 @@ com.dj.project.voucher.VoucherForm = Ext.extend(com.dj.project.base.AbstractForm
                         fieldLabel: 'Voucher Date',
                         format : 'd/m/Y'
                     },
-                    {
+                    /*{
                         xtype     : 'datefield',
                         name      : 'issueDate',
                         fieldLabel: 'Issued Date',
                         format : 'd/m/Y'
-                    },
+                    },*/
                     {
                         xtype : 'compositefield',
                         anchor: '-20',
@@ -205,33 +205,16 @@ com.dj.project.voucher.VoucherForm = Ext.extend(com.dj.project.base.AbstractForm
                 columnWidth: .40,
                 autoHeight: true,
                 anchor: '-20',
-                defaults : {
 
-                    defaultType: 'button'
-                    //baseCls: 'x-plain',
-                    //cls: 'btn-panel'
-                },
                 items : [
-
-
-                    {
-                        text: 'Add User',
-                        iconCls: 'add16',
-                        iconAlign: 'bottom'
-                    },
-                    {
-                        text: 'Add User',
-                        iconCls: 'add24',
-                        scale: 'medium',
-                        iconAlign: 'bottom'
-                    },
-                    {
-                        text: 'Add User',
-                        iconCls: 'add',
-                        scale: 'large',
-                        iconAlign: 'bottom'
-                    }
-
+                    new com.dj.project.base.Shortcuts({
+                        items: [
+                            new com.dj.project.base.ShortcutHolder(
+                            {text: 'Shortcut 1', icon: 'resources/icons/item.gif'}),
+                            { xtype: 'shortcut', text: 'Shortcut 2', icon: 'resources/icons/item.gif'},
+                            { xtype: 'shortcut', text: 'Shortcut 2', icon: 'resources/icons/item.gif'}
+                        ]
+                    })
 
                 ]
             }
