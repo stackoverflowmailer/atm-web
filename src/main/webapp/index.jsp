@@ -26,17 +26,21 @@
     <!-- If you have it in your application file delete the whole -->
     <!-- following script tag as we must have only one onReady. -->
 
+
+
     <script type="text/javascript" src="js/namespace/Namespace.js"></script>
+
     <script type="text/javascript" src="js/base/ButtonPanel.js"></script>
     <script type="text/javascript" src="js/base/ShortcutHolder.js"></script>
-
     <script type="text/javascript" src="js/base/Global.js"></script>
+    <script type="text/javascript" src="js/base/Timer.js"></script>
     <script type="text/javascript" src="js/base/JsonSubmit.js"></script>
     <script type="text/javascript" src="js/base/Report.js"></script>
     <script type="text/javascript" src="js/base/WindowReportButton.js"></script>
     <script type="text/javascript" src="js/base/BaseManager.js"></script>
     <script type="text/javascript" src="js/base/BaseForm.js"></script>
     <script type="text/javascript" src="js/base/BaseListPanel.js"></script>
+
     <script type="text/javascript" src="js/class/ClassList.js"></script>
     <script type="text/javascript" src="js/developer/DeveloperGridPanel.js"></script>
     <script type="text/javascript" src="js/developer/DeveloperForm.js"></script>

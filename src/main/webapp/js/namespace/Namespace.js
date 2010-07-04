@@ -6,3 +6,4 @@ Ext.ns("com.dj.project.user");
 Ext.ns('com.dj.project.window.report');
 Ext.ns("com.dj.project.developer");
 Ext.ns("com.dj.project.voucher");
+Ext.ns("com.dj.project.allocation");

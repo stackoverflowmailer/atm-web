@@ -6,6 +6,7 @@
     <persistence-unit name="atm" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <mapping-file>META-INF/orm.xml</mapping-file>
+        <mapping-file>META-INF/allocation-orm.xml</mapping-file>
         <properties>
             <!--<property name="javax.persistence.jdbc.driver" value="com.p6spy.engine.spy.P6SpyDriver"/>-->
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>

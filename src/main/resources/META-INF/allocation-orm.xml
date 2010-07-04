@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+                 version="1.0"
+        >
+    <description>ATM Web</description>
+
+
+    <entity class="com.dj.atm.developer.model.Developer" name="Developer"
+            access="FIELD"
+            >
+        <table name="DEVELOPER"/>
+        <named-query name="getDeveloperByName">
+            <query>
+                <![CDATA[
+                SELECT d from Developer d where d.name.firstName=:fName and d.name.lastName=:lName
+                ]]>
+            </query>
+        </named-query>
+
+        <named-query name="getAllDevelopers">
+            <query>
+                <![CDATA[
+                SELECT d FROM Developer d  ORDER BY d.id
+            ]]>
+            </query>
+        </named-query>
+
+        <attributes>
+            <basic name="doj" optional="false">
+                <column name="DATE_JOIN"/>
+                <temporal>DATE</temporal>
+            </basic>
+            <basic name="bloodGroup" optional="true">
+                <column name="BLOOD_GROUP" length="5"/>
+            </basic>
+            <basic name="dol" optional="true">
+                <column name="DATE_LEAVING"/>
+                <temporal>DATE</temporal>
+            </basic>
+            <basic name="band">
+                <enumerated>STRING</enumerated>
+            </basic>
+            <embedded name="name"/>
+            <embedded name="landPhone"/>
+
+            <embedded name="mobilePhone">
+                <attribute-override name="countryCode">
+                    <column name="MP_C_CODE"/>
+                </attribute-override>
+                <attribute-override name="stdCode">
+                    <column name="MP_STD_CODE"/>
+                </attribute-override>
+                <attribute-override name="number">
+                    <column name="MP_NUMBER"/>
+                </attribute-override>
+            </embedded>
+        </attributes>
+
+    </entity>
+</entity-mappings>

@@ -56,7 +56,7 @@ com.dj.project.developer.DeveloperManager = Ext.extend(com.dj.project.base.BaseM
             })
         };
     },
-    buildDeveloperList : function() {
+    buildAllocationGridPanel : function() {
 
         return {
             xtype     : 'developerlist',

@@ -1,9 +1,11 @@
 package com.dj.atm.core.listener;
 
+import com.dj.atm.allocation.module.AllocationModule;
 import com.dj.atm.core.module.PersistenceModule;
 import com.dj.atm.core.security.AtmSecurityFilter;
 import com.dj.atm.developer.module.DeveloperModule;
 import com.dj.atm.user.module.UserModule;
+import com.dj.atm.voucher.module.VoucherModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.servlet.GuiceServletContextListener;
@@ -43,6 +45,8 @@ public class AtmContextListener extends GuiceServletContextListener {
 
         Injector injector = Guice.createInjector(
                 new DeveloperModule(),
+                new AllocationModule(),
+                new VoucherModule(),
                 new UserModule(),
                 new PersistenceModule(),
                 PersistenceService

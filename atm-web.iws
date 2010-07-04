@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Project and Libraries" />
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js" line="50" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="Misc changes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/Voucher.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/Voucher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iml" afterPath="$PROJECT_DIR$/atm-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/allocation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationGrid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" />
+    <list default="true" readonly="true" id="f5d7e200-435b-4ec2-9b9b-3705daef20fd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/allocation-orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/developer/DeveloperManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/module/AllocationModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/dao/impl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/dao" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/atm-web.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/atm-web.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/AllocationResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/model/Allocation.java" />
+      <change type="MOVED" beforePath="D:\atm-web\src\main\webapp\js\allocation\AllocationGrid.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationGridPanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/DeveloperResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/dao/AllocationDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.iws" afterPath="$PROJECT_DIR$/atm-web.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/service" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/dao/impl/AllocationDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/Timer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/service/AllocationService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/model/Standard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/service/impl/AllocationServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/model/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atm-web.ipr" afterPath="$PROJECT_DIR$/atm-web.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/resource/VoucherResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/service/impl" />
     </list>
     <list id="416cf8ec-cf75-40ed-a75f-bda20f9e0b41" name="Failed commit: Default" comment="Voucher screen - basic screen design over" />
-    <ignored path="atm-web.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="atm-web.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +66,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" line="55" class="com.dj.atm.core.security.AtmSecurityFilter" package="com.dj.atm.core.security">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -103,98 +138,7 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="orm.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/orm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="26" selection-start="3343" selection-end="3498" vertical-scroll-proportion="-56.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoucherService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/VoucherService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="block-bottom.gif" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bg/block-bottom.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoucherForm.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="24" selection-start="3391" selection-end="3609" vertical-scroll-proportion="-1.2191582">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoucherManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="36" selection-start="5806" selection-end="5806" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1277535889218" expanded="true" signature="1465:1530" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllocationGrid.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationGrid.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllocationManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Voucher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/Voucher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="58" selection-start="1797" selection-end="1845" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="atm-web.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/atm-web.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="20" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -204,23 +148,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/impl/VoucherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/VoucherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/module/VoucherModule.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherList.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/base/ButtonPanel.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/Main.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/v/dao/VoucherDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/converter/CustomIntegerDeserializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/dao/AllocationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/dao/impl/AllocationDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/module/AllocationModule.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/allocation-orm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/allocation/model/Allocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/listener/AtmContextListener.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/atm-web.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/base/Timer.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/Voucher.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/base/WindowReportButton.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/base/Global.js" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
@@ -250,17 +201,181 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
+      <flattenPackages ProjectPane="false" />
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource ProjectPane="true" />
       <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/dj/atm">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/dj/atm">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="developer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="atm-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/dj/atm">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.dj.atm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,66 +427,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atm-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -457,7 +512,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="allocation" />
+              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +538,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="allocation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,17 +585,117 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Favorites">
+        <subPane subId="atm-web">
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.favoritesTreeView.FavoritesTreeNodeDescriptor" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
@@ -572,132 +731,15 @@
       <recent name="com.dj.atm.core.security.AtmSecurityFilter" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dj.atm.allocation.dao.impl" />
+      <recent name="com.dj.atm.allocation.dao" />
+      <recent name="com.dj.atm.allocation.service.impl" />
+      <recent name="com.dj.atm.allocation.service" />
       <recent name="com.dj.atm.voucher.service.impl" />
-      <recent name="com.dj.atm.core.service.impl" />
-      <recent name="com.dj.atm.core.service.pl" />
-      <recent name="com.dj.atm.user.dao.impl" />
-      <recent name="com.dj.atm.user.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\atm-web\src\main\resources" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="6/26/10 12:10 PM" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-          <PATH vcs="svn" revision="">D:\atm-web</PATH>
-          <PATH vcs="svn" revision="">D:\atm-web\src\main\webapp\WEB-INF\sun-web.xml</PATH>
-          <PATH vcs="svn" revision="">D:\atm-web\atm-web.iws</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-          <PATH vcs="svn" revision="">D:\atm-web\Anish.txt</PATH>
-          <PATH vcs="svn" revision="">D:\atm-web\eclipselink.h2.db</PATH>
-          <PATH vcs="svn" revision="">D:\atm-web\eclipselink.trace.db</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Will be merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Maven.ATM-WEB">
     <configuration default="false" name="UserResourceTest.testGetUsers" type="JUnit" factoryName="JUnit" temporary="true">
@@ -1026,27 +1068,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="876" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3778027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41367713" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839838" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2582734" sideWeight="0.24489796" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24676259" sideWeight="0.3512786" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2582734" sideWeight="0.24489796" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.58950204" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5605381" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21007194" sideWeight="0.63122475" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28437048" sideWeight="0.614966" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35935396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37551022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="106" y="187" width="1248" height="676" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37687075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43161434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.6769852" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1065,7 +1107,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Misc changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Session expiry handling improved." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1079,6 +1121,8 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Misc changes" />
+    <MESSAGE value="Shortcuts Component Implemented" />
+    <MESSAGE value="Session expiry handling improved." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1088,114 +1132,106 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/dao/impl/VoucherDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherGridPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/impl/VoucherServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Report.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="107" selection-start="197" selection-end="291" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/WindowReportButton.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="85" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="49" column="25" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="62" selection-start="1526" selection-end="1526" vertical-scroll-proportion="-5.7272725">
+        <state line="34" column="50" selection-start="1594" selection-end="1594" vertical-scroll-proportion="-0.6363636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/extjs-3.2.1/adapter/ext/ext-base-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="20" selection-start="3402" selection-end="3487" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Timer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="214" selection-end="214" vertical-scroll-proportion="0.23167849">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/namespace/Namespace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="39" selection-start="201" selection-end="201" vertical-scroll-proportion="0.16548464">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/ShortcutHolder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="55" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+        <state line="61" column="25" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.47044918">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Report.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/WindowReportButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="22" column="67" selection-start="706" selection-end="712" vertical-scroll-proportion="0.72813237">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/atm-web.css">
+    <entry file="jar://D:/Software/Java/jdk1.6.0_19/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bg/block-bottom.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/model/Voucher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="58" selection-start="1797" selection-end="1845" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="26" selection-start="3343" selection-end="3498" vertical-scroll-proportion="-56.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/voucher/service/VoucherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="36" selection-start="5806" selection-end="5806" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1277535889218" expanded="true" signature="1465:1530" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/allocation/AllocationGrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="47" column="30" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.25779036">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="24" selection-start="3391" selection-end="3609" vertical-scroll-proportion="-1.2191582">
+        <state line="227" column="39" selection-start="8196" selection-end="8207" vertical-scroll-proportion="0.9296482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/voucher/VoucherManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="0" selection-start="4371" selection-end="4371" vertical-scroll-proportion="-8.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/resource/VoucherResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="719" selection-end="719" vertical-scroll-proportion="0.26477543">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/embedded/glassfish-embedded-all/3.0-Prelude-Embedded-b14/glassfish-embedded-all-3.0-Prelude-Embedded-b14.jar!/org/eclipse/persistence/exceptions/PersistenceUnitLoadingException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="4192" selection-end="4192" vertical-scroll-proportion="0.7801047">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dj/atm/core/security/AtmSecurityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/base/Global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="62" selection-start="864" selection-end="864" vertical-scroll-proportion="0.13238771">
           <folding />
         </state>
       </provider>

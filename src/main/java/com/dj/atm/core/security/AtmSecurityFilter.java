@@ -68,7 +68,6 @@ public class AtmSecurityFilter implements Filter {
         } else {
             HttpServletUtil.deleteCookie("atm-web", request, response);
             handleAuthenticationFailure(request, response);
-            //response.sendRedirect(HttpServletUtil.getWebCtxName(request));
         }
     }
 
@@ -78,7 +77,7 @@ public class AtmSecurityFilter implements Filter {
     private void handleAuthenticationFailure(HttpServletRequest request, HttpServletResponse response) throws IOException {
         //response.setContentType("text/json");
         //response.getWriter().write("NOT_A_VALID_USER");
-        response.setStatus(401);
+        response.addHeader("invalid-request", "authentication-failure");
         //return;
     }
 

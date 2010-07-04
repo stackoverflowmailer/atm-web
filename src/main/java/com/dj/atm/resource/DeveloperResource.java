@@ -54,7 +54,7 @@ public class DeveloperResource {
     @GET
     @Produces({MediaType.APPLICATION_JSON, "text/json"})
     @Path("/developers")
-    public WrappedResponse<Collection> getDeveloper(@Context HttpServletRequest request) {
+    public WrappedResponse<Collection> getDevelopers(@Context HttpServletRequest request) {
         QueryParameter qp = HttpServletUtil.getQueryParameter(request);
         List<Developer> developers = developerService.getDevelopers(qp);
         Collection<Developer> filtered = Collections2.filter(developers, new Predicate<Developer>() {
