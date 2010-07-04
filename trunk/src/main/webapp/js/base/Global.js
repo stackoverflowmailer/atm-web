@@ -5,7 +5,13 @@ Ext.Ajax.defaultHeaders = {
 //Ext.Ajax.on('beforerequest', this.showSpinner, this);
 
 Ext.Ajax.on('requestcomplete', function(connection, response, object) {
-    if (response.status == 401) {
+    if (response.getResponseHeader('invalid-request') && response.getResponseHeader('invalid-request')=== "authentication-failure") {
+        response.responseText = '{' +
+                 '"root"'  + ':' +  '"data"' + ', "data" : { ' +
+                '"errMsg"'  + ':' +  '"Failed authentication ue to session expiry"' + " } ," +
+                '"success"'  + ':' +  '"false"'   +
+
+        '}';
         Ext.getBody().unmask();
         Ext.Msg.show({
             title:'Session Expired',
@@ -18,13 +24,14 @@ Ext.Ajax.on('requestcomplete', function(connection, response, object) {
                     window.location.reload(false);
                 }
             },
-            animEl: 'logout-btn',
+            //animEl: 'logout-btn',
             icon: Ext.MessageBox.QUESTION
         });
         /*window.onerror = function(msg){
             return true;
         }*/
     }
+    
 }, this);
 
 /*

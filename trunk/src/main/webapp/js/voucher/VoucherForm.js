@@ -71,7 +71,8 @@ com.dj.project.voucher.VoucherForm = Ext.extend(com.dj.project.base.AbstractForm
             }
         ];
     },
-    buildFormItems : function() {
+
+     buildFormItems : function () {
         return [
             {
                 xtype: 'fieldset',
@@ -84,7 +85,7 @@ com.dj.project.voucher.VoucherForm = Ext.extend(com.dj.project.base.AbstractForm
 
 
                 layout: 'form',
-                columnWidth: .60,
+                columnWidth: 0.60,
                 autoHeight: true,
                 anchor: '-20',
                 defaults : {
@@ -202,7 +203,7 @@ com.dj.project.voucher.VoucherForm = Ext.extend(com.dj.project.base.AbstractForm
                 },
 
                 layout: 'form',
-                columnWidth: .40,
+                columnWidth: 0.40,
                 autoHeight: true,
                 anchor: '-20',
 
