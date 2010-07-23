@@ -1,7 +1,11 @@
 package com.dj.atm.user.service;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.core.model.User;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.List;
 
@@ -30,3 +34,6 @@ public interface UserService {
      */
     public List<User> getUsers(QueryParameter qp);
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

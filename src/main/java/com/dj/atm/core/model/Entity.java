@@ -1,7 +1,12 @@
 package com.dj.atm.core.model;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.converter.CustomLongDeserializer;
+
 import org.codehaus.jackson.map.annotate.JsonDeserialize;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.io.Serializable;
 
@@ -20,3 +25,6 @@ public abstract class Entity implements Serializable {
         this.id = id;
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

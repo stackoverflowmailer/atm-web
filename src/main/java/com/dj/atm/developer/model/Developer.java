@@ -1,6 +1,10 @@
 package com.dj.atm.developer.model;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.Entity;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 
@@ -8,22 +12,23 @@ import java.util.Date;
  * Represents a developer entity in the system.
  */
 public class Developer extends Entity {
-
     private static final long serialVersionUID = 1L;
-    private String title;
-    private Name name;
-    private Phone landPhone;
-    private Phone mobilePhone;
-    private Band band;
+    private Band              band;
+    private String            bloodGroup;
+
     /**
-     * Date of joining the project *
+     * Date of joining the project 
      */
     private Date doj;
+
     /**
-     * Date of leaving the project *
+     * Date of leaving the project 
      */
-    private Date dol;
-    private String bloodGroup;
+    private Date   dol;
+    private Phone  landPhone;
+    private Phone  mobilePhone;
+    private Name   name;
+    private String title;
 
     public String getTitle() {
         return title;
@@ -89,3 +94,6 @@ public class Developer extends Entity {
         this.bloodGroup = bloodGroup;
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

@@ -1,5 +1,7 @@
 package com.dj.atm.allocation.model;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.Entity;
 
 /**
@@ -9,5 +11,7 @@ import com.dj.atm.core.model.Entity;
  * Time: 12:20:56 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Item extends Entity {
-}
+public class Item extends Entity {}
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

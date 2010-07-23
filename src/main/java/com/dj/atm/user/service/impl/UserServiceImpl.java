@@ -1,12 +1,18 @@
 package com.dj.atm.user.service.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.core.model.User;
 import com.dj.atm.core.service.HashingService;
 import com.dj.atm.user.dao.UserDao;
 import com.dj.atm.user.service.UserService;
+
 import com.google.inject.Inject;
+
 import com.wideplay.warp.persist.Transactional;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 import java.util.List;
@@ -15,11 +21,9 @@ import java.util.List;
  * @author ScriptRunner
  */
 public class UserServiceImpl implements UserService {
-
-    private UserDao userDao;
-
     @Inject
     private HashingService hashingService;
+    private UserDao        userDao;
 
     public UserDao getUserDao() {
         return userDao;
@@ -45,11 +49,13 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     @Transactional
-    public User saveUser(User u){
+    public User saveUser(User u) {
         String hash = u.getPassword();
-        //u.setPasswordHash(hash);
+
+        // u.setPasswordHash(hash);
         u.setPassword(hash);
         u.setCreationDate(new Date());
+
         /**
          * TODO:When sending User object to front-end hash should NOT be send.
          */
@@ -72,3 +78,6 @@ public class UserServiceImpl implements UserService {
         return getUserDao().getDevelopers(qp);
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

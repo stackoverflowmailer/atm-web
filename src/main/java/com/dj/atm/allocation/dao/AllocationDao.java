@@ -1,9 +1,14 @@
 package com.dj.atm.allocation.dao;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.allocation.model.Allocation;
 import com.dj.atm.allocation.model.Standard;
 import com.dj.atm.core.model.QueryParameter;
+
 import com.lowagie.text.pdf.AcroFields;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 import java.util.List;
@@ -11,8 +16,7 @@ import java.util.List;
 /**
  * @author Script Runner
  */
-public interface AllocationDao{
-
+public interface AllocationDao {
     public Allocation getAllocationsForMonth(Date d);
 
     public Allocation getAllocationsForItemForMonth(AcroFields.Item i, Date d);
@@ -27,3 +31,6 @@ public interface AllocationDao{
 
     public Allocation getAllocation(Long aLong);
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

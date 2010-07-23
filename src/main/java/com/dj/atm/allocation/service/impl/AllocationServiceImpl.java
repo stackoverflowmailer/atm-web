@@ -1,12 +1,18 @@
 package com.dj.atm.allocation.service.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.allocation.dao.AllocationDao;
 import com.dj.atm.allocation.model.Allocation;
 import com.dj.atm.allocation.model.Standard;
 import com.dj.atm.allocation.service.AllocationService;
 import com.dj.atm.core.model.QueryParameter;
+
 import com.lowagie.text.pdf.AcroFields;
+
 import com.wideplay.warp.persist.Transactional;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 import java.util.List;
@@ -15,7 +21,6 @@ import java.util.List;
  * @author Script Runner
  */
 public class AllocationServiceImpl implements AllocationService {
-
     private AllocationDao allocationDao;
 
     public AllocationDao getAllocationDao() {
@@ -35,15 +40,14 @@ public class AllocationServiceImpl implements AllocationService {
     @Override
     @Transactional
     public Allocation getAllocationsForItemForMonth(AcroFields.Item i, Date d) {
-        return getAllocationDao().getAllocationsForItemForMonth(i,d);
+        return getAllocationDao().getAllocationsForItemForMonth(i, d);
     }
 
     @Override
     @Transactional
     public Allocation getAllocationsForItemForMonthForStandard(AcroFields.Item i, Date d, Standard s) {
-        return getAllocationDao().getAllocationsForItemForMonthForStandard(i,d,s);
+        return getAllocationDao().getAllocationsForItemForMonthForStandard(i, d, s);
     }
-
 
     @Override
     @Transactional
@@ -67,3 +71,6 @@ public class AllocationServiceImpl implements AllocationService {
         getAllocationDao().remove(allocation);
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

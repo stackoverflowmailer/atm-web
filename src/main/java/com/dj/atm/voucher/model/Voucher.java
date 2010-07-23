@@ -1,26 +1,29 @@
 package com.dj.atm.voucher.model;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.Entity;
 import com.dj.atm.developer.model.Name;
 
+//~--- JDK imports ------------------------------------------------------------
+
 import java.math.BigDecimal;
+
 import java.util.Date;
 
 /**
  * @author Script Runner
  */
 public class Voucher extends Entity {
-
     private static final long serialVersionUID = 1L;
-    private Long voucherNo;
-    private Date voucherDate;
-    /*private Date issueDate;*/
-    private Name name;
+    private String            job;
 
-
+    /* private Date issueDate; */
+    private Name       name;
+    private String     remarks;
     private BigDecimal voucherAmt;
-    private String job;
-    private String remarks;
+    private Date       voucherDate;
+    private Long       voucherNo;
 
     public Long getVoucherNo() {
         return voucherNo;
@@ -38,15 +41,15 @@ public class Voucher extends Entity {
         this.voucherDate = voucherDate;
     }
 
-   /* public Date getIssueDate() {
-        return issueDate;
-    }
-
-    public void setIssueDate(Date issueDate) {
-        this.issueDate = issueDate;
-    }*/
-
-
+    /*
+     *  public Date getIssueDate() {
+     *    return issueDate;
+     * }
+     *
+     * public void setIssueDate(Date issueDate) {
+     *    this.issueDate = issueDate;
+     * }
+     */
     public BigDecimal getVoucherAmt() {
         return voucherAmt;
     }
@@ -82,15 +85,21 @@ public class Voucher extends Entity {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
+
         sb.append("Voucher");
         sb.append("{voucherNo=").append(voucherNo);
         sb.append(", voucherDate=").append(voucherDate);
-        /*sb.append(", issueDate=").append(issueDate);*/
+
+        /* sb.append(", issueDate=").append(issueDate); */
         sb.append(", name=").append(name);
         sb.append(", voucherAmt=").append(voucherAmt);
         sb.append(", job='").append(job).append('\'');
         sb.append(", remarks='").append(remarks).append('\'');
         sb.append('}');
+
         return sb.toString();
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

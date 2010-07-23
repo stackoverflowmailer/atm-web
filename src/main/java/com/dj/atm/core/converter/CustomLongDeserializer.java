@@ -1,9 +1,13 @@
 package com.dj.atm.core.converter;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.DeserializationContext;
 import org.codehaus.jackson.map.JsonDeserializer;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.io.IOException;
 
@@ -17,18 +21,22 @@ import java.io.IOException;
  * @since 0.0.1
  */
 public class CustomLongDeserializer extends JsonDeserializer<Long> {
-
     @Override
     public Long deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
         return deserializeInternal(jp, ctxt);
     }
 
-
-    private Long deserializeInternal(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
+    private Long deserializeInternal(JsonParser jp, DeserializationContext ctxt)
+            throws IOException, JsonProcessingException {
         String valueString = jp.getText().trim();
-        if (null == valueString || 0 == valueString.length()) {
+
+        if ((null == valueString) || (0 == valueString.length())) {
             return Long.valueOf(0);
         }
+
         return Long.valueOf(valueString);
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

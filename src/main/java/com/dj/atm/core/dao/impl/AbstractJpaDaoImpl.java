@@ -1,30 +1,33 @@
 package com.dj.atm.core.dao.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.dao.Dao;
 import com.dj.atm.core.model.Entity;
+
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-import javax.persistence.EntityManager;
+//~--- JDK imports ------------------------------------------------------------
+
 import java.lang.reflect.ParameterizedType;
+
+import javax.persistence.EntityManager;
 
 /**
  * Super class for all applications DAOs.
  *
  * @author Deepak Jacob
  */
-public abstract class AbstractJpaDaoImpl<K, E extends Entity> implements
-        Dao<K, E> {
-
-    protected Class<E> entityClass;
-
+public abstract class AbstractJpaDaoImpl<K, E extends Entity> implements Dao<K, E> {
+    protected Class<E>                entityClass;
     @Inject
     protected Provider<EntityManager> entityManager;
 
     public AbstractJpaDaoImpl() {
         ParameterizedType genericType = (ParameterizedType) getClass().getGenericSuperclass();
-        this.entityClass = (Class<E>) genericType.getActualTypeArguments()[1];
 
+        this.entityClass = (Class<E>) genericType.getActualTypeArguments()[1];
     }
 
     @Override
@@ -34,6 +37,7 @@ public abstract class AbstractJpaDaoImpl<K, E extends Entity> implements
         } else {
             entityManager.get().merge(entity);
         }
+
         return entity;
     }
 
@@ -47,3 +51,6 @@ public abstract class AbstractJpaDaoImpl<K, E extends Entity> implements
         return entityManager.get().find(entityClass, id);
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

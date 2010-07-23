@@ -1,8 +1,12 @@
 package com.dj.atm.developer.service;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.List;
 
@@ -59,3 +63,6 @@ public interface DeveloperService {
      */
     public Developer remove(Developer developer);
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com

@@ -1,20 +1,24 @@
 package com.dj.atm.developer.dao.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.dao.impl.AbstractJpaDaoImpl;
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.developer.dao.DeveloperDao;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
 
-import javax.persistence.Query;
+//~--- JDK imports ------------------------------------------------------------
+
 import java.util.List;
+
+import javax.persistence.Query;
 
 /**
  * @author Script Runner
  * @since 0.0.1
  */
-public class DeveloperDaoImpl extends AbstractJpaDaoImpl<Long, Developer>
-        implements DeveloperDao {
+public class DeveloperDaoImpl extends AbstractJpaDaoImpl<Long, Developer> implements DeveloperDao {
 
     /**
      * Get all the developers in the team regardless
@@ -27,12 +31,14 @@ public class DeveloperDaoImpl extends AbstractJpaDaoImpl<Long, Developer>
      */
     public List<Developer> getDevelopers(QueryParameter qp) {
         final Query query = entityManager.get().createNamedQuery("getAllDevelopers");
+
         query.setFirstResult(qp.getOffset());
         query.setMaxResults(qp.getLimit());
+
         List<Developer> developers = query.getResultList();
+
         return developers;
     }
-
 
     /**
      * Get all the developers matching the supplied name parameter.
@@ -42,9 +48,13 @@ public class DeveloperDaoImpl extends AbstractJpaDaoImpl<Long, Developer>
      */
     @Override
     public List<Developer> getDevelopersByName(Name name) {
-        final Query query = entityManager.get().createNamedQuery("getDeveloperByName");
-        @SuppressWarnings("unchecked")
-        List<Developer> developerList = query.getResultList();
+        final Query                                    query         =
+            entityManager.get().createNamedQuery("getDeveloperByName");
+        @SuppressWarnings("unchecked") List<Developer> developerList = query.getResultList();
+
         return developerList;
     }
 }
+
+
+//~ Formatted by Jindent --- http://www.jindent.com
