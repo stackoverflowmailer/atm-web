@@ -1,6 +1,9 @@
 package com.dj.atm.core.service.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.service.HashingService;
+
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -10,7 +13,6 @@ import org.apache.commons.logging.LogFactory;
  * @since 0.0.1
  */
 public class HashingServiceImpl implements HashingService {
-
     private static Log logger = LogFactory.getLog(HashingServiceImpl.class);
 
     /**
@@ -21,6 +23,9 @@ public class HashingServiceImpl implements HashingService {
      */
     @Override
     public String getHash(String input) {
-        return DigestUtils.md5Hex(input);   
+        return DigestUtils.md5Hex(input);
     }
 }
+
+
+

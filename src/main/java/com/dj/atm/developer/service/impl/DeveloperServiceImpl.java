@@ -1,12 +1,18 @@
 package com.dj.atm.developer.service.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.developer.dao.DeveloperDao;
 import com.dj.atm.developer.model.Developer;
 import com.dj.atm.developer.model.Name;
 import com.dj.atm.developer.service.DeveloperService;
+
 import com.google.inject.Inject;
+
 import com.wideplay.warp.persist.Transactional;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.List;
 
@@ -14,7 +20,6 @@ import java.util.List;
  * @author Deepak Jacob
  */
 public class DeveloperServiceImpl implements DeveloperService {
-
     @Inject
     private DeveloperDao developerDao;
 
@@ -60,7 +65,11 @@ public class DeveloperServiceImpl implements DeveloperService {
 
     @Override
     public Developer remove(Developer developer) {
-        return null; // To change body of implemented methods use File |
+        return null;    // To change body of implemented methods use File |
+
         // Settings | File Templates.
     }
 }
+
+
+

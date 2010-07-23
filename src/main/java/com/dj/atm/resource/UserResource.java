@@ -1,18 +1,25 @@
 package com.dj.atm.resource;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.core.model.User;
 import com.dj.atm.core.util.WrappedResponse;
 import com.dj.atm.user.service.UserService;
+
 import com.google.inject.Inject;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
+//~--- JDK imports ------------------------------------------------------------
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 
 /**
  * @author Script Runner
@@ -32,9 +39,11 @@ public class UserResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Map save(User user) {
         User persisted = userService.saveUser(user);
-        Map rValue = new HashMap();
+        Map  rValue    = new HashMap();
+
         rValue.put("success", true);
         rValue.put("data", persisted);
+
         return rValue;
     }
 
@@ -43,10 +52,13 @@ public class UserResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public WrappedResponse<List<User>> getUsers(@Context HttpServletRequest request) {
-        QueryParameter qp = HttpServletUtil.getQueryParameter(request);
-        List<User> users = userService.getUsers(qp);
+        QueryParameter              qp       = HttpServletUtil.getQueryParameter(request);
+        List<User>                  users    = userService.getUsers(qp);
         WrappedResponse<List<User>> response = new WrappedResponse<List<User>>(true, users);
+
         return response;
     }
-
 }
+
+
+

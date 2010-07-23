@@ -1,8 +1,12 @@
 package com.dj.atm.voucher.dao;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.dao.Dao;
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.voucher.model.Voucher;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 import java.util.List;
@@ -12,6 +16,7 @@ import java.util.List;
  * @since 0.0.1
  */
 public interface VoucherDao extends Dao<Long, Voucher> {
+
     /**
      * Get all the developers in the team regardless
      * of any condition.
@@ -25,5 +30,7 @@ public interface VoucherDao extends Dao<Long, Voucher> {
     public List<Voucher> getVouchers(QueryParameter qp);
 
     public List<Voucher> getVoucherByDate(Date date);
-
 }
+
+
+

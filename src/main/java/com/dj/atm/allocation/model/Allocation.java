@@ -1,19 +1,20 @@
 package com.dj.atm.allocation.model;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.Entity;
 
 /**
  * @author Script Runner
- * 
+ *
  */
 public class Allocation extends Entity {
-
+    private double allocated;
+    private double free;
+    private String item;
     private String standard;
     private String students;
-    private String item;
-    private double allocated;
     private double used;
-    private double free;
 
     public String getStandard() {
         return standard;
@@ -66,6 +67,7 @@ public class Allocation extends Entity {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
+
         sb.append("Allocation");
         sb.append("{standard='").append(standard).append('\'');
         sb.append(", students='").append(students).append('\'');
@@ -74,6 +76,10 @@ public class Allocation extends Entity {
         sb.append(", used=").append(used);
         sb.append(", free=").append(free);
         sb.append('}');
+
         return sb.toString();
     }
 }
+
+
+

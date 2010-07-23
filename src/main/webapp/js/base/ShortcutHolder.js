@@ -59,7 +59,7 @@ Ext.extend(com.dj.project.base.ShortcutHolder, Ext.Container, {
                 },
                 {
                     tag:  'span',
-                    clazz: 'x-shortcut-style',
+                    cls : 'x-shortcut-style',
                     html: this.initialConfig.text
                 }
             ]

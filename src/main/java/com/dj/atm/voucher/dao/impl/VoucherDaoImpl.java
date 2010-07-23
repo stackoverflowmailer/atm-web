@@ -1,20 +1,24 @@
 package com.dj.atm.voucher.dao.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.dao.impl.AbstractJpaDaoImpl;
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.voucher.dao.VoucherDao;
 import com.dj.atm.voucher.model.Voucher;
 
-import javax.persistence.Query;
+//~--- JDK imports ------------------------------------------------------------
+
 import java.util.Date;
 import java.util.List;
+
+import javax.persistence.Query;
 
 /**
  * @author Script Runner
  * @since 0.0.1
  */
-public class VoucherDaoImpl extends AbstractJpaDaoImpl<Long, Voucher>
-        implements VoucherDao {
+public class VoucherDaoImpl extends AbstractJpaDaoImpl<Long, Voucher> implements VoucherDao {
 
     /**
      * Get all the vouchers in the team regardless
@@ -27,9 +31,12 @@ public class VoucherDaoImpl extends AbstractJpaDaoImpl<Long, Voucher>
      */
     public List<Voucher> getVouchers(QueryParameter qp) {
         final Query query = entityManager.get().createNamedQuery("getAllVouchers");
+
         query.setFirstResult(qp.getOffset());
         query.setMaxResults(qp.getLimit());
+
         List<Voucher> vouchers = query.getResultList();
+
         return vouchers;
     }
 
@@ -41,11 +48,13 @@ public class VoucherDaoImpl extends AbstractJpaDaoImpl<Long, Voucher>
      */
     @Override
     public List<Voucher> getVoucherByDate(Date date) {
-        final Query query = entityManager.get().createNamedQuery("getVoucherByDate");
-        @SuppressWarnings("unchecked")
-        List<Voucher> voucherList = query.getResultList();
+        final Query                                  query       =
+            entityManager.get().createNamedQuery("getVoucherByDate");
+        @SuppressWarnings("unchecked") List<Voucher> voucherList = query.getResultList();
+
         return voucherList;
     }
 }
+
 
 

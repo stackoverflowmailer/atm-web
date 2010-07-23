@@ -13,14 +13,12 @@ package com.dj.atm.core.util;
  * @since 0.0.1
  */
 public class WrappedResponse<T> {
-
+    private T       data;
     private boolean success;
-
-    private T data;
 
     public WrappedResponse(boolean success, T data) {
         this.success = success;
-        this.data = data;
+        this.data    = data;
     }
 
     public boolean isSuccess() {
@@ -39,3 +37,6 @@ public class WrappedResponse<T> {
         this.data = data;
     }
 }
+
+
+

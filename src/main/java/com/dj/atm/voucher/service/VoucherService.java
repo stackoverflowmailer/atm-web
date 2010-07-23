@@ -1,7 +1,11 @@
 package com.dj.atm.voucher.service;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.voucher.model.Voucher;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 import java.util.List;
@@ -10,6 +14,7 @@ import java.util.List;
  * @author Script Runner
  */
 public interface VoucherService {
+
     /**
      * Return the voucher matching the provided id;
      *
@@ -55,5 +60,7 @@ public interface VoucherService {
      * @param voucher the voucher who should be removed from the team.
      */
     public void remove(Voucher voucher);
-
 }
+
+
+

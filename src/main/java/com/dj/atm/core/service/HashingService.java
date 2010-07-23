@@ -5,6 +5,7 @@ package com.dj.atm.core.service;
  * @since 0.0.1
  */
 public interface HashingService {
+
     /**
      * Get the hash of the input string using MD5 algorithm.
      *
@@ -13,3 +14,6 @@ public interface HashingService {
      */
     public String getHash(String input);
 }
+
+
+

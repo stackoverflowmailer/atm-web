@@ -1,17 +1,23 @@
 package com.dj.atm.user.dao.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.dao.impl.AbstractJpaDaoImpl;
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.core.model.User;
 import com.dj.atm.user.dao.UserDao;
 
-import javax.persistence.Query;
+//~--- JDK imports ------------------------------------------------------------
+
 import java.util.List;
+
+import javax.persistence.Query;
 
 /**
  * @author ScriptRunner
  */
 public class UserDaoImpl extends AbstractJpaDaoImpl<Long, User> implements UserDao {
+
     /**
      * Get all the users in the system regardless
      * of any condition.
@@ -25,9 +31,15 @@ public class UserDaoImpl extends AbstractJpaDaoImpl<Long, User> implements UserD
     @Override
     public List<User> getDevelopers(QueryParameter qp) {
         final Query query = entityManager.get().createNamedQuery("getAllUsers");
+
         query.setFirstResult(qp.getOffset());
         query.setMaxResults(qp.getLimit());
+
         List<User> users = query.getResultList();
+
         return users;
     }
 }
+
+
+

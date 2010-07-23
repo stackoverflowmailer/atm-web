@@ -1,6 +1,10 @@
 package com.dj.atm.core.model;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.developer.model.Name;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 
@@ -8,23 +12,15 @@ import java.util.Date;
  * Represents a user in the system.
  */
 public class User extends Entity {
-
     private static final long serialVersionUID = 1L;
 
+    // private String passwordHash;
+    private Date   creationDate;
+    private Name   name;
+    private String password;
     private String username;
 
-    private Name name;
-
-    private String password;
-
-    //private String passwordHash;
-
-    private Date creationDate;
-
-
-    public User() {
-
-    }
+    public User() {}
 
     public User(String username) {
         this.username = username;
@@ -54,14 +50,13 @@ public class User extends Entity {
         this.password = password;
     }
 
-//    public String getPasswordHash() {
-//        return passwordHash;
-//    }
+//  public String getPasswordHash() {
+//      return passwordHash;
+//  }
 //
-//    public void setPasswordHash(String passwordHash) {
-//        this.passwordHash = passwordHash;
-//    }
-
+//  public void setPasswordHash(String passwordHash) {
+//      this.passwordHash = passwordHash;
+//  }
     public Date getCreationDate() {
         return creationDate;
     }
@@ -72,13 +67,23 @@ public class User extends Entity {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+
+        if ((o == null) || (getClass() != o.getClass())) {
+            return false;
+        }
 
         User user = (User) o;
 
-        if (!name.equals(user.name)) return false;
-        if (!username.equals(user.username)) return false;
+        if (!name.equals(user.name)) {
+            return false;
+        }
+
+        if (!username.equals(user.username)) {
+            return false;
+        }
 
         return true;
     }
@@ -86,7 +91,12 @@ public class User extends Entity {
     @Override
     public int hashCode() {
         int result = username.hashCode();
+
         result = 31 * result + name.hashCode();
+
         return result;
     }
 }
+
+
+

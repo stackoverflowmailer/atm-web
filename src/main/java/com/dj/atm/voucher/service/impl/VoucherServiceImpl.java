@@ -1,10 +1,15 @@
 package com.dj.atm.voucher.service.impl;
 
+//~--- non-JDK imports --------------------------------------------------------
+
 import com.dj.atm.core.model.QueryParameter;
 import com.dj.atm.voucher.dao.VoucherDao;
 import com.dj.atm.voucher.model.Voucher;
 import com.dj.atm.voucher.service.VoucherService;
+
 import com.wideplay.warp.persist.Transactional;
+
+//~--- JDK imports ------------------------------------------------------------
 
 import java.util.Date;
 import java.util.List;
@@ -14,7 +19,6 @@ import java.util.List;
  */
 @Transactional
 public class VoucherServiceImpl implements VoucherService {
-
     private VoucherDao voucherDao;
 
     public VoucherDao getVoucherDao() {
@@ -50,3 +54,6 @@ public class VoucherServiceImpl implements VoucherService {
         getVoucherDao().delete(voucher);
     }
 }
+
+
+

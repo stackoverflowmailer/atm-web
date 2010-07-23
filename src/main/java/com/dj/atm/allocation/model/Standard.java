@@ -7,5 +7,7 @@ package com.dj.atm.allocation.model;
  * Time: 12:20:40 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Standard {
-}
+public class Standard {}
+
+
+
