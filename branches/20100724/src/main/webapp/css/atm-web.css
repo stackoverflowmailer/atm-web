@@ -1,0 +1,24 @@
+.x-form-item {
+    font-family: arial;
+    font-size: 12px;
+}
+
+.x-btn button {
+    font-family: arial;
+    font-size: 12px;
+}
+
+
+.x-shortcuts-wrapper {
+    /*background-size: 100%;
+   
+    
+    background-image: url("../resources/bg/block-bottom.gif");
+    background-repeat: no-repeat;*/
+}
+
+.x-shortcut-style{
+    font-family: arial;
+    font-size: 13px;
+    font-size: small;
+}
